@@ -1,1 +1,0 @@
-delete this file after download favicon
