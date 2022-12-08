@@ -1,2 +1,17 @@
-@import './common';
-@import './example';
+@import './utils/module';
+
+@import './base/module';
+
+@import './components/module';
+
+@import './layout/module';
+
+@import './pages/restaurant/module';
+
+@import './pages/hotel/module';
+
+@import './pages/room-luxe/module';
+
+@import './pages/room-for-3/module';
+
+@import './pages/room-for-2/module';
