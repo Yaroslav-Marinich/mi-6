@@ -1,24 +1,61 @@
-@mixin font($weight, $size, $height, $spacing) {
-    font-weight: $weight;
-    font-size: $size;
-    line-height: $height;
-    letter-spacing: $spacing;
-}
 
+@mixin font ($fw, $fz, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+  }
+
+@mixin calc-fb ($count, $gap) {
+    flex-basis: calc((100% - $gap * ($count - 1)) / $count);
+    }
+
+@mixin calc-width ($count, $gap) {
+    width: calc((100% - $gap * ($count - 1)) / $count);
+    }
+  
 @mixin mobile {
     @media screen and (min-width: 414px) {
-        @content;
+      @content;
     }
-}
+  }
 
+@mixin mobilemax {
+    @media screen and (max-width: 1023px) {
+      @content;
+    }
+  }
+  
 @mixin tablet {
     @media screen and (min-width: 1024px) {
-        @content;
+      @content;
     }
-}
+  }
 
+@mixin tabletmax {
+    @media screen and (max-width: 1279px) {
+      @content;
+    }
+  }
+  
 @mixin desktop {
     @media screen and (min-width: 1280px) {
-        @content;
+      @content;
     }
-}
+  } 
+  
+@mixin retina {
+    @media (min-device-pixel-ratio: 2), 
+      (min-resolution: 192dpi), 
+      (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+
+
+
+@mixin media ($size) {
+    @media screen and (min-width: $size) {
+      @content;
+    }
+  }
