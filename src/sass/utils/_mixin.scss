@@ -1,0 +1,24 @@
+@mixin font($weight, $size, $height, $spacing) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+@mixin mobile {
+    @media screen and (min-width: 414px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desctop {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}
