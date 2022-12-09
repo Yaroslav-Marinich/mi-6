@@ -1,0 +1,49 @@
+.footer {
+}
+.footer__wrapper {
+    padding: 40px 0px;
+    background-color: #0E0C07;
+    color: $colorAccentYellow;
+}
+
+.footer__logo {
+
+}
+
+.footer__menu {
+    font-family: 'Montserrat';
+    @include font (500, 20px, 1.2, .02);
+}
+
+.items {
+ 
+}
+.item {
+    
+}
+.footer__icon {
+}
+.thumb__social {
+}
+.icon-social__footer {
+}
+.icon-social {
+}
+.icon-social__title {
+    // display: none;
+    @include font (400, 16px, 1.25, .02);
+    // font-style: normal;
+    // font-weight: 400;
+
+    // line-height: 20px;
+    /* identical to box height */
+
+    // letter-spacing: 0.02em;
+
+    /* Akzent yellow */
+
+    color: $colorAccentYellow;
+}
+.icon-social__icon {
+    fill: $colorAccentYellow;
+}
