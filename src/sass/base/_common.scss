@@ -1,1 +1,16 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background-color: #ffffff;
+    color: #7A7A7A;
+    }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
