@@ -9,7 +9,7 @@
 }
 
 .menu__title {
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
 
   font-size: 32px;
   line-height: calc(37 / 32);
@@ -17,7 +17,7 @@
 }
 
 .menu__subtitle {
-  text-align: left;
+  // text-align: left;
 
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -25,37 +25,37 @@
 }
 
 .menu__table {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 16px;
+  // width: 100%;
 
-  &:not(:last-of-type) {
-    margin-bottom: 16px;
-  }
+  // &:not(:last-of-type) {
+  //   margin-bottom: 16px;
+  // }
 
-  &:last-of-type {
-    margin-bottom: 35px;
-  }
+  // &:last-of-type {
+  //   margin-bottom: 35px;
+  // }
 }
 
-.menu__column-one {
-}
+// .menu__column-one {
+// }
 
-.menu__data {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+// .menu__data {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 8px;
+// }
 
-.menu__row {
-  //   display: flex;
-  //   justify-content: space-between;
-}
+// .menu__row {
+//   //   display: flex;
+//   //   justify-content: space-between;
+// }
 
-.menu__meal {
-}
+// .menu__meal {
+// }
 
-.menu__ingredients {
-  margin-top: 4px;
-}
+// .menu__ingredients {
+//   margin-top: 4px;
+// }
