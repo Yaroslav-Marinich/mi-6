@@ -2,11 +2,6 @@
   background-color: $colorBgDarkLemon;
 }
 
-.room-for-3__container {
-  display: flex;
-  flex-direction: column;
-}
-
 .room-for-3__wrap {
   display: flex;
   flex-direction: column;
@@ -14,11 +9,15 @@
 }
 
 .room-for-3__pre-title {
+  font-family: 'Times New Roman';
+  @include font(400, 20px, 1.15, null);
   margin-bottom: 8px;
+  color: $colorTextHotel;
 }
 
 .room-for-3__logo {
   margin-bottom: 32px;
+  color: $colorLogoGray;
 }
 
 .room-for-3__title {
@@ -26,17 +25,36 @@
 }
 
 .room-for-3__after-title {
+  margin-right: calc(74px - 15px);
+  width: 242px;
+  margin-bottom: 32px;
+  font-family: inherit;
+  @include font(600, 12px, 1.25, 0.02em);
+}
+
+.room-for-3__living-room {
   margin-bottom: 32px;
 }
 
-.room-for-3__list {
+.room-for-3-image__wrap {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 72px;
 }
 
-.room-for-3__item {
+.room-for-3-btn__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .room-for-3__details {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 65px;
+  background-color: $colorBtnBlack;
 }
 
 .room-for-3__btn-price {
+  background-color: $colorBtnBlack;
 }

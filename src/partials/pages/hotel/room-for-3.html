@@ -2,7 +2,7 @@
   <div class="room-for-3__container container">
     <div class="room-for-3__wrap">
       <p class="room-for-3__pre-title">Amet minim mollit non</p>
-      <p class="room-for-3__logo logo">MIMIHO</p>
+      <span class="room-for-3__logo logo">MIMIHO</span>
       <h2 class="room-for-3__title hotel-title">ТРЬОХМІСНИЙ НОМЕР</h2>
       <p class="room-for-3__after-title">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -11,7 +11,7 @@
       </p>
     </div>
     <ul class="room-for-3__list list">
-      <li class="room-for-3__item">
+      <li class="room-for-3__living-room">
         <picture>
           <source
             srcset="
@@ -42,72 +42,76 @@
           />
         </picture>
       </li>
-      <li class="room-for-3__item">
-        <picture>
-          <source
-            srcset="
-              ./images/hotel/hotel-2-desk.jpg    1x,
-              ./images/hotel/hotel-2-desk-2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/hotel/hotel-2-tab.jpg    1x,
-              ./images/hotel/hotel-2-tab-2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              ./images/hotel/hotel-2-mob.jpg    1x,
-              ./images/hotel/hotel-2-mob-2x.jpg 2x
-            "
-            media="(min-width: 414px)"
-          />
-          <img
-            src="./images/hotel/hotel-2-mob.jpg"
-            alt="ванна кімната"
-            width="194"
-            height="194"
-          />
-        </picture>
-      </li>
-      <li class="room-for-3__item">
-        <picture>
-          <source
-            srcset="
-              ./images/hotel/hotel-3-desk.jpg    1x,
-              ./images/hotel/hotel-3-desk-2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/hotel/hotel-3-tab.jpg    1x,
-              ./images/hotel/hotel-3-tab-2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              ./images/hotel/hotel-3-mob.jpg    1x,
-              ./images/hotel/hotel-3-mob-2x.jpg 2x
-            "
-            media="(min-width: 414px)"
-          />
-          <img
-            src="./images/hotel/hotel-3-mob.jpg"
-            alt="краєвид з вікна"
-            width="194"
-            height="194"
-          />
-        </picture>
-      </li>
+      <div class="room-for-3-image__wrap">
+        <li class="room-for-3__others-room">
+          <picture>
+            <source
+              srcset="
+                ./images/hotel/hotel-2-desk.jpg    1x,
+                ./images/hotel/hotel-2-desk-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hotel/hotel-2-tab.jpg    1x,
+                ./images/hotel/hotel-2-tab-2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/hotel/hotel-2-mob.jpg    1x,
+                ./images/hotel/hotel-2-mob-2x.jpg 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <img
+              src="./images/hotel/hotel-2-mob.jpg"
+              alt="ванна кімната"
+              width="194"
+              height="194"
+            />
+          </picture>
+        </li>
+        <li class="room-for-3__others-room">
+          <picture>
+            <source
+              srcset="
+                ./images/hotel/hotel-3-desk.jpg    1x,
+                ./images/hotel/hotel-3-desk-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hotel/hotel-3-tab.jpg    1x,
+                ./images/hotel/hotel-3-tab-2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/hotel/hotel-3-mob.jpg    1x,
+                ./images/hotel/hotel-3-mob-2x.jpg 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <img
+              src="./images/hotel/hotel-3-mob.jpg"
+              alt="краєвид з вікна"
+              width="194"
+              height="194"
+            />
+          </picture>
+        </li>
+      </div>
     </ul>
-    <a href="#" class="room-for-3__details btn">Детальніше</a>
-    <button type="button" class="room-for-3__btn-price btn">
-      Переглянути ціни
-    </button>
+    <div class="room-for-3-btn__wrap">
+      <a href="./room-for-3.html" class="room-for-3__details btn">Детальніше</a>
+      <button type="button" class="room-for-3__btn-price btn">
+        Переглянути ціни
+      </button>
+    </div>
   </div>
 </section>
