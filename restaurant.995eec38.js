@@ -1,2 +1,2 @@
 !function(){var o={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]"),body:document.querySelector("body"),modalList:document.querySelector(".mob-modal__nav")};function e(){o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openModalBtn.addEventListener("click",e),o.closemodalBtn.addEventListener("click",e),o.modalList.addEventListener("click",(function(){o.modal.classList.add("is-hidden"),o.body.classList.remove("no-scroll")}))}();
-//# sourceMappingURL=hotel.249aaa27.js.map
+//# sourceMappingURL=restaurant.995eec38.js.map
