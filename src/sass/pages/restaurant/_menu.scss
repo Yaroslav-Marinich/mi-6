@@ -11,8 +11,8 @@
 .menu__table {
   display: flex;
   flex-direction: column;
-  margin: 0 -32px;
-  border-spacing: 32px 0;
+  margin: -8px -32px 24px;
+  border-spacing: 32px 8px;
 
   @include tablet {
     flex-direction: row;
@@ -37,10 +37,17 @@
 }
 
 .menu__subtitle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   text-align: left;
   font-size: 20px;
   line-height: calc(23 / 20);
   letter-spacing: normal;
+
+  &--not-pt {
+    padding-top: 0;
+  }
 }
 
 .menu__meal {
@@ -71,6 +78,15 @@
   line-height: calc(17 / 14);
 }
 
+.menu__wrap {
+  text-align: center;
+}
+
 .menu__button {
-  margin-top: 32px;
+  background-color: $colorBtnBlack;
+
+  &:hover,
+  &:focus {
+    border-color: $colorAccentYellow;
+  }
 }
