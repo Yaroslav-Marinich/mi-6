@@ -26,6 +26,7 @@
     justify-content: center;
     align-items: center;
     width: 66%;
+    color: inherit;
     @include tablet {
         width: 50%;
         font-size: 64px;
