@@ -1,11 +1,12 @@
 .footer {
-    // display: flex;
     padding: 40px 0px;
+    width: 100%;
     background-color: #0E0C07;
     color: $colorAccentYellow;
 }
 .footer__container{
     display: flex;
+    
 }
 .footer__wrapper-lists {
     display: flex;
@@ -30,13 +31,16 @@
 
 .footer__menu {
     display: flex;
-    // flex-wrap: wrap;
     flex-direction: column;
     gap: 16px;
     font-family: 'Montserrat';
+    & a {
+        color: inherit;
+    }
     @include font (500, 20px, 1.2, .02);
     @include tablet {
         width: 50%;
+        margin-left: 8px;
     }
 }
 
@@ -50,6 +54,7 @@ gap: 20px;
 // padding-right: 30px;
 @include tablet {
     flex-direction: column;
+    margin-left: 8px;
     gap: 12px;
 
 }
