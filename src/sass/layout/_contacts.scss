@@ -1,193 +1,188 @@
 .contacts {
-    padding-top: 36px;
-    padding-bottom: 32px;
-    @include tablet{
+  padding-top: 36px;
+  padding-bottom: 32px;
+  @include tablet {
     padding-top: 56px;
     padding-bottom: 40px;
-}
-@include desktop{
+  }
+  @include desktop {
     padding-bottom: 73px;
-}
+  }
 }
 
-.contacts__container{
-@include tablet{
+.contacts__container {
+  @include tablet {
     display: flex;
     justify-content: space-between;
-}
+  }
 }
 
 .contacts__logo {
-    color: $colorLogoGray;
-    margin-bottom: 12px;
-    display: block;
-    @include font(700, 64px, 1.08, 0.03em);
-    @include tablet{
-       margin-bottom: 8px;
-    } 
-@include desktop{
-                margin-bottom: 16px;
-}
+  color: $colorLogoGray;
+  margin-bottom: 12px;
+  display: block;
+  @include font(700, 64px, 1.08, 0.03em);
+  @include tablet {
+    margin-bottom: 8px;
+  }
+  @include desktop {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__text {
-    @include font(600, 16px, 1.25, 0.02em);
-    color: $colorTextPrimary;
-    margin-bottom: 16px;
-    @include tablet{
-       margin-bottom: 52px;
-    } 
-    @include desktop{
-        margin-bottom: 40px;
-@include font(600, 20px, 1.2, 0.02em);
-        }
-    }
+  @include font(600, 16px, 1.25, 0.02em);
+  color: $colorTextPrimary;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 52px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+    @include font(600, 20px, 1.2, 0.02em);
+  }
+}
 
 .contacts__item {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    margin-bottom: 16px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @include mobile {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mobile {
     justify-content: flex-start;
-    }
-    @include tablet{
-      display: block;
+  }
+  @include tablet {
+    display: block;
     margin-bottom: 24px;
-    } 
+  }
 }
 
 .contacts__link {
-    @include font(500, 20px, 1.2, 0.02em);
-    color: $colorBrown;
-    @include tablet{
-        display: block;
-      margin-bottom: 8px;
-    } 
-    }
+  @include font(500, 20px, 1.2, 0.02em);
+  color: $colorBrown;
+  @include tablet {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
 
 .contacts__phone {
-    @include font(400, 14px, 1.2, 0.02em);
-    color: $colorTextAddressMobTab;
-    border: 0.5px solid $colorAccentYellow;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    width: 144px;
-    height: 40px;
-    padding-left: 14px;
-    
+  @include font(400, 14px, 1.2, 0.02em);
+  color: $colorTextAddressMobTab;
+  border: 0.5px solid $colorAccentYellow;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  width: 144px;
+  height: 40px;
+  padding-left: 14px;
 }
-.contacts__phone--twin{
-    @include mobile {
+.contacts__phone--twin {
+  @include mobile {
     width: 260px;
-}
-    @include tablet{
+  }
+  @include tablet {
     width: 264px;
-    } 
-
-
+  }
 }
 
 .phone__icon {
-    margin-right: 14px;
-    fill: $colorBrown;
-    
+  margin-right: 14px;
+  fill: $colorBrown;
 }
 
 .contacts__item--hotel {
-    gap: 54px;
-     @include tablet{
+  gap: 54px;
+  @include tablet {
     margin-bottom: 48px;
-    } 
+  }
 }
 
 .contacts__hotel-phone {
-display: none;
-    @include font(400, 14px, 1.2, 0.02em);
-    color: $colorTextAddressMobTab;
-    @include mobile {
+  display: none;
+  @include font(400, 14px, 1.2, 0.02em);
+  color: $colorTextAddressMobTab;
+  @include mobile {
     display: flex;
-    align-items: center
-    }
-    
+    align-items: center;
+  }
 }
 .contacts__phone--first {
- @include mobile {   
-margin-right: 12px;}
-display: flex;
-align-items: center;
-@include tablet{
+  @include mobile {
+    margin-right: 12px;
+  }
+  display: flex;
+  align-items: center;
+  @include tablet {
     margin-right: 16px;
-    } 
-
+  }
 }
 
 .contacts__wraper {
-    @include mobilemax {
-    margin-bottom: 32px;}
-   }
+  @include mobilemax {
+    margin-bottom: 32px;
+  }
+}
 
-.contacts__map{
-    display: flex;
-    justify-content: center;
-    @include mobile {
+.contacts__map {
+  display: flex;
+  justify-content: center;
+  @include mobile {
     margin-left: 124px;
-    }
-    @include tablet{
+  }
+  @include tablet {
     margin-left: 0;
-    display: block
-    } 
+    display: block;
+  }
 }
 
 .contacts__phone--map {
-    @include font(400, 16px, 1.25, 0.01em);
-    color: $colorTextAddressMobTab;
-    width: 260px;
-    height: 76px;
-    padding-left: 16px;
-     @include tablet{
+  @include font(400, 16px, 1.25, 0.01em);
+  color: $colorTextAddressMobTab;
+  width: 260px;
+  height: 76px;
+  padding-left: 16px;
+  @include tablet {
     width: 285px;
     height: 56px;
-    } 
-    }
+  }
+}
 
 .contacts__icon {
-    margin-right: 16px;
-    fill: $colorBrown;
+  margin-right: 16px;
+  fill: $colorBrown;
 }
 .map__text {
-    width: 183px;
-    height: 61px;
-    @include tablet{
+  width: 183px;
+  height: 61px;
+  @include tablet {
     width: 233px;
     height: 40px;
-    } 
+  }
 }
 
-.contacts__googlemap{ 
-    width: 290px;
-    height: 220px;
-    @include mobilemax {
-display: block;
+.contacts__googlemap {
+  width: 290px;
+  height: 220px;
+  @include mobilemax {
+    display: block;
     margin: 0 auto;
-    }
-    @include mobile {
-width: 384px;
-}
-@include tablet {
-width: 535px;
+  }
+  @include mobile {
+    width: 384px;
+  }
+  @include tablet {
+    width: 535px;
     height: 412px;
-}
-@include desktop {
-width: 634px;
-}
+  }
+  @include desktop {
+    width: 634px;
+  }
 }
 .color-adress--desktop {
-@include desktop{
-   color: $colorTextAddressDesktop;
-        }
+  @include desktop {
+    color: $colorTextAddressDesktop;
+  }
 }
-
