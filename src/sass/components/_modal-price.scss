@@ -15,6 +15,7 @@
     @include tablet {
       width: 712px;
       min-height: 489px;
+      padding: 60px;
     }
 }
 
@@ -73,6 +74,13 @@
 }
 .modal-price__text {
     margin-bottom: 20px;
+}
+
+.wrapper-group{
+    @include tablet {
+        display: flex;
+    }
+    
 }
 .wrapper-input{
         margin-bottom: 20px;

@@ -12,42 +12,44 @@
       
       <form class="modal-price__form">
         <p class="modal-price__text">Категорія номеру</p>
-        <div class="wrapper-input">
-          <div class="modal-price__user-name modal-price__input-wrapper">
-            <input
-              type="number"
-              id="number-cast"
-              name="number-cast"
-              class="modal-price__input"
-              minlength="2"
-              placeholder="1"
-              required
-            />
-            <select name="number-cast" class="modal-price__select"></select>
-
+        <div class="wrapper-group">
+          <div class="wrapper-input">
+            <div class="modal-price__user-name modal-price__input-wrapper">
+              <input
+                type="number"
+                id="number-cast"
+                name="number-cast"
+                class="modal-price__input"
+                minlength="2"
+                placeholder="1"
+                required
+              />
+              <select name="number-cast" class="modal-price__select"></select>
+  
+            </div>
+            <label for="number-cast" class="modal-price__label">Кількість ночей</label>
           </div>
-          <label for="number-cast" class="modal-price__label">Кількість ночей</label>
-        </div>
-
-        <div class="wrapper-input wrapper-last">
-          <div class="modal-price__user-name modal-price__input-wrapper">
-            <input
-              type="number"
-              id="number-cost"
-              name="number-cost"
-              class="modal-price__input"
-              minlength="2"
-              placeholder="1"
-              required
-            />
-            <select name="number-cost" class="modal-price__select"></select>
-
+  
+          <div class="wrapper-input wrapper-last">
+            <div class="modal-price__user-name modal-price__input-wrapper">
+              <input
+                type="number"
+                id="number-cost"
+                name="number-cost"
+                class="modal-price__input"
+                minlength="2"
+                placeholder="1000"
+                required
+              />
+              <select name="number-cost" class="modal-price__select"></select>
+  
+            </div>
+            <label for="number-cost" class="modal-price__label">грн</label>
           </div>
-          <label for="number-cost" class="modal-price__label">грн</label>
         </div>
 
         
-        <button type="submit" class="modal__btn">Відправити</button>
+        <button type="submit" class="modal__btn">ЗАБРОНЮВАТИ НОМЕР</button>
       </form>
   </div>
 </div>
