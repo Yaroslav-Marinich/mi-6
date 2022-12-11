@@ -7,6 +7,15 @@
     rgba(0, 0, 0, 0.55) 54.17%,
     rgba(0, 0, 0, 0) 100%
   ), url(../images/room/room-1-mob.jpg);
+    @include retina {
+    background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  ), url(../images/room/room-1-mob-2x.jpg);
+  }
+
   background-repeat: no-repeat;
   background-position: top, center;
     background-size: 100% 143px, 100% 100%;
@@ -18,6 +27,14 @@
     rgba(0, 0, 0, 0) 100%
   ), url(../images/room/room-1-tab.jpg);
     background-size: 100% 116px, 100% 100%;
+     @include retina {
+    background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  ), url(../images/room/room-1-tab-2x.jpg);
+  }
   }
   @include desktop {
     background-image: linear-gradient(
@@ -27,7 +44,14 @@
     rgba(0, 0, 0, 0) 100%
   ), url(../images/room/room-1-desk.jpg);
     background-size: 100% 147px, 100% 100%;
-
+ @include retina {
+    background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  ), url(../images/room/room-1-desk-2x.jpg);
+  }
   }
 }
 
