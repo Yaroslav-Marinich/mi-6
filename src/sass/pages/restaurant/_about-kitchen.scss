@@ -32,19 +32,21 @@
 }
 
 .kitchen-card {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 32px;
-  margin-top: 12px;
+
+  display: flex;
   align-items: center;
-  gap: 28px;
+  row-gap: 28px;
   @include tablet {
     margin-top: 24px;
   }
 }
 .kitchen-card--top {
+  margin-top: 12px;
+
+  flex-wrap: wrap;
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   @include tablet {
     margin-bottom: 142px;
   }
@@ -93,8 +95,8 @@
 }
 .kitchen-card__description--orange {
   color: $colorBrown;
-  width: 163px;
   padding-left: 20px;
+  padding-bottom: 20px;
   @include tablet {
     padding-left: 48px;
     width: 312px;
