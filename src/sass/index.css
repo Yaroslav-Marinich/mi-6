@@ -240,12 +240,11 @@ img {
 
 .logo {
   font-family: "Film P3";
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .main-title {
@@ -333,4 +332,56 @@ img {
 }
 .section-hotel--dark-lemon {
   background-color: #F0ECD6;
+}
+
+.about-our-kitchen {
+  background-color: #FFFDEE;
+}
+
+.about-kitchen__title {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #B4B4B4;
+  margin-bottom: 12px;
+  margin-top: 16px;
+}
+
+.about-kitchen__logo {
+  font-family: "Film P3";
+  font-size: 40px;
+  line-height: 43px;
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+
+.kitchen-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+
+.kitchen-card__description {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+}
+
+.kitchen-card__description--gray {
+  color: #5F5F5F;
+  width: 258px;
+  padding-bottom: 28px;
+}
+
+.kitchen-card__description--orange {
+  color: #C79002;
+  width: 163px;
+  padding-left: 20px;
+}
+
+.kitchen-card__photo--top {
+  margin-left: auto;
 }/*# sourceMappingURL=index.css.map */

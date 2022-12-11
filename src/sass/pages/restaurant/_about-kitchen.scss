@@ -1,0 +1,52 @@
+.about-our-kitchen {
+  background-color: $colorBgLemon;
+}
+
+.about-kitchen__title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: $colorTextSecondary;
+  margin-bottom: 12px;
+  margin-top: 16px;
+}
+
+.about-kitchen__logo {
+  font-family: 'Film P3';
+  font-size: 40px;
+  line-height: 43px;
+  letter-spacing: 0.3em;
+  color: $colorTextAddressMobTab;
+}
+
+.kitchen-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+
+.kitchen-card__description {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+}
+.kitchen-card__description--gray {
+  color: $colorTextPrimary;
+  width: 258px;
+  padding-bottom: 28px;
+}
+.kitchen-card__description--orange {
+  color: $colorBrown;
+  width: 163px;
+  padding-left: 20px;
+}
+
+.kitchen-card__photo--top {
+  margin-left: auto;
+}
+
+.slick-prev:before {
+}
