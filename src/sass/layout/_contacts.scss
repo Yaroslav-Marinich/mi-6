@@ -1,19 +1,37 @@
 .contacts {
     padding-top: 36px;
     padding-bottom: 32px;
+    @include tablet{
+    padding-top: 56px;
+    padding-bottom: 40px;
+}
+}
+
+.contacts__container{
+@include tablet{
+    display: flex;
+    justify-content: space-between;
+}
 }
 
 .contacts__logo {
     color: $colorLogoGray;
     margin-bottom: 12px;
     display: block;
+    @include font(700, 64px, 1.08, 0.03em);
+    @include tablet{
+       margin-bottom: 8px;
+    } 
 }
 
 .contacts__text {
     @include font(600, 16px, 1.25, 0.02em);
     color: $colorTextPrimary;
     margin-bottom: 16px;
-}
+    @include tablet{
+       margin-bottom: 52px;
+    } 
+    }
 
 .contacts__item {
     display: flex;
@@ -25,11 +43,19 @@
     @include mobile {
     justify-content: flex-start;
     }
+    @include tablet{
+      display: block;
+    margin-bottom: 24px;
+    } 
 }
 
 .contacts__link {
     @include font(500, 20px, 1.2, 0.02em);
     color: $colorBrown;
+    @include tablet{
+        display: block;
+      margin-bottom: 8px;
+    } 
 }
 
 .contacts__phone {
@@ -43,10 +69,15 @@
     height: 40px;
     padding-left: 14px;
 }
-@include mobile {
 .contacts__phone--twin{
+    @include mobile {
     width: 260px;
 }
+    @include tablet{
+    width: 264px;
+    } 
+
+
 }
 
 .phone__icon {
@@ -57,6 +88,9 @@
 
 .contacts__item--hotel {
     gap: 54px;
+     @include tablet{
+    margin-bottom: 48px;
+    } 
 }
 
 .contacts__hotel-phone {
@@ -72,12 +106,17 @@ display: none;
  @include mobile {   
 margin-right: 12px;}
 display: flex;
-align-items: center
+align-items: center;
+@include tablet{
+    margin-right: 16px;
+    } 
+
 }
 
-.contacts__list {
-    margin-bottom: 32px;
-}
+.contacts__wraper {
+    @include mobilemax {
+    margin-bottom: 32px;}
+   }
 
 .contacts__map{
     display: flex;
@@ -85,6 +124,10 @@ align-items: center
     @include mobile {
     margin-left: 124px;
     }
+    @include tablet{
+    margin-left: 0;
+    display: block
+    } 
 }
 
 .contacts__phone--map {
@@ -93,9 +136,12 @@ align-items: center
     width: 260px;
     height: 76px;
     padding-left: 16px;
+     @include tablet{
+    width: 285px;
+    height: 56px;
+    } 
     }
 
-    
 .contacts__icon {
     margin-right: 16px;
     fill: $colorBrown;
@@ -103,15 +149,20 @@ align-items: center
 .map__text {
     width: 183px;
     height: 61px;
+    @include tablet{
+    width: 233px;
+    height: 40px;
+    } 
 }
-
 
 .contacts__googlemap{ 
     width: 290px;
     height: 220px;
-    display: block;
+    @include mobilemax {
+display: block;
     margin: 0 auto;
-@include mobile {
+    }
+    @include mobile {
 width: 384px;
 }
 @include tablet {
