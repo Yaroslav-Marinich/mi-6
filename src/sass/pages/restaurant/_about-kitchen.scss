@@ -1,6 +1,6 @@
 .about-our-kitchen {
   background-color: $colorBgLemon;
-  padding-bottom: 72px;
+  padding-bottom: 20px;
 }
 
 .about-kitchen__title {
@@ -37,6 +37,7 @@
   flex-wrap: wrap;
   margin-bottom: 32px;
   margin-top: 12px;
+  align-items: center;
   @include tablet {
     margin-top: 24px;
   }
@@ -49,11 +50,6 @@
   }
   @include desktop {
     margin-bottom: 162px;
-  }
-}
-.kitchen-card--bottom {
-  @include tablet {
-    align-items: center;
   }
 }
 
