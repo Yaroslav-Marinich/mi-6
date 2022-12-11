@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: end;
+  @include desktop {
+    margin-right: calc(142px - 85px);
+  }
 }
 
 .room-for-3__pre-title {
@@ -23,6 +26,12 @@
   display: table;
   margin-left: auto;
   margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 62px;
+  }
+  @include desktop {
+    margin-bottom: 72px;
+  }
 }
 
 .room-for-3__logo {
@@ -31,7 +40,6 @@
   color: $colorLogoGray;
   @include tablet {
     @include font(null, 64px, 1.08, null);
-    margin-bottom: 62px;
   }
 }
 
@@ -40,6 +48,12 @@
   @include tablet {
     margin-bottom: 16px;
     margin-right: calc(90px - 47px);
+    @include font(null, 30px, 1.13, null);
+  }
+  @include desktop {
+    margin-right: 0;
+    margin-bottom: 24px;
+    @include font(null, 36px, 1.14, null);
   }
 }
 
@@ -52,7 +66,20 @@
   @include tablet {
     width: 400px;
     margin-right: calc(67px - 47px);
+    margin-bottom: 0;
     @include font(null, 16px, null, null);
+  }
+  @include desktop {
+    width: 400px;
+    margin-bottom: 0;
+    margin-right: calc(195px - 85px - 57px);
+  }
+}
+
+.room-for-3__living-room {
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 48px;
   }
 }
 
@@ -64,19 +91,15 @@
   }
 }
 
-.room-for-3__living-room {
-  margin-bottom: 32px;
-  @include tablet {
-    margin-bottom: 48px;
-  }
-}
-
-.room-for-3-image__wrap {
+.room-for-3-image {
   display: flex;
   gap: 16px;
   margin-bottom: 72px;
   @include tablet {
     margin-bottom: 0;
+  }
+  @include desktop {
+    gap: 40px;
   }
 }
 
