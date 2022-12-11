@@ -8,8 +8,14 @@
   font-weight: 400;
   font-size: 20px;
   color: $colorTextSecondary;
-  margin-bottom: 12px;
-  margin-top: 16px;
+  padding-bottom: 12px;
+  padding-top: 16px;
+  @include tablet {
+    padding-bottom: 4px;
+    padding-top: 120px;
+    font-size: 32px;
+    line-height: 37px;
+  }
 }
 
 .about-kitchen__logo {
@@ -18,13 +24,54 @@
   line-height: 43px;
   letter-spacing: 0.3em;
   color: $colorTextAddressMobTab;
+  @include tablet {
+    font-size: 64px;
+    line-height: 69px;
+  }
 }
 
 .kitchen-card {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 32px;
   margin-top: 12px;
+  @include tablet {
+    margin-top: 24px;
+  }
+}
+.kitchen-card--top {
+  position: relative;
+  margin-bottom: 28px;
+  @include tablet {
+    margin-bottom: 142px;
+  }
+  @include desktop {
+    margin-bottom: 162px;
+  }
+}
+.kitchen-card--bottom {
+  @include tablet {
+    align-items: center;
+  }
+}
+
+.kitchen-card__photo--top {
+  margin-left: auto;
+  padding-top: 20px;
+  @include tablet {
+    width: 400px;
+    height: 524px;
+    position: absolute;
+    right: 65px;
+    top: -310px;
+  }
+  @include desktop {
+    width: 460px;
+    height: 574px;
+    right: 85px;
+    top: -310px;
+  }
 }
 
 .kitchen-card__description {
@@ -32,20 +79,33 @@
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.02em;
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .kitchen-card__description--gray {
   color: $colorTextPrimary;
   width: 258px;
-  padding-bottom: 28px;
+  // padding-bottom: 28px;
+  @include tablet {
+    width: 439px;
+  }
+  @include desktop {
+    width: 518px;
+  }
 }
 .kitchen-card__description--orange {
   color: $colorBrown;
   width: 163px;
   padding-left: 20px;
-}
-
-.kitchen-card__photo--top {
-  margin-left: auto;
+  @include tablet {
+    padding-left: 48px;
+    width: 312px;
+  }
+  @include desktop {
+    padding-left: 32px;
+  }
 }
 
 .slick-prev:before {
