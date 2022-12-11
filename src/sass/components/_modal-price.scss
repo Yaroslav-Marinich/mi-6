@@ -1,0 +1,102 @@
+.modal-price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 15px;
+    width: 414px;
+    min-height: 572px;
+    overflow: scroll;
+
+    font-size: 0;
+    border-radius: 2px;
+    background-color: $colorBgLemon;
+    
+    @include tablet {
+      width: 712px;
+      min-height: 489px;
+    }
+}
+
+.modal-price__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.modal-price__close-icon {
+    stroke: $colorBlack;
+    background-color: $colorBgLemon;
+    & use {
+        width: 24px;
+        height: 24px;    
+    }
+}
+
+.price-form {
+    font-family: 'Times New Roman';
+}
+
+.modal-price__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: $colorTextMenu; 
+    @include tablet {
+        font-size: 32px;
+        line-height: 1.16;
+    } 
+}
+.modal-price__sub-title {
+    margin-bottom: 28px;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: #808080;
+    @include tablet {
+
+    }
+}
+
+.modal-price__form {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $colorBrown;
+}
+.modal-price__text {
+    margin-bottom: 20px;
+}
+
+.modal-price__user-name {
+}
+.modal-price__input-wrapper {
+}
+.modal-price__input {
+    margin-bottom: 8px;
+    width: 384px;
+    height: 54px;
+    background-color:  $colorBgLemon;
+    border: 1px solid $colorBrown;
+    &::placeholder {
+        padding-left: 15px;
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+        color: $colorTextModal;
+    }
+}
+
+.modal-price__label {
+    margin: 0 0 20px 15px;
+    // display: inline-block;
+}

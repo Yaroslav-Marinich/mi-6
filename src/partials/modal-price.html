@@ -1,0 +1,31 @@
+<div class="backdrop" data-modal>
+  <!-- is-hidden -->
+  <div class="modal-price is-hidden">
+      <button type="button" class="modal-price__close" data-modal-close>
+      <svg class="modal-price__close-icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-close"></use>
+          <!-- symbol-defs.svg#icon-close -->
+      </svg>
+      </button>
+      <p class="modal-price__title price-form">ЦІНИ НА НОМЕР</p>
+      <p class="modal-price__sub-title price-form">Двомісний люкс</p>
+      
+      <form class="modal-price__form">
+        <p class="modal-price__text">Категорія номеру</p>
+        <div class="modal-price__user-name modal-price__input-wrapper">
+          <input
+            type="number"
+            id="number-category"
+            name="number-category"
+            class="modal-price__input"
+            minlength="2"
+            placeholder="1"
+            required
+          />
+          <select name="number-category" id="number-category"> class="modal-price__select"</select>
+
+        </div>
+        <label for="number-category" class="modal-price__label">Кількість ночей</label>
+      </form>
+  </div>
+</div>
