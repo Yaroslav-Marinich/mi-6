@@ -1,7 +1,9 @@
 .amenities {
 
-    &__section {
+    &__section .container {
         background-color: $colorBgLemon;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 
     &__lines {
@@ -166,7 +168,10 @@
     }
 
     &__list {
-        @include style-list
+        list-style-type: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
     }
 
     &__box {
