@@ -1,0 +1,196 @@
+.details-rest {
+  background-color: $colorBlack;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/main/details-restaurant/details-rest-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/main/details-restaurant/details-rest-bg-mob-2x.jpg);
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/main/details-restaurant/details-rest-bg-tab.jpg);
+
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main/details-restaurant/details-rest-bg-tab-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/main/details-restaurant/details-rest-bg-desk.jpg);
+
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main/details-restaurant/details-rest-bg-desk-2x.jpg);
+    }
+  }
+}
+
+.details-rest__wrap {
+  width: 259px;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-bottom: 48px;
+  @include tablet {
+    width: 610px;
+  }
+}
+
+.details-rest__logo {
+  margin-bottom: 12px;
+}
+
+.details-rest__title {
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 8px;
+  }
+}
+
+.details-rest__text {
+  display: block;
+  width: 259px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $colorTextHotel;
+  @include tablet {
+    width: 610px;
+    font-size: 16px;
+  }
+}
+
+.details-rest__wrap-btn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.details-rest__link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.details-rest__button {
+  display: block;
+  margin: 0 auto;
+}
+
+.details-rest__link {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-rest__slider {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 -64px 0;
+  padding: 0 0 64px 0;
+
+  @include mobilemax {
+    margin: 0 0 0 0;
+    padding: 0 0 80px 0;
+  }
+}
+
+.detail-rest__box {
+  @include tablet {
+    display: flex;
+    gap: 34px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+}
+
+.slick-slide {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  top: auto;
+  bottom: -16px;
+  width: 32px;
+  height: 32px;
+
+  @include mobilemax {
+    bottom: 10px;
+  }
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  left: 64px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.slick-next:before {
+  background: url('../images/vector-right.svg') no-repeat 0 0 / 32px 32px;
+}
+
+.slick-prev:before {
+  background: url('../images/vector-left.svg') no-repeat 0 0 / 32px 32px;
+}
+
+.slick-track {
+  display: flex;
+  gap: 20px;
+  @media screen and (min-width: 1024px) {
+    gap: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 87px;
+  }
+}
