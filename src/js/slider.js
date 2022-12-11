@@ -24,4 +24,9 @@ $('.kitchen-slider').slick({
   variableWidth: true,
   autoplay: false,
   autoplaySpeed: 1000,
+  infinite: true,
+  arrows: true,
+  appendArrows: '.slider-arrows',
+  prevArrow: '<button class="left-arrow"></button > ',
+  nextArrow: '<button class="right-arrow"></button>',
 });
