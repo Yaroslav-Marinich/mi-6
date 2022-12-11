@@ -44,14 +44,12 @@
 }
 
 .contacts__item {
-  display: flex;
-  align-items: center;
-  gap: 22px;
   margin-bottom: 16px;
-  flex-wrap: wrap;
-  justify-content: space-between;
   @include mobile {
     justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 22px;
   }
   @include tablet {
     display: block;
@@ -62,6 +60,10 @@
 .contacts__name {
   @include font(500, 20px, 1.2, 0.02em);
   color: $colorBrown;
+  @media screen and (max-width: 413px) {
+    margin-bottom: 10px;
+    display: block;
+  }
   @include tablet {
     display: block;
     margin-bottom: 8px;
@@ -80,9 +82,8 @@
   padding-left: 14px;
 }
 .contacts__phone--twin {
-  @include mobile {
-    width: 260px;
-  }
+  width: 260px;
+
   @include tablet {
     width: 264px;
   }
@@ -101,7 +102,6 @@
 }
 
 .contacts__hotel-phone {
-  display: none;
   @include font(400, 14px, 1.2, 0.02em);
   color: $colorTextAddressMobTab;
   @include mobile {
@@ -110,9 +110,7 @@
   }
 }
 .contacts__phone--first {
-  @include mobile {
-    margin-right: 12px;
-  }
+  margin-right: 12px;
   display: flex;
   align-items: center;
   @include tablet {
