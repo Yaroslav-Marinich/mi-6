@@ -32,12 +32,12 @@
 }
 
 .kitchen-card {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 32px;
   margin-top: 12px;
   align-items: center;
+  gap: 28px;
   @include tablet {
     margin-top: 24px;
   }
@@ -55,7 +55,6 @@
 
 .kitchen-card__photo--top {
   margin-left: auto;
-  padding-top: 20px;
   @include tablet {
     width: 400px;
     height: 524px;
