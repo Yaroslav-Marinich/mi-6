@@ -67,6 +67,9 @@
 
 .details-rest__logo {
   margin-bottom: 12px;
+  @include tablet {
+    font-size: 64px;
+  }
 }
 
 .details-rest__title {
