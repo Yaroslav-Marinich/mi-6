@@ -13,20 +13,21 @@
 .menu__table {
   display: flex;
   flex-direction: column;
-  margin: -8px -32px 24px;
-  border-spacing: 32px 8px;
+  margin: -8px 0 24px;
+  border-spacing: 0 8px;
 
   @include tablet {
     flex-direction: row;
+    justify-content: space-between;
 
-    margin: -8px -44px 32px;
-    border-spacing: 44px 8px;
+    margin: -8px 0 32px;
+    border-spacing: 0 8px;
   }
 
   @include desktop {
     column-gap: 20px;
-    margin: -12px -60px 19px;
-    border-spacing: 60px 12px;
+    margin: -12px 0 19px;
+    border-spacing: 0 12px;
   }
 }
 
@@ -34,12 +35,28 @@
   width: 100%;
 
   @include tablet {
-    width: 50%;
+    width: calc((100% - 88px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 140px) / 2);
+  }
+}
+
+.menu__column {
+  &--dish {
+    width: calc(100% * (254 / 384));
+  }
+  &--weight {
+    width: calc(100% * (65 / 384));
+  }
+  &--price {
+    width: calc(100% * (65 / 384));
   }
 }
 
 .menu__title {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
   text-transform: uppercase;
   font-size: 32px;
@@ -47,37 +64,36 @@
   letter-spacing: normal;
 
   @include tablet {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
+  }
+
+  @include desktop {
+    margin-bottom: 32px;
   }
 }
 
-.menu__subtitle {
-  font-family: 'Times New Roman';
-  padding-top: 8px;
-  padding-bottom: 8px;
+.menu__dish-name {
+  height: 39px;
 
+  font-family: 'Times New Roman';
   text-align: left;
   font-size: 20px;
   line-height: calc(23 / 20);
   letter-spacing: normal;
 
   @include tablet {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    height: 47px;
   }
 
   @include desktop {
+    height: 44px;
+
     font-size: 24px;
     line-height: calc(28 / 24);
   }
-
-  &--not-pt {
-    padding-top: 0;
-  }
 }
 
-.menu__meal {
-  margin-right: -3px;
+.menu__dish {
   margin-bottom: 4px;
 
   font-weight: 500;
@@ -86,6 +102,14 @@
 
   &--short {
     margin-bottom: 3px;
+
+    @include tablet {
+      margin-bottom: 2px;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
 
   @include desktop {
@@ -95,12 +119,18 @@
 }
 
 .menu__ingredients {
+  padding-right: 30px;
+
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
 
   @include tablet {
-    margin-right: 4px;
+    padding-right: 47px;
+  }
+
+  @include desktop {
+    padding-right: 50px;
   }
 }
 
