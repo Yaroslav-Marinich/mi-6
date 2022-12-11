@@ -1,15 +1,13 @@
 .menu {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: $colorBlack;
   background-color: $colorBgLemon;
 
   @include tablet {
     background-color: $colorBgDarkLemon;
   }
-}
-
-.menu__container {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .menu__table {
@@ -55,6 +53,7 @@
 }
 
 .menu__subtitle {
+  font-family: 'Times New Roman';
   padding-top: 8px;
   padding-bottom: 8px;
 
