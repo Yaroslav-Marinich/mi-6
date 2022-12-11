@@ -1,0 +1,21 @@
+.luxe-hero {
+  background-color: #3d3e45;
+  background-image: url(../images/room/room-1-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+.luxe-hero__container {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+.luxe-hero__shadow {
+  height: 143px;
+  background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
