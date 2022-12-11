@@ -7,15 +7,19 @@
         padding: 80px 0px;
     }
 }
+
 .footer__container{
-    display: flex;
-    
+    display: flex;    
 }
+
 .footer__wrapper-lists {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-left: 8px;
     @include tablet {
+        margin-left: 0;
+        border: none;
         flex-direction: row;
         width: 50%;
     }
@@ -32,7 +36,6 @@
         font-size: 64px;
         line-height: 1.08;
     }
-
 }
 
 .footer__menu {
@@ -46,19 +49,18 @@
     @include font (500, 20px, 1.2, .02);
     @include tablet {
         width: 50%;
-        margin-left: 8px;
+        padding-left: 8px;
     }
 }
 
 .footer__social{
-display: flex;
-gap: 20px;
-// padding-right: 30px;
-@include tablet {
-    flex-direction: column-reverse;
-    margin-left: 8px;
-    gap: 12px;
-}
+    display: flex;
+    gap: 20px;
+    @include tablet {
+        flex-direction: column-reverse;
+        padding-left: 8px;
+        gap: 12px;
+    }
 }
 
 .icon-social__footer {
@@ -70,7 +72,6 @@ gap: 20px;
         height: 40px;
         border: .5px solid $colorAccentYellow;
         border-radius: 2px;
-
     }
 }
 
@@ -85,12 +86,11 @@ gap: 20px;
     }
 }
 .icon-social__thumb{
-    display: flex;
+    height: 24px;
     @include tablet {
         padding-right: 12px;
     }
 }
 .icon-social__icon {
     fill: $colorAccentYellow;
-
 }
