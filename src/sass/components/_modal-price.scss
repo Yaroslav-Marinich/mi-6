@@ -74,7 +74,12 @@
 .modal-price__text {
     margin-bottom: 20px;
 }
-
+.wrapper-input{
+        margin-bottom: 20px;
+}
+.wrapper-last{
+    margin-bottom: 40px;
+}
 .modal-price__user-name {
 }
 .modal-price__input-wrapper {
@@ -94,9 +99,19 @@
         letter-spacing: 0.05em;
         color: $colorTextModal;
     }
+    @include tablet {
+        display: none;
+    }
+}
+
+.modal-price__select{
+    display: none;
+    @include tablet {
+        display: inline-block;
+    }
 }
 
 .modal-price__label {
-    margin: 0 0 20px 15px;
+    margin-left: 15px;
     // display: inline-block;
 }
