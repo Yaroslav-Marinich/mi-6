@@ -23,11 +23,9 @@ $('.variable-width').slick({
   dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
   variableWidth: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
 });
 
 // SLICK-SLIDER Mini
