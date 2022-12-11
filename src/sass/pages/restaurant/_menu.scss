@@ -1,6 +1,10 @@
 .menu {
   color: $colorBlack;
   background-color: $colorBgLemon;
+
+  @include tablet {
+    background-color: $colorBgDarkLemon;
+  }
 }
 
 .menu__container {
@@ -16,6 +20,16 @@
 
   @include tablet {
     flex-direction: row;
+    column-gap: 14px;
+
+    margin: -8px -37px 32px;
+    border-spacing: 37px 8px;
+  }
+
+  @include desktop {
+    column-gap: 20px;
+    margin: -12px -60px 19px;
+    border-spacing: 60px 12px;
   }
 }
 
@@ -34,6 +48,10 @@
   font-size: 32px;
   line-height: calc(37 / 32);
   letter-spacing: normal;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
 }
 
 .menu__subtitle {
@@ -45,6 +63,16 @@
   line-height: calc(23 / 20);
   letter-spacing: normal;
 
+  @include tablet {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
   &--not-pt {
     padding-top: 0;
   }
@@ -54,6 +82,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
+
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .menu__ingredients {
@@ -76,10 +109,19 @@
   text-align: right;
   font-size: 14px;
   line-height: calc(17 / 14);
+
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .menu__wrap {
   text-align: center;
+
+  @include tablet {
+    text-align: right;
+  }
 }
 
 .menu__button {
