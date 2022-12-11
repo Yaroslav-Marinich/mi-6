@@ -1,0 +1,90 @@
+.contacts {
+    padding-top: 36px;
+    padding-bottom: 32px;
+}
+
+.contacts__logo {
+    color: $colorLogoGray;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.contacts__text {
+    @include font(600, 16px, 1.25, 0.02em);
+    color: $colorTextPrimary;
+    margin-bottom: 16px;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 16px;
+}
+
+.contacts__link {
+    @include font(500, 20px, 1.2, 0.02em);
+    color: $colorBrown;
+}
+
+.contacts__phone {
+    @include font(400, 14px, 1.2, 0.02em);
+    color: $colorTextAddressMobTab;
+    border: 0.5px solid $colorAccentYellow;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    width: 144px;
+    height: 40px;
+    padding-left: 14px;
+}
+
+.contacts__phone--twin{
+    width: 260px;
+}
+
+.phone__icon {
+    margin-right: 14px;
+    fill: $colorBrown;
+    
+}
+
+.contacts__item--hotel {
+    gap: 54px;
+}
+
+.contacts__hotel-phone {
+    @include font(400, 14px, 1.2, 0.02em);
+    color: $colorTextAddressMobTab;
+    display: flex;
+    align-items: center;
+}
+.contacts__phone--first {
+margin-right: 12px;
+}
+
+.contacts__list {
+    margin-bottom: 32px;
+}
+
+.contacts__map{
+    margin-left: 124px;
+}
+
+.contacts__phone--map {
+    @include font(400, 16px, 1.25, 0.01em);
+    color: $colorTextAddressMobTab;
+    width: 260px;
+    height: 76px;
+    padding-left: 16px;
+    }
+
+    
+.contacts__icon {
+    margin-right: 16px;
+    fill: $colorBrown;
+}
+.map__text {
+    width: 183px;
+    height: 61px;
+}
