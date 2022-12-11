@@ -23,6 +23,7 @@ $('.variable-width').slick({
   dots: false,
   infinite: true,
   speed: 300,
+  initialSlide: 0,
   slidesToShow: 3,
   slidesToScroll: 1,
   variableWidth: true,
