@@ -13,6 +13,10 @@
   @include font(400, 20px, 1.15, null);
   margin-bottom: 8px;
   color: $colorTextHotel;
+  @include tablet {
+    @include font(400, 32px, 1.16, null);
+    margin-bottom: 4px;
+  }
 }
 
 .room-for-3-logo__wrap {
@@ -23,14 +27,20 @@
 
 .room-for-3__logo {
   text-align: right;
-  letter-spacing: 0.3em;
   margin-right: -0.3em;
-
   color: $colorLogoGray;
+  @include tablet {
+    @include font(null, 64px, 1.08, null);
+    margin-bottom: 62px;
+  }
 }
 
 .room-for-3__title {
   margin-bottom: 12px;
+  @include tablet {
+    margin-bottom: 16px;
+    margin-right: calc(90px - 47px);
+  }
 }
 
 .room-for-3__after-title {
@@ -39,16 +49,35 @@
   margin-bottom: 32px;
   font-family: inherit;
   @include font(600, 12px, 1.25, 0.02em);
+  @include tablet {
+    width: 400px;
+    margin-right: calc(67px - 47px);
+    @include font(null, 16px, null, null);
+  }
+}
+
+.room-for-3-tablet__wrap {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 .room-for-3__living-room {
   margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 48px;
+  }
 }
 
 .room-for-3-image__wrap {
   display: flex;
   gap: 16px;
   margin-bottom: 72px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .room-for-3-btn__wrap {
@@ -56,6 +85,9 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  @include tablet {
+    justify-content: center;
+  }
 }
 
 .room-for-3__details {
