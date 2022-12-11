@@ -9,11 +9,20 @@
   ), url(../images/room/room-1-mob.jpg);
   background-repeat: no-repeat;
   background-position: top, center;
-  background-size: 100% 143px, cover;
+    background-size: 100% 143px, cover;
+    @include tablet {
+    background-size: 100% 116px, cover;
+  }
 }
 .luxe-hero__container {
   padding-top: 64px;
   padding-bottom: 40px;
+  @include tablet {
+    padding-top: 100px;
+  padding-bottom: 24px;
+  }
+  position: relative;
+  
 }
 
 .luxe-hero__map {
@@ -27,6 +36,7 @@
   align-items: center;
   padding-left: 11px;
   margin-bottom: 372px;
+  margin-left: auto;
    }
 .map__adress {
   width: 179px;
@@ -40,22 +50,42 @@
 font-family: 'Times New Roman';
 @include font(700, 28px, 1.14, 0.05em);
 color: $colorWhite;
-width: 325px;
+width: 100%;
+@include mobile {
+    width: 325px;
+  }
 margin-bottom: 14px;
 }
 .luxe-hero__text {
   @include font(700, 12px, 1.25, 0.02em);
  color: $colorWhite;
- width: 325px;
- margin-bottom: 17px;
+ width: 100%;
+@include mobile {
+    width: 325px;
+  }
+ margin-bottom: 30px;
 }
 .luxe-hero__social {
     gap: 8px;
     display: flex; 
   flex-direction: column;
+  position: absolute;
+  bottom: 14px;
   }
+
+  .icon-social--luxe {
+fill: rgba(243, 198, 83, 0.7);;
+  }
+  
 .luxe-hero__button {
 width: 232px;
 height: 48px;
-
+margin-left: 50px;
+@include mobile {
+   margin-left: 94px;
+  }
+background-color: rgba(0, 0, 0, 0.4);
+border: 2px solid $colorWhite;
+@include font(700, 16px, 1.25, 0.02em);
+color: $colorAccentYellow;
 }
