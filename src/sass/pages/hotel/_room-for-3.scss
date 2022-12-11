@@ -92,23 +92,43 @@
 }
 
 .room-for-3-image {
+  position: relative;
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
-  @include tablet {
-    margin-bottom: 0;
-  }
   @include desktop {
     gap: 40px;
   }
 }
 
+.room-for-3__svg {
+  position: absolute;
+  top: 196px;
+  right: 2px;
+  fill: $colorBlack;
+  @include tablet {
+    top: 218px;
+    left: 0px;
+    fill: $colorBlack;
+  }
+  @include desktop {
+    top: 278px;
+    left: 0px;
+    fill: $colorTextModal;
+  }
+}
+
+.room-for-3__left {
+  margin-right: 34px;
+}
+
 .room-for-3-btn__wrap {
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   @include tablet {
+    margin-top: 0;
     justify-content: center;
   }
 }

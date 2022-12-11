@@ -39,45 +39,42 @@
           <img
             src="./images/hotel/hotel-1-desk.jpg"
             alt="гостинна кімната"
-            sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, 246px"
+            sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, 244px"
           />
         </picture>
       </li>
     </ul>
     <div class="room-for-3-tablet__wrap">
-      <ul class="room-for-3-image">
-        <li class="room-for-3-image__others-room">
-          <picture>
-            <source
-              srcset="
-                ./images/hotel/hotel-2-desk.jpg    1x,
-                ./images/hotel/hotel-2-desk-2x.jpg 2x
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/hotel/hotel-2-tab.jpg    1x,
-                ./images/hotel/hotel-2-tab-2x.jpg 2x
-              "
-              media="(min-width: 1024px)"
-            />
-            <source
-              srcset="
-                ./images/hotel/hotel-2-mob.jpg    1x,
-                ./images/hotel/hotel-2-mob-2x.jpg 2x
-              "
-              media="(min-width: 320px)"
-            />
-            <img
-              src="./images/hotel/hotel-2-desk.jpg"
-              alt="ванна кімната"
-              width="194"
-              height="194"
-            />
-          </picture>
-        </li>
-        <li class="room-for-3-image__others-room">
+      <div class="room-for-3-image">
+        <picture>
+          <source
+            srcset="
+              ./images/hotel/hotel-2-desk.jpg    1x,
+              ./images/hotel/hotel-2-desk-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/hotel/hotel-2-tab.jpg    1x,
+              ./images/hotel/hotel-2-tab-2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/hotel/hotel-2-mob.jpg    1x,
+              ./images/hotel/hotel-2-mob-2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/hotel/hotel-2-desk.jpg"
+            alt="ванна кімната"
+            sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
+          />
+        </picture>
+        <div class="room-for-3-image">
           <picture>
             <source
               srcset="
@@ -103,12 +100,19 @@
             <img
               src="./images/hotel/hotel-3-desk.jpg"
               alt="краєвид з вікна"
-              width="194"
-              height="194"
+              sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
             />
           </picture>
-        </li>
-      </ul>
+        </div>
+        <div class="room-for-3__svg">
+          <svg class="room-for-3__left" width="32" height="32">
+            <use href="./images/sprite.svg#icon-cil_arrow-left32"></use>
+          </svg>
+          <svg class="room-for-3__right" width="32" height="32">
+            <use href="./images/sprite.svg#icon-cil_arrow-right32"></use>
+          </svg>
+        </div>
+      </div>
       <div class="room-for-3-btn__wrap">
         <a href="./room-for-3.html" class="room-for-3__details btn"
           >Детальніше</a
