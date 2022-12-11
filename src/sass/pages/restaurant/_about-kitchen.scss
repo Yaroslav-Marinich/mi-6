@@ -1,5 +1,6 @@
 .about-our-kitchen {
   background-color: $colorBgLemon;
+  padding-bottom: 72px;
 }
 
 .about-kitchen__title {
@@ -108,5 +109,27 @@
   }
 }
 
-.slick-prev:before {
+.kitchen-slider {
+  position: relative;
+  padding-left: 69px;
+  margin-right: -15px;
+
+  .slick-prev {
+    background-color: red;
+    background-image: url(../images/left.svg);
+    position: absolute;
+    top: 265px;
+    left: 200px;
+  }
+  .slick-next {
+    background-color: green;
+    position: absolute;
+    top: 265px;
+    right: 100px;
+  }
+}
+
+div.kitchen-slide.slick-slide {
+  margin-right: 12px;
+  margin-left: 12px;
 }
