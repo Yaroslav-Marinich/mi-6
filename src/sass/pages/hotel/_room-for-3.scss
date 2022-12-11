@@ -105,6 +105,7 @@
   top: 196px;
   right: 2px;
   fill: $colorBlack;
+  cursor: pointer;
   @include tablet {
     top: 218px;
     left: 0px;
@@ -119,6 +120,17 @@
 
 .room-for-3__left {
   margin-right: 34px;
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}
+
+.room-for-3__right {
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
 }
 
 .room-for-3-btn__wrap {
