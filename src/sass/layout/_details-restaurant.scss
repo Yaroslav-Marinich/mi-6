@@ -120,6 +120,18 @@
   justify-content: center;
 }
 
+.detail-rest__box {
+  @include tablet {
+    display: flex;
+    gap: 34px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+}
+
+//Styles for slider
+
 .detail-rest__slider {
   overflow: hidden;
   display: flex;
@@ -131,16 +143,6 @@
   @include mobilemax {
     margin: 0 0 0 0;
     padding: 0 0 80px 0;
-  }
-}
-
-.detail-rest__box {
-  @include tablet {
-    display: flex;
-    gap: 34px;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    align-items: flex-end;
   }
 }
 
