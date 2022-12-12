@@ -1,6 +1,7 @@
 .about-our-kitchen {
   background-color: $colorBgLemon;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .about-kitchen__title {
@@ -55,8 +56,16 @@
   }
 }
 
+.kitchen-card__photo {
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
 .kitchen-card__photo--top {
   margin-left: auto;
+  position: relative;
+  z-index: 5;
   @include tablet {
     width: 400px;
     height: 524px;
@@ -107,15 +116,36 @@
 }
 
 // KITCHEN SLIDER CONTAINER
-.kitchen-slider {
-  position: relative;
+.kitchen-slider-box {
   padding-left: 69px;
-  margin-right: -15px;
+  position: relative;
+  z-index: 5;
 }
 
-div.kitchen-slide.slick-slide {
-  margin-right: 12px;
-  margin-left: 12px;
+.kitchen-slider {
+  position: relative;
+  margin-right: -15px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  overflow: visible;
+}
+
+.test {
+  overflow: visible;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  img {
+    overflow: visible;
+    display: block;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+}
+
+div.kitchen-slide {
+  overflow: visible;
+  margin-right: 24px;
 }
 
 // KITCHEN SLIDER ARROWS
@@ -141,4 +171,24 @@ div.kitchen-slide.slick-slide {
 
 .right-arrow {
   transform: rotate(180deg);
+}
+
+.vertical-left-stripe::before,
+.vertical-right-stripe::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1191px;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+  position: absolute;
+  top: 0;
+}
+
+.vertical-left-stripe::before {
+  left: 140px;
+}
+
+.vertical-right-stripe::after {
+  left: 274px;
 }
