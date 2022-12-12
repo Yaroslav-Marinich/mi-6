@@ -5,6 +5,30 @@
   background-color: tomato;
 }
 
+// VERTICAL SECTION STRIPES
+.vertical-left-stripe::before,
+.vertical-right-stripe::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 1px solid rgba(186, 186, 186, 0.4);
+  filter: blur(0.5px);
+  position: absolute;
+  top: 0;
+  @include mobile {
+    height: 1191px;
+  }
+}
+
+.vertical-left-stripe::before {
+  left: 34vw;
+}
+
+.vertical-right-stripe::after {
+  left: 66vw;
+}
+
 .about-our-kitchen {
   background-color: $colorBgLemon;
   padding-bottom: 20px;
@@ -122,33 +146,6 @@
   }
 }
 
-// KITCHEN SLIDER CONTAINER
-.kitchen-slider-box {
-  padding-left: 69px;
-  position: relative;
-  z-index: 5;
-}
-
-.kitchen-slider {
-  position: relative;
-  margin-right: -15px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-}
-
-.test {
-  img {
-    display: block;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-  }
-}
-
-div.kitchen-slide {
-  overflow: visible;
-  margin-right: 24px;
-}
-
 // KITCHEN SLIDER ARROWS
 .slider-arrows {
   display: inline-flex;
@@ -174,23 +171,31 @@ div.kitchen-slide {
   transform: rotate(180deg);
 }
 
-// VERTICAL SECTION STRIPES
-.vertical-left-stripe::before,
-.vertical-right-stripe::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 1191px;
-  border: 1px solid rgba(186, 186, 186, 0.4);
-  filter: blur(0.5px);
-  position: absolute;
-  top: 0;
+// KITCHEN SLIDER CONTAINER
+.kitchen-slider-box {
+  position: relative;
+  z-index: 5;
+  @include mobile {
+    padding-left: 69px;
+  }
 }
 
-.vertical-left-stripe::before {
-  left: 34vw;
+.kitchen-slider {
+  position: relative;
+  margin-right: -15px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
-.vertical-right-stripe::after {
-  left: 66vw;
+.test {
+  img {
+    display: block;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+}
+
+div.kitchen-slide {
+  overflow: visible;
+  margin-right: 24px;
 }
