@@ -1,4 +1,18 @@
+.hotel-wrap-top {
+  @include tablet {
+    display: flex;
+  }
+}
+
 .room-wrap-top {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop {
+    // font-size: 36px;
+  }
 }
 
 .hotel-pre-title {
@@ -19,7 +33,6 @@
 
 .hotel-logo {
   color: #494848;
-  text-transform: uppercase;
   margin-bottom: 32px;
 
   @include tablet {
@@ -32,7 +45,6 @@
 }
 
 .room-title {
-  text-transform: uppercase;
   margin-top: 32px;
 }
 
@@ -58,17 +70,25 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 32px;
+
+  @include mobile {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+  }
 }
 
-.room-wrap-bottom {
+.hotel-wrap-bottom {
 }
 
 .room-slider-thumb {
   margin-right: 115px;
+  overflow: hidden;
 }
 
 .room-slider {
   display: flex;
+  flex-direction: row-reverse;
   gap: 16px;
   margin-top: 32px;
 }
