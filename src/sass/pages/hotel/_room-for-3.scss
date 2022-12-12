@@ -83,37 +83,45 @@
   }
 }
 
-.room-for-3-tablet__wrap {
-  @include tablet {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
+.room-for-3__slider {
+  overflow: hidden;
+  margin: 0 0 0 115px;
+  position: relative;
 }
 
-.room-for-3-image {
-  position: relative;
+.room-for-3__bathroom {
   display: flex;
+  width: calc(194px * 7);
   gap: 16px;
-  @include desktop {
-    gap: 40px;
-  }
 }
+
+// .room-for-3-tablet__wrap {
+//   display: flex;
+//   @include tablet {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: space-between;
+//   }
+// }
+
+// .room-for-3__slider {
+//   display: flex;
+//   position: relative;
+//   flex-direction: row;
+//   @include desktop {
+//     gap: 40px;
+//   }
+// }
 
 .room-for-3__svg {
   position: absolute;
-  top: 196px;
-  right: 2px;
+  right: 18px;
   fill: $colorBlack;
   cursor: pointer;
   @include tablet {
-    top: 218px;
-    left: 0px;
     fill: $colorBlack;
   }
   @include desktop {
-    top: 278px;
-    left: 0px;
     fill: $colorTextModal;
   }
 }
