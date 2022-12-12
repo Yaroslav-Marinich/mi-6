@@ -94,7 +94,7 @@
 }
 
 .room-for-3__slider {
-  margin-bottom: 72px;
+  margin-bottom: 28px;
   overflow: hidden;
   margin-left: 115px;
   @include tablet {
@@ -136,9 +136,10 @@
   padding: 14px 65px;
 }
 
-//Styles for slider
-
 .room-for-3-svg {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 28px;
   fill: $colorBlack;
   cursor: pointer;
   @include tablet {
