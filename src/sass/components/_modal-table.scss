@@ -195,7 +195,7 @@
   letter-spacing: 0.05em;
   padding: 16px 12px;
   border-radius: 2px;
-  fill: $colorBrown;
+  
 
   @include mobile {
     min-width: 384px;
@@ -224,7 +224,7 @@
   background-position: top 15px right 15px;
   background-size: 24px 24px;
   background-repeat: no-repeat;
-  fill: $colorBrown;
+  
   
 
   @include tablet {
@@ -272,6 +272,7 @@
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
+  
 }
 
 .custom-date {
