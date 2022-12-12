@@ -2,6 +2,10 @@
   background-color: $colorBgDarkLemon;
 }
 
+.room-for-3__container {
+  position: relative;
+}
+
 .room-for-3__wrap {
   display: flex;
   flex-direction: column;
@@ -78,11 +82,11 @@
 .room-for-3__list {
   @include tablet {
     position: absolute;
-    top: -32px;
+    top: -96px;
     left: 112px;
   }
   @include desktop {
-    top: -32px;
+    top: -104px;
     left: 180px;
   }
 }
@@ -126,24 +130,6 @@
     width: calc((254px + 40px) * 7);
   }
 }
-
-// .room-for-3-tablet__wrap {
-//   display: flex;
-//   @include tablet {
-//     display: flex;
-//     flex-direction: row-reverse;
-//     justify-content: space-between;
-//   }
-// }
-
-// .room-for-3__slider {
-//   display: flex;
-//   position: relative;
-//   flex-direction: row;
-//   @include desktop {
-//     gap: 40px;
-//   }
-// }
 
 .room-for-3__svg {
   fill: $colorBlack;
