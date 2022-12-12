@@ -1,49 +1,58 @@
-
-  .luxe-hero {
-    position: relative;
-    background-image: linear-gradient(
+.luxe-hero {
+  position: relative;
+  background-image: linear-gradient(
     180deg,
     #000000 0%,
     rgba(0, 0, 0, 0.55) 54.17%,
     rgba(0, 0, 0, 0) 100%
   );
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: top, center;
-    background-size: 100% 143px;
-    @include tablet {
-      background-image: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.55) 54.17%,
-    rgba(0, 0, 0, 0) 100%
-  );
-    background-size: 100% 116px;
-      }
+  background-size: 100% 143px;
+  @include mobile {
+    background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background-size: 414px 143px;
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background-size: 1024px 116px;
+  }
   @include desktop {
     background-image: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.55) 54.17%,
-    rgba(0, 0, 0, 0) 100%
-  );
-    background-size: 100% 147px;
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background-size: 1280px 147px;
   }
-  }
+}
 
 .luxe-hero__container {
   padding-top: 64px;
   padding-bottom: 40px;
   @include tablet {
     padding-top: 468px;
-  padding-bottom: 24px;
-  display: flex;
-  gap: 191px;
+    padding-bottom: 24px;
+    display: flex;
+    gap: 191px;
   }
   position: relative;
   @include desktop {
     padding-top: 683px;
-  padding-bottom: 48px;
-  gap: 371px;
+    padding-bottom: 48px;
+    gap: 371px;
   }
 }
 
@@ -53,16 +62,15 @@
   border-radius: 2px;
   display: flex;
   align-items: center;
- 
-     }
+}
 .map__adress {
   width: 179px;
   height: 30px;
   @include tablet {
     width: 233px;
-  height: 40px;
+    height: 40px;
   }
- }
+}
 .luxe-hero-map__icon {
   margin-right: 13px;
   fill: $colorAccentYellow;
@@ -79,95 +87,95 @@
   width: 210px;
   height: 47px;
   @include font(400, 12px, 1.25, 0.01em);
-   padding-left: 11px;
-
+  padding-left: 11px;
 }
 
 .luxe-hero__tittle {
-font-family: 'Times New Roman';
-@include font(700, 28px, 1.14, 0.05em);
-color: $colorWhite;
-width: 100%;
-@include mobile {
+  font-family: 'Times New Roman';
+  @include font(700, 28px, 1.14, 0.05em);
+  color: $colorWhite;
+  width: 100%;
+  @include mobile {
     width: 325px;
   }
-margin-bottom: 14px;
-@include tablet {
+  margin-bottom: 14px;
+  @include tablet {
     width: 507px;
     white-space: nowrap;
     @include font(700, 36px, 1.14, 0.05em);
-margin-bottom: 24px;
+    margin-bottom: 24px;
   }
- 
 }
 .luxe-hero__text {
   @include font(700, 12px, 1.25, 0.02em);
- color: $colorWhite;
- width: 100%;
-@include mobile {
+  color: $colorWhite;
+  width: 100%;
+  @include mobile {
     width: 325px;
   }
- margin-bottom: 30px;
- @include tablet {
+  margin-bottom: 30px;
+  @include tablet {
     width: 400px;
     @include font(700, 16px, 1.25, 0.02em);
     margin-bottom: 24px;
   }
-  
 }
 
 .luxe-hero__map--bottom {
   @include mobilemax {
-    display: none;}
-width: 285px;
+    display: none;
+  }
+  width: 285px;
   height: 56px;
   @include font(400, 16px, 1.25, 0.01em);
   padding-left: 16px;
   @include desktop {
-    display: none;}
+    display: none;
+  }
 }
 
-.luxe-hero__icon{
+.luxe-hero__icon {
   width: 24px;
   height: 24px;
 }
 .luxe-hero__social {
-    gap: 8px;
-    display: flex; 
+  gap: 8px;
+  display: flex;
   flex-direction: column;
   position: absolute;
   bottom: 14px;
   @include tablet {
     flex-direction: row;
-     gap: 20px;
-     left: 372px;
-     bottom: 38px;
+    gap: 20px;
+    left: 372px;
+    bottom: 38px;
   }
   @include desktop {
-    display: none;}
+    display: none;
   }
+}
 
-  .icon-social--luxe {
-fill: rgba(243, 198, 83, 0.7);;
-  }
-  .luxe-hero_soclink {
-    width: 24px;
+.icon-social--luxe {
+  fill: rgba(243, 198, 83, 0.7);
+}
+.luxe-hero_soclink {
+  width: 24px;
   height: 24px;
-  }
+}
 .luxe-hero__button {
-width: 232px;
-height: 48px;
-margin-left: 50px;
-@include mobile {
-   margin-left: 94px;
+  width: 232px;
+  height: 48px;
+  margin-left: 50px;
+  @include mobile {
+    margin-left: 94px;
   }
-background-color: rgba(0, 0, 0, 0.4);
-border: 2px solid $colorWhite;
-@include font(700, 16px, 1.25, 0.02em);
-color: $colorAccentYellow;
- @include tablet {
-  margin-left: 0;
-  margin-top: 140px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid $colorWhite;
+  @include font(700, 16px, 1.25, 0.02em);
+  color: $colorAccentYellow;
+  @include tablet {
+    margin-left: 0;
+    margin-top: 140px;
   }
   @include desktop {
     margin-top: 82px;
@@ -177,25 +185,70 @@ color: $colorAccentYellow;
 // Slider
 
 .luxe-hero__slider {
-    position: absolute;
-    width: 414px;
-}
-.fade {
-    width: 414px;
-    margin: 0 auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 414px;
+  @include tablet {
+    max-width: 1024px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
 }
 
-.slick-arrow{
-    z-index: 1;
+.slick-arrow {
+  z-index: 1;
 }
 
-.slick-next {
-    right: 25px;
-}
-
-.slick-prev {
-    left: 25px;
-}
 .slick-list {
-    z-index: -1;
+  z-index: -1;
+}
+.slider__img {
+  height: 755px;
+  @include mobile {
+    height: 739px;
+  }
+  @include tablet {
+    height: 718px;
+  }
+  @include desktop {
+    height: 901px;
+  }
+}
+
+.luxe-left__arrow {
+  position: absolute;
+  top: 350px;
+  left: 15px;
+  background-image: url(../images/room/lux_arrow-left.svg);
+  width: 40px;
+  height: 40px;
+  @include tablet {
+    top: 340px;
+    left: 47px;
+  }
+  @include desktop {
+    top: 412px;
+    left: 85px;
+  }
+}
+.luxe-right__arrow {
+  position: absolute;
+  top: 350px;
+  right: 15px;
+  background-image: url(../images/room/lux_arrow-right.svg);
+  width: 40px;
+  height: 40px;
+  @include tablet {
+    top: 340px;
+    right: 47px;
+  }
+  @include desktop {
+    top: 412px;
+    right: 85px;
+  }
 }

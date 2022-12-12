@@ -15,6 +15,9 @@ $('.fade').slick({
   speed: 500,
   fade: true,
   cssEase: 'linear',
+  arrows: true,
+  prevArrow: '<div class="luxe-left__arrow"></div>',
+  nextArrow: '<div class="luxe-right__arrow"></div>',
 });
 
 // SLICK SLIDER FOR VARIABLE WIDTH
@@ -39,4 +42,3 @@ $('.autoplay-mini').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
-
