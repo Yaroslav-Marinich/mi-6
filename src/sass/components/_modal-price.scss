@@ -2,15 +2,20 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $transDuration $cubic;
     padding: 60px 15px;
-    width: 414px;
+    width: 90%;
     min-height: 572px;
     overflow: scroll;
-
     border-radius: 2px;
     background-color: $colorBgLemon;
-    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    @include mobile {
+        width: 414px;
+    }
     @include tablet {
       width: 712px;
       min-height: 489px;
@@ -24,16 +29,19 @@
     right: 16px;
     padding: 0;
     margin: 0;
-    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: color $transDuration $cubic, transform $transDuration $cubic;
 }
 
 .modal-price__close-icon {
-    stroke: $colorBlack;
-    background-color: $colorBgLemon;
-    & use {
-        width: 24px;
-        height: 24px;    
-    }
+    stroke: currentColor;
+    fill: currentColor;
 }
 
 .price-form {
@@ -105,13 +113,8 @@
 }
 .modal-price__user-name {
 }
-// .modal-price__input-cast > .modal-price__input{
-//     @include tablet {
-   
-//             display: none;
-   
-//     }
-// }
+
+
 .modal-price__input, .modal-price__select {
 
     width: 100%;
@@ -183,9 +186,24 @@
         top: 50%;
         right: 6px;
         transform: translateY(-50%);
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         background-color: $colorBgLemon;
 
     }
 }
+
+.custom-select-arrow::after {
+    content: ' ';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    border: 1px solid transparent;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/ep_arrow-down-bold.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    fill: $colorBrown;
+  }
