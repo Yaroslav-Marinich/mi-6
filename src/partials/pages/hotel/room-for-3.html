@@ -1,49 +1,47 @@
-<section class="room-for-3 section-hotel">
+<section class="room-for-3 section-hotel section-hotel--dark-lemon">
   <div class="room-for-3__container container">
     <div class="room-for-3__wrap">
       <p class="room-for-3__pre-title">Amet minim mollit non</p>
       <div class="room-for-3-logo__wrap">
         <span class="room-for-3__logo logo">MIMIHO</span>
       </div>
-      <h2 class="room-for-3__title hotel-title">ТРЬОХМІСНИЙ НОМЕР</h2>
+      <h2 class="room-for-3__title hotel-title">Трьохмісний номер</h2>
       <p class="room-for-3__after-title">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <ul class="room-for-3__list list">
-      <li class="room-for-3__living-room">
-        <picture>
-          <source
-            srcset="
-              ./images/hotel/hotel-1-desk.jpg    1x,
-              ./images/hotel/hotel-1-desk-2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/hotel/hotel-1-tab.jpg    1x,
-              ./images/hotel/hotel-1-tab-2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              ./images/hotel/hotel-1-mob.jpg    1x,
-              ./images/hotel/hotel-1-mob-2x.jpg 2x
-            "
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/hotel/hotel-1-desk.jpg"
-            alt="гостинна кімната"
-            sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, 244px"
-          />
-        </picture>
-      </li>
-    </ul>
+    <div class="room-for-3__center">
+      <picture>
+        <source
+          srcset="
+            ./images/hotel/hotel-1-desk.jpg    1x,
+            ./images/hotel/hotel-1-desk-2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/hotel/hotel-1-tab.jpg    1x,
+            ./images/hotel/hotel-1-tab-2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./images/hotel/hotel-1-mob.jpg    1x,
+            ./images/hotel/hotel-1-mob-2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/hotel/hotel-1-desk.jpg"
+          alt="гостинна кімната"
+          sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, 244px"
+        />
+      </picture>
+    </div>
     <div class="room-ror-3__slider-wrap">
       <div class="room-for-3__slider">
         <div class="room-for-3__bathroom variable-width">
@@ -255,21 +253,28 @@
               />
             </picture>
           </div>
+          <div class="slider-show"></div>
         </div>
-        <!-- <div class="room-for-3-svg">
-          <svg class="room-for-3-svg__left" width="32" height="32">
+        <div class="room-for-3-svg">
+          <svg class="room-for-3-svg__left prev" width="32" height="32">
             <use href="./images/sprite.svg#icon-cil_arrow-left32"></use>
           </svg>
-          <svg class="room-for-3-svg__right" width="32" height="32">
+          <svg class="room-for-3-svg__right next" width="32" height="32">
             <use href="./images/sprite.svg#icon-cil_arrow-right32"></use>
           </svg>
-        </div> -->
+        </div>
       </div>
       <div class="room-for-3-btn__wrap">
-        <a href="./room-for-3.html" class="room-for-3-btn__details btn"
+        <a
+          href="./room-for-3.html"
+          class="room-for-3-btn__details btn btn--hotel-and-rest"
           >Детальніше</a
         >
-        <button type="button" class="room-for-3-btn__price btn" data-modal-open>
+        <button
+          type="button"
+          class="room-for-3-btn__price btn btn--hotel-and-rest"
+          data-modal-open
+        >
           Переглянути ціни
         </button>
       </div>

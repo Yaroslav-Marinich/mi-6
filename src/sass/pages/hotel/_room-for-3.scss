@@ -1,7 +1,3 @@
-.room-for-3 {
-  background-color: $colorBgDarkLemon;
-}
-
 .room-for-3__container {
   position: relative;
 }
@@ -46,6 +42,7 @@
 
 .room-for-3__title {
   margin-bottom: 12px;
+  text-transform: uppercase;
   @include tablet {
     margin-bottom: 16px;
     margin-right: calc(90px - 47px);
@@ -75,22 +72,17 @@
   }
 }
 
-.room-for-3__list {
+.room-for-3__center {
+  margin-bottom: 32px;
   @include tablet {
     position: absolute;
     top: -96px;
     left: 112px;
+    margin-bottom: 48px;
   }
   @include desktop {
     top: -104px;
     left: 180px;
-  }
-}
-
-.room-for-3__living-room {
-  margin-bottom: 32px;
-  @include tablet {
-    margin-bottom: 48px;
   }
 }
 
@@ -142,12 +134,9 @@
   display: inline-flex;
   align-items: center;
   padding: 14px 65px;
-  background-color: $colorBtnBlack;
 }
 
-.room-for-3-btn__price {
-  background-color: $colorBtnBlack;
-}
+//Styles for slider
 
 .room-for-3-svg {
   fill: $colorBlack;
