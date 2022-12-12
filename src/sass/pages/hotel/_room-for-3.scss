@@ -87,6 +87,7 @@
 }
 
 .room-ror-3__slider-wrap {
+  position: relative;
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
@@ -94,7 +95,7 @@
 }
 
 .room-for-3__slider {
-  margin-bottom: 28px;
+  margin-bottom: 72px;
   overflow: hidden;
   margin-left: 115px;
   @include tablet {
@@ -137,15 +138,21 @@
 }
 
 .room-for-3-svg {
-  display: flex;
+  bottom: 35%;
+  right: 0%;
   justify-content: flex-end;
-  margin-bottom: 28px;
+  display: flex;
+  position: absolute;
   fill: $colorBlack;
   cursor: pointer;
   @include tablet {
+    bottom: -40%;
+    right: 36%;
     fill: $colorBlack;
   }
   @include desktop {
+    bottom: -28%;
+    right: 41%;
     fill: $colorTextModal;
   }
 }
@@ -162,5 +169,18 @@
   &:hover,
   &:focus {
     fill: $colorAccentYellow;
+  }
+}
+
+// SLICK
+
+.slick-track {
+  display: flex;
+  gap: 16px;
+  @include tablet {
+    gap: 40px;
+  }
+  @include desktop {
+    gap: 40px;
   }
 }
