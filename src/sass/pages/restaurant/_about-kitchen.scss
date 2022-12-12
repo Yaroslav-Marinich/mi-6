@@ -101,7 +101,7 @@
   margin-bottom: 32px;
 }
 
-.kitchen-card--top {
+.kitchen-card:first-child {
   flex-wrap: wrap;
   @include tablet {
     margin-bottom: 338px;
@@ -136,7 +136,7 @@
   }
 }
 
-.kitchen-card--bottom {
+.kitchen-card:last-child {
   align-items: center;
   column-gap: 20px;
   @include tablet {
