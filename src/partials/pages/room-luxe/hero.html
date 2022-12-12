@@ -1,4 +1,32 @@
 <section class="luxe-hero">
+  <div class="luxe-hero__slider">
+    <div class="fade">
+      <div>
+        <picture>
+          <source srcset="
+                                                    ./images/room/room-1-desk.jpg 1x,
+                                                    ./images/room/room-1-desk-2x.jpg 2x
+                                                  " media="(min-width: 1280px)" />
+          <source srcset="
+                                                    ./images/room/room-1-tab.jpg 1x,
+                                                    ./images/room/room-1-tab-2x.jpg 2x
+                                                  " media="(min-width: 1024px)" />
+          <source srcset="
+                                                    ./images/room/room-1-mob.jpg 1x,
+                                                    ./images/room/room-1-mob-2x.jpg 2x
+                                                  " media="(min-width: 414px)" />
+          <img src="./images/room/room-1-desk.jpg" width="100%" alt="Дизай першої кімнати">
+        </picture>
+        <img src="./images/room/room-3-mob.jpg" width="100%" alt="">
+      </div>
+      <div>
+        <img src="./images/room/room-2-mob.jpg" width="100%" alt="">
+      </div>
+      <div>
+        <img src="./images/room/room-1-mob.jpg" width="100%" alt="">
+      </div>
+    </div>
+  </div>
   <div class="container luxe-hero__container">
     <a class="luxe-hero__map luxe-hero__map--top" href="https://goo.gl/maps/bBwFzgiCFPFPAu5Y6" target="_blank"
       rel="noopener noreferrer nofollow"><svg class="luxe-hero-map__icon" width="10" height="16">
@@ -42,7 +70,7 @@
         </li>
       </ul>
     </div>
-    <button type="button" class="button luxe-hero__button">Переглянути ціни</button>
+    <button type="button" class="button luxe-hero__button" data-modal-open>Переглянути ціни</button>
   </div>
 
 </section>

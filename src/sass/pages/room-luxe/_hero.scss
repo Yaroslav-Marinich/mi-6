@@ -1,59 +1,34 @@
 
   .luxe-hero {
-   background-color: #3d3e45;
-  background-image: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.55) 54.17%,
-    rgba(0, 0, 0, 0) 100%
-  ), url(../images/room/room-1-mob.jpg);
-    @include retina {
+    position: relative;
     background-image: linear-gradient(
     180deg,
     #000000 0%,
     rgba(0, 0, 0, 0.55) 54.17%,
     rgba(0, 0, 0, 0) 100%
-  ), url(../images/room/room-1-mob-2x.jpg);
-  }
-
-  background-repeat: no-repeat;
+  );
+    background-repeat: no-repeat;
   background-position: top, center;
-    background-size: 100% 143px, 100% 100%;
+    background-size: 100% 143px;
     @include tablet {
       background-image: linear-gradient(
     180deg,
     #000000 0%,
     rgba(0, 0, 0, 0.55) 54.17%,
     rgba(0, 0, 0, 0) 100%
-  ), url(../images/room/room-1-tab.jpg);
-    background-size: 100% 116px, 100% 100%;
-     @include retina {
-    background-image: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.55) 54.17%,
-    rgba(0, 0, 0, 0) 100%
-  ), url(../images/room/room-1-tab-2x.jpg);
-  }
-  }
+  );
+    background-size: 100% 116px;
+      }
   @include desktop {
     background-image: linear-gradient(
     180deg,
     #000000 0%,
     rgba(0, 0, 0, 0.55) 54.17%,
     rgba(0, 0, 0, 0) 100%
-  ), url(../images/room/room-1-desk.jpg);
-    background-size: 100% 147px, 100% 100%;
- @include retina {
-    background-image: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.55) 54.17%,
-    rgba(0, 0, 0, 0) 100%
-  ), url(../images/room/room-1-desk-2x.jpg);
+  );
+    background-size: 100% 147px;
   }
   }
-}
 
 .luxe-hero__container {
   padding-top: 64px;
@@ -199,3 +174,28 @@ color: $colorAccentYellow;
   }
 }
 
+// Slider
+
+.luxe-hero__slider {
+    position: absolute;
+    width: 414px;
+}
+.fade {
+    width: 414px;
+    margin: 0 auto;
+}
+
+.slick-arrow{
+    z-index: 1;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev {
+    left: 25px;
+}
+.slick-list {
+    z-index: -1;
+}

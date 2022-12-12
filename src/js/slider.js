@@ -10,7 +10,7 @@ $('.autoplay').slick({
 // ROOMS PAGE SLIDER - SLICK SCRIPT
 
 $('.fade').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   fade: true,
@@ -39,3 +39,4 @@ $('.autoplay-mini').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
