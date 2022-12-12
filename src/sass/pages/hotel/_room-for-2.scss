@@ -1,0 +1,49 @@
+.room-wrap-top {
+}
+
+.hotel-pre-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+  margin-bottom: 8px;
+}
+
+.hotel-logo {
+  color: #494848;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.room-title {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hotel-text {
+  width: 258px;
+  height: 76px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5f5f5f;
+  margin-bottom: 32px;
+}
+
+.room-wrap-center {
+}
+
+.room-wrap-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hotel-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
