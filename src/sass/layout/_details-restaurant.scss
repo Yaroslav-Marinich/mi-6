@@ -55,7 +55,7 @@
 
 .details-rest__wrap {
   width: 259px;
-  margin: 0 auto 49px;
+  margin: 0 0 49px auto;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -66,8 +66,7 @@
     padding-left: 236px;
     @include desktop {
       margin: 0 auto 40px;
-
-      padding-left: 0;
+      padding-left: 3px;
     }
   }
 }
