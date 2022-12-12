@@ -6,13 +6,15 @@
 }
 
 // VERTICAL SECTION STRIPES
+.vertical-mid-stripe::before,
 .vertical-left-stripe::before,
 .vertical-right-stripe::after {
   content: '';
   display: block;
   width: 0;
   height: 0;
-  border: 1px solid rgba(186, 186, 186, 0.4);
+  // border: 1px solid rgba(186, 186, 186, 0.4);
+  border: 1px solid red;
   filter: blur(0.5px);
   position: absolute;
   top: 0;
@@ -26,20 +28,40 @@
 
 .vertical-left-stripe::before {
   left: 34vw;
+  @include tablet {
+    left: 278px;
+  }
+}
+
+.vertical-mid-stripe::before {
+  left: -50vw;
+  top: -16px;
+  @include tablet {
+    left: 50%;
+    top: -120px;
+  }
 }
 
 .vertical-right-stripe::after {
   left: 66vw;
+  @include tablet {
+    left: 746px;
+  }
 }
 
 // KITCHEN SECTION
 .about-our-kitchen {
   position: relative;
   background-color: $colorBgLemon;
+
+  .container {
+    position: relative;
+  }
   padding-top: 16px;
   padding-bottom: 20px;
   @include tablet {
     padding-top: 120px;
+    padding-bottom: 32px;
   }
 }
 
@@ -54,6 +76,7 @@
   @include tablet {
     margin-bottom: 4px;
     font-size: 32px;
+    letter-spacing: 0;
   }
 }
 
@@ -93,7 +116,7 @@
   column-gap: 20px;
   @include tablet {
     column-gap: 48px;
-    margin-bottom: -48px;
+    margin-bottom: -28px;
   }
 }
 
@@ -148,6 +171,8 @@
   padding-bottom: 20px;
   @include tablet {
     width: 312px;
+    padding-bottom: 0;
+    padding-top: 16px;
   }
   @include desktop {
     padding-left: 32px;
@@ -162,6 +187,9 @@
   margin-top: 20px;
   justify-content: flex-end;
   padding-right: 2px;
+  @include tablet {
+    margin-top: 32px;
+  }
 }
 
 .right-arrow,
@@ -186,6 +214,10 @@
   @include mobile {
     padding-left: 69px;
   }
+  @include tablet {
+    padding-left: 0;
+    padding-right: 13px;
+  }
 }
 
 .kitchen-slider {
@@ -194,8 +226,9 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   @include tablet {
-    width: 388px;
+    width: 428px;
     margin-left: auto;
+    margin-right: 0;
   }
 }
 
