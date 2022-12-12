@@ -113,6 +113,7 @@
     }
     @include desktop {
       top: -188px;
+      transform: translateY(1px);
     }
   }
 }
@@ -150,6 +151,9 @@
   padding-right: 2px;
   @include tablet {
     margin-top: 32px;
+  }
+  @include desktop {
+    margin-top: 40px;
   }
 }
 
@@ -203,6 +207,9 @@
     display: flex;
     @include tablet {
       column-gap: 40px;
+    }
+    @include desktop {
+      height: 245px;
     }
   }
 }
