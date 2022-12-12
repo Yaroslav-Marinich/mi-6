@@ -38,31 +38,35 @@
   background-color: $colorBgLemon;
   padding-top: 16px;
   padding-bottom: 20px;
+  @include tablet {
+    padding-top: 120px;
+  }
 }
 
-.about-kitchen__title {
+.about-kitchen__slogan {
   margin-bottom: 12px;
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
+  line-height: 1.15;
   font-size: 20px;
   color: $colorTextSecondary;
   @include tablet {
+    margin-bottom: 4px;
     font-size: 32px;
-    line-height: 37px;
   }
 }
 
-.about-kitchen__logo {
+.restaurant-logo {
   font-family: 'Film P3';
   font-size: 40px;
-  line-height: 43px;
+  line-height: 1.08;
   letter-spacing: 0.3em;
   color: $colorTextAddressMobTab;
   margin-bottom: 12px;
   @include tablet {
     font-size: 64px;
-    line-height: 69px;
+    margin-bottom: 24px;
   }
 }
 
@@ -72,10 +76,8 @@
   display: flex;
   align-items: center;
   row-gap: 28px;
-  @include tablet {
-    margin-top: 24px;
-  }
 }
+
 .kitchen-card--top {
   flex-wrap: wrap;
   position: relative;
