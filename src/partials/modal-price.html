@@ -1,72 +1,74 @@
+    <div class="backdrop " data-modal>
     <div class="modal modal-book-table">
       <button type="button" class="modal-btn-close" data-modal-close>
         <svg class="modal-icon-close" width="24" height="24">
-          <use href="../images/sprite.svg#icon-close"></use>
+          <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
       <p class="modal-title">Забронювати столик</p>
       <form class="modal-form">
-        <ul>
-          <li class="modal-field">
-            <input
-              type="text"
-              name="user-name"
-              id="name"
-              class="modal-input"
-              placeholder="Ваше ім’я"
-              aria-label="ім’я"
-              pattern=""
-              required
-            />
-            <label for="name" class="modal-label">На кого забронювати столик?</label>
-          </li>
+        <div class="modal-list">
+          <div class="modal-tab-wrap">
+            <div class="modal-field">
+              <input
+                type="text"
+                name="user-name"
+                id="name"
+                class="modal-input"
+                placeholder="Ваше ім’я"
+                aria-label="ім’я"
+                required
+              />
+              <label for="name" class="modal-label">На кого забронювати столик?</label>
+            </div>
+    
+            <div class="modal-field">
+              <input
+                type="tel"
+                name="user-tel"
+                id="tel"
+                class="modal-input"
+                placeholder="+38 (___) ___-__-__"
+                aria-label="номер телефону"
+                pattern="+[0-9]" 
+                required
+              />
+              <label for="tel" class="modal-label">Номер телефону</label>
+            </div>
+          </div>
   
-          <li class="modal-field">
-            <input
-              type="tel"
-              name="user-tel"
-              id="tel"
-              class="modal-input"
-              placeholder="+38 (___) ___-__-__"
-              aria-label="номер телефону"
-              pattern="+[0-9]" 
-              required
-            />
-            <label for="tel" class="modal-label">Номер телефону</label>
-          </li>
-  
-          <li class="modal-field">
-             <select class="modal-input custom-select-arrow" id="guests-number" name="guests-number">
-              <option value="1" selected>1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7 і більше</option>
-            </select>
-            
-            <label class="modal-label" for="guests-number">Столик на яку кількість осіб?</label>
-          </li>
-            
-          <li class="modal-field">
-             <div class="custom-date">
-             <input type="text" class="modal-input input-date" name="" placeholder="Сьогодні">
-             <input class="table-date-hidden" type="date" name="table-date" id="table-date">
+          <div class="modal-tab-wrap">
+            <div class="modal-field">
+              <select class="modal-input custom-select" id="guests-number" name="guests-number">
+               <option class="select-option" value="1">1</option>
+               <option class="select-option" value="2" selected>2</option>
+               <option class="select-option" value="3">3</option>
+               <option class="select-option" value="4">4</option>
+               <option class="select-option" value="5">5</option>
+               <option class="select-option" value="6">6</option>
+               <option class="select-option" value="7">7</option>
+             </select>
+                          
              
-             <label class="modal-label" for="table-date">На яку дату бронювати?</label>
-             </div>
-          </li>
-
-          <li class="modal-field">
-            <div class="input-field">
-                <label>Custom Field</label>
-                <input id="custom-input-date" class="calendar" type="text" name="upload-release" placeholder="dd/mm/yyyy">
-                <p class="label-error"></p>
+              <svg class="custom-select-arrow" width="24" height="24">
+                <use href="./images/sprite.svg#icon-ep_arrow-down-bold"></use>
+              </svg>
+             
+ 
+             <label class="modal-label" for="guests-number">Столик на яку кількість осіб?</label>
+           </div>
+             
+           <div class="modal-field">
+              <div class="custom-date">
+              <input class="modal-input table-date-hidden" type="date" name="table-date" id="table-date">
+              
+              <label class="modal-label" for="table-date">На яку дату бронювати?</label>
               </div>
-          </li>
-        </ul>
+           </div>
+          </div>
+        </div>
         
-       <button type="submit" class="button">Оформити бронювання</button> 
+       <button type="submit" class="modal__btn">Оформити бронювання</button> 
       </form>
     </div>
+  </div>
