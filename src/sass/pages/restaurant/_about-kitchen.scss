@@ -195,19 +195,18 @@
   @include desktop {
     width: 530px;
   }
+
+  .slick-track {
+    column-gap: 24px;
+    display: flex;
+    @include tablet {
+      column-gap: 40px;
+    }
+  }
 }
 
 .kitchen-slide {
-  img {
-    display: block;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-  }
-}
-
-div.kitchen-slide {
-  margin-right: 24px;
-  @include tablet {
-    margin-right: 40px;
-  }
+  display: block;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
