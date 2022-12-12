@@ -19,11 +19,12 @@
     transition: transform $transDuration $cubic;
 
     @include mobile {
-      width: 414px;
+      width: 384px;
     }
 
     @include tablet {
       width: 712px;
+      padding: 60px 60px;
     }
     
   }
