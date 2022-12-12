@@ -17,6 +17,9 @@
   @include tablet {
     height: 1238px;
   }
+  @include desktop {
+    height: 1260px;
+  }
 }
 
 .vertical-left-stripe::before {
