@@ -127,16 +127,10 @@
   margin-right: -15px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-  overflow: visible;
 }
 
 .test {
-  overflow: visible;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-
   img {
-    overflow: visible;
     display: block;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
@@ -173,6 +167,7 @@ div.kitchen-slide {
   transform: rotate(180deg);
 }
 
+// VERTICAL SECTION STRIPES
 .vertical-left-stripe::before,
 .vertical-right-stripe::after {
   content: '';
