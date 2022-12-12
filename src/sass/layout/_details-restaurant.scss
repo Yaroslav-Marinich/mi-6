@@ -207,3 +207,8 @@
     gap: 87px;
   }
 }
+
+.slick-prev:before,
+.slick-next:before {
+  opacity: 1;
+}
