@@ -131,32 +131,6 @@
   }
 }
 
-.room-for-3__svg {
-  fill: $colorBlack;
-  cursor: pointer;
-  @include tablet {
-    fill: $colorBlack;
-  }
-  @include desktop {
-    fill: $colorTextModal;
-  }
-}
-
-.room-for-3__left {
-  margin-right: 34px;
-  &:hover,
-  &:focus {
-    fill: $colorAccentYellow;
-  }
-}
-
-.room-for-3__right {
-  &:hover,
-  &:focus {
-    fill: $colorAccentYellow;
-  }
-}
-
 .room-for-3-btn__wrap {
   display: flex;
   flex-direction: column;
@@ -168,13 +142,39 @@
   }
 }
 
-.room-for-3__details {
+.room-for-3-btn__details {
   display: inline-flex;
   align-items: center;
   padding: 14px 65px;
   background-color: $colorBtnBlack;
 }
 
-.room-for-3__btn-price {
+.room-for-3-btn__price {
   background-color: $colorBtnBlack;
+}
+
+.room-for-3-svg {
+  fill: $colorBlack;
+  cursor: pointer;
+  @include tablet {
+    fill: $colorBlack;
+  }
+  @include desktop {
+    fill: $colorTextModal;
+  }
+}
+
+.room-for-3-svg__left {
+  margin-right: 34px;
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}
+
+.room-for-3-svg__right {
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
 }
