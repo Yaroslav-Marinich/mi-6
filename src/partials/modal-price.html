@@ -13,25 +13,37 @@
       <form class="modal-price__form">
         <p class="modal-price__text">Категорія номеру</p>
         <div class="wrapper-group">
-          <div class="wrapper-input">
-            <div class="modal-price__user-name modal-price__input-wrapper">
+          <div class="wrapper-input cast">
+            <div class="modal-price__input-cast custom-select">
               <input
                 type="number"
                 id="number-cast"
                 name="number-cast"
-                class="modal-price__input"
+                class="modal-price__input input-cast"
                 minlength="2"
                 placeholder="1"
                 required
               />
-              <select name="number-cast" class="modal-price__select"></select>
+              <select name="number-cast" id="select-cast" class="modal-price__select">
+                <option value="1">Одна</option>
+                <option value="2">Дві</option>
+                <option value="3">Три</option>
+                <option value="4">Чотири</option>
+                <option value="5">П'ять</option>
+              </select>
+              <div class="shade"></div>
+              <svg class="modal-price__icon" for="select-cast"  width="24" height="24"> 
+                <use href="./images/sprite.svg#icon-ep_arrow-down-bold"></use>
+              </svg>
+              
   
             </div>
             <label for="number-cast" class="modal-price__label">Кількість ночей</label>
+            <label for="select-cast" class="modal-price__label-select">Кількість ночей</label>
           </div>
   
           <div class="wrapper-input wrapper-last">
-            <div class="modal-price__user-name modal-price__input-wrapper">
+            <div class="modal-price__input-cost">
               <input
                 type="number"
                 id="number-cost"
@@ -41,8 +53,6 @@
                 placeholder="1000"
                 required
               />
-              <select name="number-cost" class="modal-price__select"></select>
-  
             </div>
             <label for="number-cost" class="modal-price__label">грн</label>
           </div>
