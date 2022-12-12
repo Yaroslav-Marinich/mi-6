@@ -95,6 +95,7 @@
 
 .menu__dish {
   margin-bottom: 4px;
+  padding-right: 28px;
 
   font-weight: 500;
   font-size: 14px;
@@ -103,13 +104,13 @@
   &--short {
     margin-bottom: 3px;
 
-    @include tablet {
-      margin-bottom: 2px;
-    }
-
     @include desktop {
       margin-bottom: 0;
     }
+  }
+
+  @include tablet {
+    padding-right: 23px;
   }
 
   @include desktop {
