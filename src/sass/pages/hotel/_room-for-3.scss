@@ -27,8 +27,6 @@
 }
 
 .room-for-3-logo__wrap {
-  display: table;
-  margin-left: auto;
   margin-bottom: 32px;
   @include tablet {
     margin-bottom: 62px;
@@ -39,7 +37,6 @@
 }
 
 .room-for-3__logo {
-  text-align: right;
   margin-right: -0.3em;
   color: $colorLogoGray;
   @include tablet {
@@ -65,7 +62,6 @@
   margin-right: calc(74px - 15px);
   width: 242px;
   margin-bottom: 32px;
-  font-family: inherit;
   @include font(600, 12px, 1.25, 0.02em);
   @include tablet {
     width: 400px;
