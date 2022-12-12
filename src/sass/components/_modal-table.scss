@@ -6,7 +6,7 @@
 
     transform: translate(-50%, -50%) scale(1.1);
   
-    width: 95%;   
+    width: 90%;   
     padding: 60px 15px;
   
     background-color: $colorBgLemon;
@@ -19,7 +19,7 @@
     transition: transform $transDuration $cubic;
 
     @include mobile {
-      width: 414px
+      width: 414px;
     }
 
     @include tablet {
@@ -44,12 +44,7 @@
     }
   }
 
-  .modal__form {
-    @include tablet {
-
-    }
-  }
-  
+   
   .modal__list {
 
     @include tablet {
@@ -59,7 +54,7 @@
     }
   }
 
-  .modal__wrap {
+  .modal__wrap { 
 
     @include tablet {
       display: flex;
@@ -82,11 +77,7 @@
 
   .modal__field {
     position: relative;
-    width: 100%;
-
-    @include tablet {
-      width: 288px;
-    }
+   
   }
   
   .modal__field:not(:last-child) {
@@ -115,6 +106,7 @@
   }
   
   .modal__input, .select__option {
+    display: inline-block;
     width: 100%;
     height: 54px;
     border: 1px solid $colorBrown;
@@ -134,15 +126,19 @@
     transition: border-color $transDuration $cubic;
 
     @include mobile {
-      width: 95%;
+      min-width: 384px;
     }
 
     @include tablet {
-      width: 288px;
+      min-width: 288px;
       height: 64px;
       font-size: 24px;
       line-height: 1.17;
     }
+  }
+
+  .pwm-field-icon {
+    display: none;
   }
   
   .modal__input:focus {
@@ -183,13 +179,13 @@
   }
 
 
-//  CUSTOM SELECT
+  //  CUSTOM SELECT
 
 .custom-select {
 
   /* styling */
   background-color: $colorBgLemon;
-  border: thin solid $colorBrown;
+  border: 1px solid $colorBrown;
   border-radius: 4px;
   display: inline-block;
   font-family: 'Times New Roman', sans;
@@ -199,6 +195,18 @@
   letter-spacing: 0.05em;
   padding: 16px 12px;
   border-radius: 2px;
+  fill: $colorBrown;
+
+  @include mobile {
+    min-width: 384px;
+  }
+
+  @include tablet {
+    min-width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 
   
   /* reset */
@@ -216,6 +224,7 @@
   background-position: top 15px right 15px;
   background-size: 24px 24px;
   background-repeat: no-repeat;
+  fill: $colorBrown;
   
 
   @include tablet {
@@ -242,13 +251,14 @@
   border-radius: 2px;
   width: 100%;
   height: 54px;
+  fill: $colorBrown;
 
   @include mobile {
-    width: 95%;
+    min-width: 384px;
   }
 
   @include tablet {
-    width: 288px;
+    min-width: 288px;
     height: 64px;
     font-size: 24px;
     line-height: 1.17;
@@ -269,6 +279,7 @@
   background-position: top 15px right 15px;
   background-size: 24px 24px;
   background-repeat: no-repeat;
+  fill: $colorBrown;
   
   @include tablet {
     background-position: top 20px right 20px;
