@@ -55,13 +55,20 @@
 
 .details-rest__wrap {
   width: 259px;
-  margin-left: auto;
+  margin: 0 auto 49px;
   display: flex;
   justify-content: end;
   flex-direction: column;
   margin-bottom: 48px;
   @include tablet {
     width: 610px;
+    margin: 0 auto 40px 0;
+    padding-left: 236px;
+    @include desktop {
+      margin: 0 auto 48px;
+      margin-bottom: 48px;
+      padding-left: 0;
+    }
   }
 }
 
@@ -145,7 +152,7 @@
 
   @include mobilemax {
     margin: 0 0 0 0;
-    padding: 0 0 80px 0;
+    padding: 0 0 80px 25px;
   }
 }
 
@@ -161,6 +168,7 @@
 
   @include mobilemax {
     bottom: 10px;
+    padding-left: 25px;
   }
 }
 
@@ -192,10 +200,10 @@
 .slick-track {
   display: flex;
   gap: 20px;
-  @media screen and (min-width: 1024px) {
-    gap: 32px;
+  @include tablet {
+    gap: 34px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     gap: 87px;
   }
 }
