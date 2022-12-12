@@ -19,6 +19,9 @@
   @include mobile {
     height: 1191px;
   }
+  @include tablet {
+    height: 1238px;
+  }
 }
 
 .vertical-left-stripe::before {
@@ -29,23 +32,22 @@
   left: 66vw;
 }
 
+// KITCHEN SECTION
 .about-our-kitchen {
-  background-color: $colorBgLemon;
-  padding-bottom: 20px;
   position: relative;
+  background-color: $colorBgLemon;
+  padding-top: 16px;
+  padding-bottom: 20px;
 }
 
 .about-kitchen__title {
+  margin-bottom: 12px;
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: $colorTextSecondary;
-  padding-bottom: 12px;
-  padding-top: 16px;
   @include tablet {
-    padding-bottom: 4px;
-    padding-top: 120px;
     font-size: 32px;
     line-height: 37px;
   }
@@ -57,6 +59,7 @@
   line-height: 43px;
   letter-spacing: 0.3em;
   color: $colorTextAddressMobTab;
+  margin-bottom: 12px;
   @include tablet {
     font-size: 64px;
     line-height: 69px;
@@ -74,17 +77,18 @@
   }
 }
 .kitchen-card--top {
-  margin-top: 12px;
-
   flex-wrap: wrap;
   position: relative;
-  margin-bottom: 32px;
   @include tablet {
     margin-bottom: 142px;
   }
   @include desktop {
     margin-bottom: 162px;
   }
+}
+
+.kitchen-card--bottom {
+  column-gap: 20px;
 }
 
 .kitchen-card__photo {
@@ -135,7 +139,6 @@
 }
 .kitchen-card__description--orange {
   color: $colorBrown;
-  padding-left: 20px;
   padding-bottom: 20px;
   @include tablet {
     padding-left: 48px;
@@ -196,6 +199,8 @@
 }
 
 div.kitchen-slide {
-  overflow: visible;
   margin-right: 24px;
+  @include tablet {
+    margin-right: 40px;
+  }
 }
