@@ -1,5 +1,7 @@
 .header {
-    background-color: #383535;
+    position: absolute;
+    z-index: 1;
+    
     height: 64px;
     padding-top: 16px;
     padding-bottom: 9px;
@@ -25,7 +27,7 @@
     line-height: 1.08;
     letter-spacing: 0.3em;
 
-    // margin-right: 52px;
+    margin-right: 52px;
 
     color: $colorLogoWhite;
 
