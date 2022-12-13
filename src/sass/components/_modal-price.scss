@@ -23,7 +23,7 @@
     }
 }
 
-.modal-price__close {
+.modal-price__btn-close {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -37,22 +37,23 @@
     background-color: transparent;
     border: 1px solid transparent;
     transition: color $transDuration $cubic, transform $transDuration $cubic;
+    &:hover, &:focus {
+        color: $colorBrown;
+        transform: rotate(90deg);
+    }
 }
+  
 
-.modal-price__close-icon {
+.modal-price__icon-close {
     stroke: currentColor;
     fill: currentColor;
-}
-
-.price-form {
-    font-family: 'Times New Roman';
 }
 
 .modal-price__title {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-
+    font-family: 'Times New Roman';
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.05em;
@@ -64,6 +65,7 @@
 }
 .modal-price__sub-title {
     margin-bottom: 28px;
+    font-family: 'Times New Roman';
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.05em;
@@ -73,61 +75,64 @@
     }
 }
 
-.modal-price__form {
+// Стилізую шрифти в формі
+.form__modal-price {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
     color: $colorBrown;
+
 }
+
 .modal-price__text {
     margin-bottom: 20px;
 }
 
-.wrapper-group{
+.container__form-price{
     @include tablet {
         display: flex;
         gap: 16px;
     }
-    
 }
+
 .wrapper-input{
-    margin-bottom: 20px;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    &:last-child {
+        margin-bottom: 40px;
+    }
     @include calc-width(1, 16px);
     @include tablet {
+        &:first-child { margin-bottom: 40px; } 
         @include calc-width(2, 16px);
     }
 }
 
-.modal-price__input-cast, .modal-price__input-cost{
+.modal-price__input-wrap{
     position: relative;
     margin-bottom: 8px;
 }
 
-.custom-select{
-    @include tablet{
-
-    }
-}
-.wrapper-last{
-    margin-bottom: 40px;
-}
-.modal-price__user-name {
-}
-
-
-.modal-price__input, .modal-price__select {
+.modal-price__input {
+    // ?
+    display: inline-block;
+    position: relative;
 
     width: 100%;
     height: 54px;
-    background-color:  $colorBgLemon;
+    
     border: 1px solid $colorBrown;
     padding-left: 15px;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', sans;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.05em;
     color: $colorTextModal;
+    background-color:  $colorBgLemon;
+
+    transition: border-color $transDuration $cubic;
 
     &::placeholder {
         font-family: 'Times New Roman';
@@ -137,73 +142,64 @@
         letter-spacing: 0.05em;
         color: $colorTextModal;
     }
+
+    &:focus {
+        box-shadow: 2px 2px 15px 2px $colorTextSecondary;
+    }
 }
 
+// що це таке?
+.pwm-field-icon {
+    display: none;
+  }
+
+.modal-price__label-input, .modal-price__label-select,
+.modal-price__label {
+    margin-left: 15px;
+}
+
+ //заміна елементів вводу на різних пристроях 
 .input-cast {
     @include tablet {
         display: none;
     }
 }
 
-.modal-price__select{
+.select-cast, .modal-price__custom-select{
     display: none;
     @include tablet {
         display: inline-block;
     }
 }
 
-.modal-price__label, .modal-price__label-select {
-    margin-left: 15px;
-}
-.cast .modal-price__label{
+.modal-price__label-input{
     @include tablet{
         display: none;
     }
 }
-
-.cast .modal-price__label-select{
+.modal-price__label-select {
     display: none;
     @include tablet{
         display: inline;
     }
 }
 
-.modal-price__icon{
-    display: none;
-    @include tablet {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        fill: $colorBrown;
-    }
-}
+//  CUSTOM SELECT
+.modal-price__custom-select {
+    background-image: url(../images/ep_arrow-down-bold.svg);
+    background-position: top 15px right 15px;
 
-.shade {
-    @include tablet {
-        position: absolute;
-        top: 50%;
-        right: 6px;
-        transform: translateY(-50%);
-        width: 15px;
-        height: 15px;
-        background-color: $colorBgLemon;
-
-    }
-}
-
-.custom-select-arrow::after {
-    content: ' ';
-    position: absolute;
-    top: 15px;
-    right: 15px;
-
-    border: 1px solid transparent;
-    width: 24px;
-    height: 24px;
-    background-image: url("../images/ep_arrow-down-bold.svg");
+    background-size: 24px 24px;
     background-repeat: no-repeat;
-    background-size: contain;
-    fill: $colorBrown;
-  }
+   
+}
+
+//Костиль на галочку
+.shade{
+    position: absolute;
+    top: 20px;
+    right: 3px;
+    background-color: $colorBgLemon;
+    width: 15px;
+    height: 15px;
+}
