@@ -1,0 +1,68 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-room">
+    <button type="button" class="modal-close" data-modal-close>
+      <svg class="modal-room__close-icon" width="24" height="24">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-room__title">Забронювати номер</p>
+    <form class="modal-room__form" action="">
+    <div class="modal-room__wrapper">
+    <div class="modal-room__input-wrap">
+      <div class="modal-room__input-field">
+      <input
+        type="text"
+        id="client-name"
+        name="user-name"
+        placeholder="Ваше ім’я"
+        required
+        class="modal-room__modal-input"
+      />
+      <label for="client-name" class="modal-room__modal-label"
+        >На кого забронювати номер?</label
+      >
+    </div>
+    <div class="modal-room__input-field">
+      <input
+        class="modal-room__modal-input"
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+38 (___) ___-__-__"
+        pattern="+[0-9]"
+        required
+      />
+      <label for="phone" class="modal-room__modal-label">Номер телефону</label>
+    </div>
+    </div>
+    <div class="modal-room__input-wrap--category">
+      <div class="modal-room__input-field">
+      <select name="room-types" id="room-types" class="modal-room__modal-input modal-room__custom-select select">
+        <option value="lux" selected class="modal-room__modal-option">Двомісний люкс</option>
+        <option value="two" class="modal-room__modal-option">Двомісний номер</option>
+        <option value="three" class="modal-room__modal-option">Трьохмісний номер</option>
+      </select>
+      <label class="modal-room__modal-label"" for="room-types">Категорія номеру</label>
+    </div>
+    </div>
+    <div class="modal-room__input-box">
+      <div class="modal-room__input-field arrival-date">
+      <input class="modal-room__modal-input custom-date modal-room__custom-select" type="text" name="arrival-date"
+      id="arrival-date" placeholder="Сьогодні" onfocus="(this.type='date')" />
+      <label class="modal-room__modal-label" for="arrival-date">Дата заїзду</label>
+    </div>
+    <div class="modal-room__input-field">
+      <input
+        class="modal-room__modal-input modal-room__custom-date modal-room__custom-select"
+        type="text"
+        name="departure-date"
+        id="departure-date" placeholder="Сьогодні" onfocus="(this.type='date')"
+      />
+      <label class="modal-room__modal-label" for="arrival-date">Дата виїзду</label>
+    </div>
+    </div>
+        </div>
+    <button type="submit" class="modal-room__button">Оформити бронювання</button>
+</form>
+  </div>
+</div>
