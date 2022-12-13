@@ -81,6 +81,13 @@
   height: 40px;
   padding-left: 14px;
 }
+
+.contacts__phone:hover,
+.contacts__phone:focus {
+  color: $colorAccentYellow;
+  transition: color $transDuration $cubic;
+}
+
 .contacts__phone--twin {
   width: 260px;
 
@@ -109,6 +116,13 @@
     align-items: center;
   }
 }
+
+.contacts__hotel-phone:hover,
+.contacts__hotel-phone:focus {
+  color: $colorAccentYellow;
+  transition: color $transDuration $cubic;
+}
+
 .contacts__phone--first {
   margin-right: 12px;
   display: flex;
