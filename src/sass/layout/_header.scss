@@ -31,12 +31,18 @@
 
     color: $colorLogoWhite;
 
+    transition: color $transDuration $cubic;
+
     @include tablet {
         font-size: 40px;
         line-height: 1.1;
     }
 }
 
+.header-logo:hover,
+.header-logo:focus {
+    color: $colorAccentYellow;
+}
 
 .site-nav__list {
     display: flex;
