@@ -10,11 +10,14 @@ $('.autoplay').slick({
 // ROOMS PAGE SLIDER - SLICK SCRIPT
 
 $('.fade').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   fade: true,
   cssEase: 'linear',
+  arrows: true,
+  prevArrow: '<div class="luxe-left__arrow"></div>',
+  nextArrow: '<div class="luxe-right__arrow"></div>',
 });
 
 // SLICK SLIDER FOR VARIABLE WIDTH
