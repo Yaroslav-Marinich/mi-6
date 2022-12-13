@@ -56,7 +56,6 @@
     &__discription {
      
         line-height: 1.25;
-        font-weight: 700;
         color: $colorTextRooms;
 margin-bottom: 32px;
         @include tablet {
@@ -97,7 +96,7 @@ margin-bottom: 32px;
         }
 
         @include mobile {
-            margin-top: 16px;
+            
         }
 
         @include tablet {
@@ -215,12 +214,9 @@ margin-bottom: 32px;
 
 
 .link__amenities {
-    text-decoration: none;
-    font-family: 'Montserrat';
-
+    
     font-weight: 500;
     line-height: 1.21;
-    letter-spacing: 0.02em;
     color: $colorBrown;
 
     display: flex;
@@ -250,6 +246,7 @@ margin-bottom: 32px;
         margin-left: 563px;
     }
         transition: color 250ms linear;
+        
     
         &:hover,
         &:focus {
@@ -257,8 +254,9 @@ margin-bottom: 32px;
 }
 }
 
-.menu__wrap {
+.button__wrap {
     text-align: right;
     margin-bottom: 32px;
+   
 
 }
