@@ -17,9 +17,7 @@
 .about-kitchen__slogan {
   margin-bottom: 13px;
   font-family: 'Times New Roman';
-  font-style: normal;
   font-weight: 400;
-  line-height: 1.15;
   font-size: 20px;
   letter-spacing: 0;
   color: $colorTextSecondary;
@@ -121,7 +119,7 @@
 .kitchen-card__description {
   font-weight: 600;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   @include tablet {
     font-size: 16px;
