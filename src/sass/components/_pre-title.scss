@@ -1,0 +1,15 @@
+.pre-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  @include font(400, 20px, 1.15, null);
+  color: #b4b4b4;
+  margin-bottom: 8px;
+
+  @include tablet {
+    @include font(400, 32px, 1.16, null);
+  }
+
+  @include desktop {
+    margin-bottom: 4px;
+  }
+}
