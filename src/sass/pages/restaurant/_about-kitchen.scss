@@ -2,15 +2,15 @@
 .about-our-kitchen {
   position: relative;
   background-color: $colorBgLemon;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
 
   .container {
     position: relative;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    @include tablet {
-      padding-top: 120px;
-      padding-bottom: 32px;
-    }
   }
 }
 
