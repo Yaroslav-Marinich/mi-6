@@ -3,24 +3,57 @@
     text-align: center;
     margin: 0 auto;
 
+<<<<<<< Updated upstream
     background-image: url(../images/main/hero/hero-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #474747;
+=======
+    padding-top: 129px;
+    padding-bottom: 20px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)), url(../images/main/hero/hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $colorBlack;
+
+    @include tablet {
+        padding-top: 88px;
+        padding-bottom: 15px;
+    }
+    @include display {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+>>>>>>> Stashed changes
 }
 
 .hero__title {
     font-weight: 700;
+<<<<<<< Updated upstream
         font-size: 96px;
         line-height: 1.07;
         letter-spacing: 0.3em;
         margin-bottom: 24px;
         // margin-top: 70px;
+=======
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    margin-bottom: 24px;
+
+    @include tablet {
+        margin-bottom: 16px;
+    }
+>>>>>>> Stashed changes
 }
 
 .hero__subtitle {
     font-family: 'Montserrat';
+<<<<<<< Updated upstream
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -42,10 +75,60 @@
 
         color: #FFFFFF;
         margin-bottom: 113px;
+=======
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: $colorWhite;
+    margin-bottom: 56px;
+
+    @include tablet {
+        margin-bottom: 56px;
+    }
+}
+
+.hero__text {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $colorWhite;
+    margin-bottom: 113px;
+
+    @include tablet {
+        margin-bottom: 145px;
+    }
+}
+
+.hero__bloc-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablet {
+        display: flex;
+        gap: 40px;
+        justify-content: flex-end;
+    }
+>>>>>>> Stashed changes
 }
 
 .hero__btn:not(:last-child) {
     margin-bottom: 24px;
+<<<<<<< Updated upstream
+=======
+
+    @include tablet {
+        margin-bottom: 0;
+    }
+>>>>>>> Stashed changes
 }
 
 .hero__block {
@@ -53,11 +136,26 @@
     top: 0;
     right: 15px;
 
+<<<<<<< Updated upstream
+=======
+    @include tablet {
+        position: static;
+    }
+}
+
+.hero__end {
+    display: flex;
+    justify-content: space-between;
+>>>>>>> Stashed changes
 }
 
 .hero__contact {
     @include font(400, 12px, 1.2, 0.01em);
+<<<<<<< Updated upstream
     color: #E5E5E5;
+=======
+    color: $colorTextAddressHeader;
+>>>>>>> Stashed changes
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
     text-align: left;
@@ -70,7 +168,27 @@
 }
 
 .hero__icon {
+<<<<<<< Updated upstream
     fill: #F3C653;
     margin-left: 11px;
 }
 
+=======
+    fill: $colorAccentYellow;
+    margin-left: 11px;
+}
+
+.hero__social {
+    display: flex;
+    gap: 20px;
+    margin-top: 58px;
+
+    @include tablet {
+        margin-top: 25px;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+>>>>>>> Stashed changes
