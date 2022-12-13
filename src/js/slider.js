@@ -38,3 +38,17 @@ $('.autoplay-mini').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+// Restaurant page -> Kitchen Section -> Slider
+$('.kitchen-slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  infinite: true,
+  arrows: true,
+  appendArrows: '.slider-arrows',
+  prevArrow: '<button class="left-arrow"></button > ',
+  nextArrow: '<button class="right-arrow"></button>',
+});
