@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    // margin-left: 8px;
+    
 
     @include tablet {
         margin-left: 0;
@@ -67,10 +67,6 @@
     
     @include font (500, 20px, 1.2, .02);
 
-    @include tablet {
-        width: 50%;
-        // padding-left: 8px;
-    }
 }
 
 .footer__menu-link:focus,
@@ -83,7 +79,6 @@
     gap: 20px;
     @include tablet {
         flex-direction: column-reverse;
-        // padding-left: 8px;
         gap: 12px;
     }
 }
