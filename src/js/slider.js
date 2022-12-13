@@ -50,3 +50,16 @@ $('.kitchen-slider').slick({
   prevArrow: '<button type="button" class="left-arrow"></button > ',
   nextArrow: '<button type="button" class="right-arrow"></button>',
 });
+
+// SLICK-SLIDER REST
+
+$('.rest-slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  infinite: true,
+  arrows: true,
+  appendArrows: '.slider-arrows',
+  prevArrow: '<button type="button" class="left-arrow"></button > ',
+  nextArrow: '<button type="button" class="right-arrow"></button>',
+});
