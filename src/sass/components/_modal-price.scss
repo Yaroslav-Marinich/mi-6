@@ -7,7 +7,7 @@
     padding: 60px 15px;
     width: 90%;
     min-height: 572px;
-    overflow: scroll;
+
     border-radius: 2px;
     background-color: $colorBgLemon;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -148,41 +148,36 @@
     }
 }
 
-// що це таке?
-.pwm-field-icon {
-    display: none;
-  }
-
 .modal-price__label-input, .modal-price__label-select,
 .modal-price__label {
     margin-left: 15px;
 }
 
  //заміна елементів вводу на різних пристроях 
-.input-cast {
-    @include tablet {
-        display: none;
-    }
-}
+// .input-cast {
+//     @include tablet {
+//         display: none;
+//     }
+// }
 
-.select-cast, .modal-price__custom-select{
-    display: none;
-    @include tablet {
-        display: inline-block;
-    }
-}
+// .select-cast, .modal-price__custom-select{
+//     display: none;
+//     @include tablet {
+//         display: inline-block;
+//     }
+// }
 
-.modal-price__label-input{
-    @include tablet{
-        display: none;
-    }
-}
-.modal-price__label-select {
-    display: none;
-    @include tablet{
-        display: inline;
-    }
-}
+// .modal-price__label-input{
+//     @include tablet{
+//         display: none;
+//     }
+// }
+// .modal-price__label-select {
+//     display: none;
+//     @include tablet{
+//         display: inline;
+//     }
+// }
 
 //  CUSTOM SELECT
 .modal-price__custom-select {
@@ -191,15 +186,12 @@
 
     background-size: 24px 24px;
     background-repeat: no-repeat;
-   
-}
-
-//Костиль на галочку
-.shade{
-    position: absolute;
-    top: 20px;
-    right: 3px;
-    background-color: $colorBgLemon;
-    width: 15px;
-    height: 15px;
+    
+     /* reset */
+    margin-bottom: 8px;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
