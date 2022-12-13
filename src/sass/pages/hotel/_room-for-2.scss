@@ -1,3 +1,7 @@
+.room-for-2--section {
+  position: relative;
+}
+
 .hotel-wrap-top {
   @include tablet {
     display: flex;
@@ -8,10 +12,11 @@
   @include tablet {
     display: flex;
     flex-direction: column;
+    margin-bottom: 174px;
   }
 
   @include desktop {
-    // font-size: 36px;
+    margin-bottom: 188px;
   }
 }
 
@@ -27,25 +32,23 @@
   }
 
   @include desktop {
-    // font-size: 36px;
+    margin-bottom: 4px;
   }
 }
 
 .hotel-logo {
   color: #494848;
+  display: block;
   margin-bottom: 32px;
 
   @include tablet {
     @include font(700, 64px, 1.08, 0.3em);
+    margin-bottom: 62px;
   }
 
   @include desktop {
-    // font-size: 36px;
+    margin-bottom: 72px;
   }
-}
-
-.room-title {
-  margin-top: 32px;
 }
 
 .hotel-text {
@@ -58,39 +61,63 @@
   @include tablet {
     width: 439px;
     height: 80px;
+    margin-top: 16px;
     @include font(600, 16px, 1.25, 0.02em);
   }
 
   @include desktop {
-    // font-size: 36px;
+    width: 400px;
+    height: 83px;
+    margin-top: 24px;
   }
 }
 
 .room-wrap-center {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 32px;
-
-  @include mobile {
+  @include mobilemax {
     display: flex;
     justify-content: flex-end;
     margin-top: 32px;
   }
+
+  @include tablet {
+    position: absolute;
+    right: 112px;
+    top: -32px;
+  }
 }
 
 .hotel-wrap-bottom {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .room-slider-thumb {
-  margin-right: 115px;
   overflow: hidden;
+  @include mobilemax {
+    margin-right: 115px;
+  }
 }
 
 .room-slider {
   display: flex;
   flex-direction: row-reverse;
   gap: 16px;
-  margin-top: 32px;
+
+  @include mobilemax {
+    margin-top: 32px;
+  }
+
+  @include tablet {
+    gap: 40px;
+    max-width: 428px;
+  }
+
+  @include desktop {
+    max-width: 548px;
+  }
 }
 
 .room-wrap-bottom {
@@ -98,7 +125,10 @@
   align-items: center;
   flex-direction: column;
   gap: 16px;
-  margin-top: 32px;
+
+  @include mobilemax {
+    margin-top: 32px;
+  }
 }
 
 .hotel-link {
