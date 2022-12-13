@@ -55,7 +55,7 @@ $('.kitchen-slider').slick({
   nextArrow: '<button class="right-arrow"></button>',
 });
 
-// SLICK SLIDER FOR VARIABLE WIDTH (ROOM-FOR-3-ADULT)
+// SLICK SLIDER ROOM
 
 $('.room-slider').slick({
   dots: false,
