@@ -23,11 +23,10 @@ $('.variable-width').slick({
   dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
+  initialSlide: 0,
+  slidesToShow: 3,
+  slidesToScroll: 1,
   variableWidth: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
 });
 
 // SLICK-SLIDER Mini
@@ -38,4 +37,16 @@ $('.autoplay-mini').slick({
   variableWidth: true,
   autoplay: true,
   autoplaySpeed: 2000,
+});
+
+// Restaurant page -> Kitchen Section -> Slider
+$('.kitchen-slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  infinite: true,
+  arrows: true,
+  appendArrows: '.slider-arrows',
+  prevArrow: '<button type="button" class="left-arrow"></button > ',
+  nextArrow: '<button type="button" class="right-arrow"></button>',
 });

@@ -1,0 +1,67 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal modal-book-table">
+      <button type="button" class="modal__btn--close" data-modal-close>
+        <svg class="modal__icon--close" width="24" height="24">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal__title">Забронювати столик</p>
+      <form class="modal__form">
+        <div class="modal__list">
+          <div class="modal__wrap">
+            <div class="modal__field">
+              <input
+                type="text"
+                name="user-name"
+                id="name"
+                class="modal__input"
+                placeholder="Ваше ім’я"
+                aria-label="ім’я"
+                required
+              />
+              <label for="name" class="modal__label">На кого забронювати столик?</label>
+            </div>
+    
+            <div class="modal__field">
+              <input
+                type="tel"
+                name="user-tel"
+                id="tel"
+                class="modal__input"
+                placeholder="+38 (___) ___-__-__"
+                aria-label="номер телефону"
+                pattern="+[0-9]" 
+                required
+              />
+              <label for="tel" class="modal__label">Номер телефону</label>
+            </div>
+          </div>
+  
+          <div class="modal__wrap">
+            <div class="modal__field">
+              <select class="modal__input custom-select" id="guests-number" name="guests-number">
+               <option class="select-option" value="1">1</option>
+               <option class="select-option" value="2" selected>2</option>
+               <option class="select-option" value="3">3</option>
+               <option class="select-option" value="4">4</option>
+               <option class="select-option" value="5">5</option>
+               <option class="select-option" value="6">6</option>
+               <option class="select-option" value="7">7</option>
+             </select>
+                          
+             <label class="modal__label" for="guests-number">Столик на яку кількість осіб?</label>
+           </div>
+             
+           <div class="modal__field">
+              
+              <input class="custom-date" type="text" value="Cьогодні" placeholder="Сьогодні" onfocus="(this.type = 'date')" id="table-date" name="table-date">
+              <label class="modal__label" for="table-date">На яку дату бронювати?</label>
+              
+           </div>
+          </div>
+        </div>
+        
+       <button type="submit" class="modal__btn">Оформити бронювання</button> 
+      </form>
+    </div>
+  </div>
