@@ -1,0 +1,172 @@
+.menu {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $colorBlack;
+  background-color: $colorBgLemon;
+
+  @include tablet {
+    background-color: $colorBgDarkLemon;
+  }
+}
+
+.menu__table {
+  display: flex;
+  flex-direction: column;
+  margin: -8px 0 24px;
+  border-spacing: 0 8px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: -8px 0 32px;
+    border-spacing: 0 8px;
+  }
+
+  @include desktop {
+    column-gap: 20px;
+    margin: -12px 0 19px;
+    border-spacing: 0 12px;
+  }
+}
+
+.menu__data {
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 88px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 140px) / 2);
+  }
+}
+
+.menu__column {
+  &--dish {
+    width: calc(100% * (254 / 384));
+  }
+  &--weight {
+    width: calc(100% * (65 / 384));
+  }
+  &--price {
+    width: calc(100% * (65 / 384));
+  }
+}
+
+.menu__title {
+  margin-bottom: 24px;
+
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  letter-spacing: normal;
+
+  @include tablet {
+    margin-bottom: 28px;
+  }
+
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.menu__dish-name {
+  height: 39px;
+
+  font-family: 'Times New Roman';
+  text-align: left;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: normal;
+
+  @include tablet {
+    height: 47px;
+  }
+
+  @include desktop {
+    height: 44px;
+
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+
+.menu__dish {
+  margin-bottom: 4px;
+  padding-right: 28px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  &--short {
+    margin-bottom: 3px;
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  @include tablet {
+    padding-right: 23px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}
+
+.menu__ingredients {
+  padding-right: 30px;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+
+  @include tablet {
+    padding-right: 47px;
+  }
+
+  @include desktop {
+    padding-right: 50px;
+  }
+}
+
+.menu__weight {
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+}
+
+.menu__price {
+  white-space: nowrap;
+  text-align: right;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}
+
+.menu__wrap {
+  text-align: center;
+
+  @include tablet {
+    text-align: right;
+  }
+}
+
+.menu__button {
+  background-color: $colorBtnBlack;
+
+  &:hover,
+  &:focus {
+    border-color: $colorAccentYellow;
+  }
+}

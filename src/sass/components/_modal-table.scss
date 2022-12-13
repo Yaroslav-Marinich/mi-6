@@ -1,0 +1,302 @@
+ 
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  
+    width: 90%;   
+    padding: 60px 15px;
+  
+    background-color: $colorBgLemon;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    text-align: center;
+  
+    transform: translate(-50%, -50%);
+    transition: transform $transDuration $cubic;
+
+    @include mobile {
+      width: 414px;
+    }
+
+    @include tablet {
+      width: 712px;
+      padding: 60px 60px;
+    }
+    
+  }
+  
+  .modal__title {
+    font-family: 'Times New Roman', sans;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+    color: $colorBlack;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include tablet {
+      font-size: 40px;
+      line-height: 1.15;
+    }
+  }
+
+   
+  .modal__list {
+
+    @include tablet {
+     display: flex;
+     justify-content: center;
+     gap: 16px;
+    }
+  }
+
+  .modal__wrap { 
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    
+         }
+  }
+
+  .modal__wrap:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  .modal__wrap:last-child {
+    margin-bottom: 40px;
+  }
+
+  .modal__field {
+    position: relative;
+   
+  }
+  
+  .modal__field:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include tablet {
+      background-position: top 20px right 20px;
+    }
+  }
+  
+  .modal__label { 
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $colorBrown;
+    margin-left: 12px;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+  
+  .modal__input, .select__option {
+    display: inline-block;
+    width: 100%;
+    height: 54px;
+    border: 1px solid $colorBrown;
+    padding: 16px 12px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+  
+    font-family: 'Times New Roman', sans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+  
+    color: $colorTextModal;
+    background-color: $colorBgLemon;
+  
+    transition: border-color $transDuration $cubic;
+
+    @include mobile {
+      min-width: 384px;
+    }
+
+    @include tablet {
+      min-width: 288px;
+      height: 64px;
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
+
+  .pwm-field-icon {
+    display: none;
+  }
+  
+  .modal__input:focus {
+    box-shadow: 2px 2px 15px 2px $colorTextSecondary;
+  }
+
+  .modal__btn--close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    padding: 0;
+    margin: 0;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    color: $colorBlack;
+      
+    transition: color $transDuration $cubic, transform $transDuration $cubic;
+  }
+  
+  .modal__btn--close:hover,
+  .modal__btn--close:focus {
+    color: $colorBrown;
+    transform: rotate(90deg);
+  }
+
+
+  .modal__icon--close {
+    display: inline-block;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+
+  //  CUSTOM SELECT
+
+.custom-select {
+
+  /* styling */
+  background-color: $colorBgLemon;
+  border: 1px solid $colorBrown;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: 'Times New Roman', sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  padding: 16px 12px;
+  border-radius: 2px;
+  
+
+  @include mobile {
+    min-width: 384px;
+  }
+
+  @include tablet {
+    min-width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  
+  /* reset */
+
+  margin-bottom: 8px;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.custom-select {
+  background-image: url(../images/ep_arrow-down-bold.svg);
+  background-position: top 15px right 15px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  
+  
+
+  @include tablet {
+    background-position: top 20px right 20px;
+  }
+}
+
+
+//  CUSTOM DATE
+
+.custom-date {
+
+  /* styling */
+  background-color: $colorBgLemon;
+  border: thin solid $colorBrown;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: 'Times New Roman', sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  padding: 16px 12px;
+  border-radius: 2px;
+  width: 100%;
+  height: 54px;
+  fill: $colorBrown;
+
+  @include mobile {
+    min-width: 384px;
+  }
+
+  @include tablet {
+    min-width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  
+  /* reset */
+
+  margin-bottom: 8px;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+}
+
+.custom-date {
+  background-image: url(../images/ep_arrow-down-bold.svg);
+  background-position: top 15px right 15px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  fill: $colorBrown;
+  
+  @include tablet {
+    background-position: top 20px right 20px;
+  }
+}
+
+.custom-date[onfocus] {
+  color: $colorTextModal;
+  }
+
+.custom-date[onfocus]:focus {
+  background-image: none;
+ }
+
+.custom-date[type="date"] {
+  background-image: none;
+}
+
+
