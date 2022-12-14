@@ -129,6 +129,8 @@
 
 .room-svg-left {
   margin-right: 34px;
+  transition: fill $transDuration $cubic;
+
   &:hover,
   &:focus {
     fill: $colorAccentYellow;
@@ -136,6 +138,8 @@
 }
 
 .room-svg-right {
+  transition: fill $transDuration $cubic;
+
   &:hover,
   &:focus {
     fill: $colorAccentYellow;
