@@ -27,7 +27,7 @@ $('.variable-width').slick({
   infinite: true,
   speed: 300,
   initialSlide: 0,
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   variableWidth: true,
 });

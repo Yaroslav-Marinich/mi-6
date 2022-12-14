@@ -1,0 +1,273 @@
+.room-luxe {
+  background-color: $colorBgLemon;
+
+  @include tablet {
+    padding-top: 62px;
+    padding-bottom: 47px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
+  }
+}
+
+.room-luxe__container {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.room-luxe__data {
+  @include mobilemax {
+    margin-bottom: 32px;
+  }
+
+  @include tablet {
+    margin-bottom: -46px;
+  }
+
+  @include desktop {
+    margin-bottom: -56px;
+  }
+}
+
+.room-luxe__pre-title {
+  margin-bottom: 8px;
+
+  color: $colorTextSecondary;
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: normal;
+
+  @include tablet {
+    margin-bottom: 4px;
+
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+}
+
+.room-luxe__logo {
+  display: block;
+  margin-bottom: 32px;
+
+  color: $colorLogoGray;
+
+  @include tablet {
+    margin-bottom: 62px;
+
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+
+  @include desktop {
+    margin-bottom: 72px;
+  }
+}
+
+.room-luxe__title {
+  margin-bottom: 12px;
+
+  text-transform: lowercase;
+
+  span {
+    text-transform: uppercase;
+  }
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+  }
+}
+
+.room-luxe__description {
+  max-width: 258px;
+
+  color: $colorTextPrimary;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  @include tablet {
+    min-width: 100%;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  @include desktop {
+    color: $colorTextRooms;
+  }
+}
+
+.room-luxe__image-wrap {
+  display: flex;
+  justify-content: end;
+
+  @include tablet {
+    margin-bottom: -46px;
+    position: relative;
+    top: -94px;
+    right: 65px;
+  }
+
+  @include desktop {
+    margin-bottom: -56px;
+    top: -105px;
+    right: 95px;
+  }
+}
+
+.room-luxe__image {
+  background: $colorBgImage;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @include tablet {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.room-luxe__button-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @include tablet {
+    height: 194px;
+    justify-content: center;
+  }
+
+  @include desktop {
+    height: 254px;
+  }
+}
+
+.room-luxe__button {
+  display: block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Styles for slider
+
+.room_luxe__thumb {
+  @include mobilemax {
+    max-width: 284px;
+    position: relative;
+    top: 0;
+    left: -15px;
+  }
+
+  @include tablet {
+    max-width: 428px;
+    min-height: 251px;
+  }
+
+  @include desktop {
+    min-width: 548px;
+    min-height: 319px;
+  }
+}
+
+.room-luxe__slider {
+  display: flex;
+  width: 120%;
+  height: 100%;
+
+  @include mobilemax {
+    padding-bottom: 42px;
+  }
+
+  .slick-list {
+    @include mobilemax {
+      padding: 32px 0 28px 90px;
+      margin-left: -215px;
+    }
+
+    @include tablet {
+      padding-top: 28px;
+      padding-bottom: 28px;
+      margin-top: -28px;
+      // max-height: 194px;
+      min-width: 428px;
+
+      padding-left: 28px;
+      margin-left: -28px;
+    }
+
+    @include desktop {
+      // max-height: 254px;
+      min-width: 548px;
+    }
+  }
+
+  .slick-track {
+    gap: 16px;
+
+    @include tablet {
+      gap: 40px;
+    }
+  }
+
+  .slick-arrow {
+    top: auto;
+    bottom: -16px;
+    width: 32px;
+    height: 32px;
+
+    @include mobilemax {
+      bottom: 10px;
+    }
+
+    @include desktop {
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    transform: translate(-10px, -8px);
+
+    @include tablet {
+      transform: translate(337px, -50%);
+    }
+
+    @include desktop {
+      transform: translate(457px, -50%);
+    }
+  }
+
+  .slick-next:before {
+    background: url('../images/cil_arrow-right32.svg') no-repeat 0 0 / 32px 32px;
+  }
+
+  .slick-prev:before {
+    background: url('../images/cil_arrow-left32.svg') no-repeat 0 0 / 32px 32px;
+  }
+
+  .slick-slide {
+    opacity: 0;
+    transition: opacity $transDuration $cubic;
+  }
+
+  .slick-active {
+    opacity: 1;
+
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.room-luxe__slide {
+  @include mobilemax {
+    border-radius: 2px;
+  }
+}
