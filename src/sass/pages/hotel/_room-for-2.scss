@@ -1,4 +1,4 @@
-.room-for-2--section {
+.room-section {
   position: relative;
 }
 
@@ -12,7 +12,7 @@
   @include tablet {
     display: flex;
     flex-direction: column;
-    margin-bottom: 174px;
+    margin-bottom: 126px;
   }
 
   @include desktop {
@@ -35,9 +35,12 @@
 }
 
 .room-wrap-center {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
   @include mobilemax {
-    display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
+    width: 244px;
     margin-top: 32px;
   }
 
@@ -45,10 +48,12 @@
     position: absolute;
     right: 112px;
     top: -32px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
 
 .hotel-wrap-bottom {
+  position: relative;
   @include tablet {
     display: flex;
     align-items: center;
@@ -59,18 +64,25 @@
 .room-slider-thumb {
   overflow: hidden;
   @include mobilemax {
-    margin-right: 115px;
+    padding-top: 32px;
+    padding-right: 115px;
+    padding-bottom: 72px;
+  }
+  @include tablet {
+    padding-top: 48px;
+    padding-right: 60px;
+    padding-bottom: 104px;
+  }
+
+  @include desktop {
+    padding-bottom: 112px;
   }
 }
 
-.room-slider {
+.hotel-room-slider {
   display: flex;
   flex-direction: row-reverse;
   gap: 16px;
-
-  @include mobilemax {
-    margin-top: 32px;
-  }
 
   @include tablet {
     gap: 40px;
@@ -82,14 +94,57 @@
   }
 }
 
+.hotel-room-slider img {
+  border-radius: 2px;
+  box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
+
+  @include tablet {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.room-svg {
+  cursor: pointer;
+  top: 254px;
+  display: flex;
+  position: absolute;
+  fill: $colorBlack;
+
+  @include mobilemax {
+    left: 16px;
+  }
+
+  @include tablet {
+    top: 266px;
+  }
+
+  @include desktop {
+    fill: $colorTextModal;
+  }
+}
+
+.room-svg-left {
+  margin-right: 34px;
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}
+
+.room-svg-right {
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}
+
 .room-wrap-bottom {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 16px;
-
-  @include mobilemax {
-    margin-top: 32px;
+  @include tablet {
+    margin-bottom: 81px;
   }
 }
 

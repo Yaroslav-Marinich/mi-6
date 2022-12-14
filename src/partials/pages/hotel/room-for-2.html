@@ -1,4 +1,4 @@
-<section class="room-for-2--section section-hotel section-hotel--lemon">
+<section class="room-section section-hotel section-hotel--lemon">
   <div class="container">
     <div class="hotel-wrap-top">
       <div class="room-wrap-top">
@@ -44,7 +44,7 @@
     </div>
     <div class="hotel-wrap-bottom">
       <div class="room-slider-thumb">
-        <div class="fade room-slider">
+        <div class="hotel-room-slider room-slider">
           <div>
             <picture
               ><source
@@ -67,10 +67,11 @@
                 media="(max-width: 1023px)" />
               <img
                 src="./images/hotel/hotel-3-mob.jpg"
-                alt="біла ванна"
+                alt="чашка на підвіконні"
                 sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
             /></picture>
           </div>
+
           <div>
             <picture
               ><source
@@ -93,10 +94,11 @@
                 media="(max-width: 1023px)" />
               <img
                 src="./images/hotel/hotel-2-mob.jpg"
-                alt="біла ванна"
+                alt="біла раковина"
                 sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
             /></picture>
           </div>
+
           <div>
             <picture
               ><source
@@ -123,6 +125,7 @@
                 sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
             /></picture>
           </div>
+
           <div>
             <picture
               ><source
@@ -149,6 +152,7 @@
                 sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
             /></picture>
           </div>
+
           <div>
             <picture
               ><source
@@ -175,6 +179,7 @@
                 sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
             /></picture>
           </div>
+
           <div>
             <picture
               ><source
@@ -201,6 +206,7 @@
                 sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
             /></picture>
           </div>
+
           <div>
             <picture
               ><source
@@ -227,13 +233,26 @@
                 sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, 194px"
             /></picture>
           </div>
+
+          <div class="room-svg">
+            <svg class="room-svg-left prev" width="32" height="32">
+              <use href="./images/sprite.svg#icon-cil_arrow-left32"></use>
+            </svg>
+            <svg class="room-svg-right next" width="32" height="32">
+              <use href="./images/sprite.svg#icon-cil_arrow-right32"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="room-wrap-bottom">
         <a href="./room-for-2.html" class="btn btn--hotel-and-rest hotel-link"
           >Детальніше</a
         >
-        <button type="button" class="btn btn--hotel-and-rest" data-modal-open>
+        <button
+          type="button"
+          class="btn btn--hotel-and-rest"
+          data-price-modal-open
+        >
           Переглянути ціни
         </button>
       </div>
