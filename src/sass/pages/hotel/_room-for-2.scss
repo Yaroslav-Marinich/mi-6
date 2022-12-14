@@ -66,30 +66,28 @@
 }
 
 .room-slider-thumb {
-  overflow: hidden;
+  // overflow: hidden;
   @include mobilemax {
+    position: relative;
+    top: 0;
+    left: -15px;
     padding-top: 32px;
-    padding-right: 115px;
+    padding-right: 100px;
     padding-bottom: 72px;
   }
   @include tablet {
     padding-top: 48px;
     padding-right: 60px;
-    padding-bottom: 104px;
+    padding-bottom: 25px;
   }
 
   @include desktop {
-    padding-bottom: 112px;
+    padding-bottom: 0px;
   }
 }
 
 .hotel-room-slider {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 16px;
-
   @include tablet {
-    gap: 40px;
     max-width: 428px;
   }
 
@@ -98,7 +96,8 @@
   }
 }
 
-.hotel-room-slider img {
+.hotel-room-slider .slic-active {
+  opacity: 1;
   border-radius: 2px;
   box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
 
@@ -107,11 +106,19 @@
   }
 }
 
+.hotel-room-slider .slick-list {
+  @include mobilemax {
+    border-radius: 2px;
+    box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
+    padding-left: 90px;
+  }
+}
+
 .room-svg {
   cursor: pointer;
-  top: 254px;
+  top: 28px;
   display: flex;
-  position: absolute;
+  position: relative;
   fill: $colorBlack;
 
   @include mobilemax {
@@ -119,10 +126,12 @@
   }
 
   @include tablet {
-    top: 266px;
+    top: 40px;
   }
 
   @include desktop {
+    top: 48px;
+    left: 450px;
     fill: $colorTextModal;
   }
 }
