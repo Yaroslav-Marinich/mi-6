@@ -1,6 +1,6 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-room">
-    <button type="button" class="modal-close" data-modal-close>
+    <button type="button" class="modal-room__btn--close" data-modal-close>
       <svg class="modal-room__close-icon" width="24" height="24">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
@@ -16,6 +16,7 @@
         name="user-name"
         placeholder="Ваше ім’я"
         required
+        pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}"
         class="modal-room__modal-input"
       />
       <label for="client-name" class="modal-room__modal-label"
@@ -37,7 +38,7 @@
     </div>
     <div class="modal-room__input-wrap--category">
       <div class="modal-room__input-field">
-      <select name="room-types" id="room-types" class="modal-room__modal-input modal-room__custom-select select">
+      <select name="room-types" id="room-types" class="modal-room__modal-input modal-room__custom-select">
         <option value="lux" selected class="modal-room__modal-option">Двомісний люкс</option>
         <option value="two" class="modal-room__modal-option">Двомісний номер</option>
         <option value="three" class="modal-room__modal-option">Трьохмісний номер</option>
@@ -47,13 +48,13 @@
     </div>
     <div class="modal-room__input-box">
       <div class="modal-room__input-field arrival-date">
-      <input class="modal-room__modal-input custom-date modal-room__custom-select" type="text" name="arrival-date"
+      <input class="modal-room__modal-input  modal-room__custom-select" type="text" name="arrival-date"
       id="arrival-date" placeholder="Сьогодні" onfocus="(this.type='date')" />
       <label class="modal-room__modal-label" for="arrival-date">Дата заїзду</label>
     </div>
     <div class="modal-room__input-field">
       <input
-        class="modal-room__modal-input modal-room__custom-date modal-room__custom-select"
+        class="modal-room__modal-input  modal-room__custom-select"
         type="text"
         name="departure-date"
         id="departure-date" placeholder="Сьогодні" onfocus="(this.type='date')"
@@ -62,7 +63,7 @@
     </div>
     </div>
         </div>
-    <button type="submit" class="modal-room__button" data-modal-close>Оформити бронювання</button>
+    <button type="submit" class="modal-room__button modal__btn" data-modal-close>Оформити бронювання</button>
 </form>
   </div>
 </div>

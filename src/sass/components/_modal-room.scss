@@ -12,7 +12,6 @@
   transition: transform $transDuration $cubic;
   @include mobile {
     width: 414px;
-    height: 780px;
   }
   @include tablet {
     width: 712px;
@@ -49,7 +48,6 @@
   display: block;
   text-align: left;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $colorBrown;
@@ -58,8 +56,11 @@
 
 .modal-room__modal-input,
 .modal-room__modal-option {
-  width: 384px;
-  height: 64px;
+  width: 95%;
+  @include mobile {
+    width: 384px;
+  }
+  height: 54px;
   border: 1px solid $colorBrown;
   padding-left: 12px;
   padding-right: 15px;
@@ -72,9 +73,9 @@
   color: $colorTextModal;
   background-color: $colorBgLemon;
   transition: border-color $transDuration $cubic;
-  box-shadow: 2px 2px 15px 2px $colorTextSecondary;
 
   @include tablet {
+    height: 54px;
     width: 288px;
     font-size: 24px;
     line-height: 1.17;
@@ -89,21 +90,21 @@
   display: inline-block;
   stroke: currentColor;
   fill: currentColor;
-  position: absolute;
-  right: 1px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
 }
 
-.modal-close {
-  width: 24px;
-  height: 24px;
+.modal-room__btn--close {
   background-color: transparent;
-  border: none;
+  border: transparent;
   position: absolute;
   right: 16px;
   top: 16px;
+  color: $colorBlack;
+  transition: color $transDuration $cubic, transform $transDuration $cubic;
+}
+.modal-room__btn--close:hover,
+.modal-room__btn--close:focus {
+  color: $colorBrown;
+  transform: rotate(90deg);
 }
 
 .modal-room__custom-select {
@@ -111,6 +112,7 @@
   background-position: top 15px right 15px;
   background-size: 24px 24px;
   background-repeat: no-repeat;
+  fill: $colorBrown;
 
   @include tablet {
     background-position: top 20px right 20px;
@@ -129,23 +131,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 .modal-room__button {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: $colorBtnWhite;
-  background: #000000;
-  border: 1px solid $colorAccentYellow;
-  border-radius: 2px;
-  width: 100%;
-  height: 64px;
   margin-top: 40px;
-  @include tablet {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.21;
-  }
 }
 
 .modal-room__wrapper,
@@ -167,14 +153,14 @@ input[type='date']::-webkit-calendar-picker-indicator {
   }
 }
 
-.modal-room__custom-date {
-  background-image: url(../images/ep_arrow-down-bold.svg);
-  background-position: top 15px right 15px;
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-  fill: $colorBrown;
+// .modal-room__custom-date {
+//   background-image: url(../images/ep_arrow-down-bold.svg);
+//   background-position: top 20px right 15px;
+//   background-size: 24px 24px;
+//   background-repeat: no-repeat;
+//   fill: $colorBrown;
 
-  @include tablet {
-    background-position: top 20px right 20px;
-  }
-}
+//   @include tablet {
+//     background-position: top 20px right 20px;
+//   }
+// }
