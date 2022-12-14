@@ -38,8 +38,9 @@
 .modal-room__input-field {
   position: relative;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   @include tablet {
+    margin-bottom: 12px;
     width: 288px;
   }
 }
@@ -132,6 +133,9 @@ input[type='date']::-webkit-calendar-picker-indicator {
 
 .modal-room__button {
   margin-top: 40px;
+  @include tablet {
+    margin-top: 28px;
+  }
 }
 
 .modal-room__wrapper,
