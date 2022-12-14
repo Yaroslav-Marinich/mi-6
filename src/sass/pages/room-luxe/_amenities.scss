@@ -1,285 +1,154 @@
 .amenities {
-
-    &__section {
+    @include desktop {
         background-color: $colorBgLemon;
-        
     }
 
-    &__section {
-        @include mobimax {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        @include mobile {
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
-
-        @include tablet {
-            padding-top: 48px;
-            padding-bottom: 40px;
-        }
-
-        @include desktop {
-            padding-top: 48px;
-            padding-bottom: 48px;
-
-           
-        }
-    }
-
-
+    
     &__title {
-        font-family: "Times New Roman";
+        margin-bottom: 16px;
+        font-family: 'Times New Roman';
         font-weight: 400;
         font-size: 32px;
-        line-height: 1.15;
-        color: $colorBtnBlack;
+        line-height: 1.16;
         text-transform: uppercase;
+        color: $colorBlack;
+    }
 
-        @media (max-width:413px) {
-            text-align: center;
-            margin-bottom: 12px;
+    &__title-text {
+        max-width: 757px;
+        margin-bottom: 32px;
+        line-height: 1.25;
+        color: $colorTextRooms;
+    }
+
+    &__text {
+        max-width: 384px;
+        line-height: 1.25;
+        color: $colorTextRooms;
+
+        @include tablet {
+            max-width: 400px;
         }
+    }
 
-        @media (min-width:414px) {
-            margin-bottom: 16px;
+    &__item-discription {
+        @include tablet {
+            display: flex;
         }
+    }
 
-        @media screen and (max-width: 400px) {
-            font-size: 25px;
-        }
-
+    &__subtitle {
+        margin-bottom: 16px;
+        font-family: 'Times New Roman';
+        font-size: 24px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        color: $colorBlack;
     }
 
     &__discription {
-     
+        max-width: 384px;
+        margin-bottom: 16px;
         line-height: 1.25;
         color: $colorTextRooms;
-margin-bottom: 32px;
+
         @include tablet {
-            line-height: 1.21;
-            width: 400px;
-
+            max-width: 400px;
+            margin-right: 80px;
+            margin-bottom: 0;
         }
 
-        @media screen and (max-width: 400px) {
-            font-size: 13px;
+        @include tablet {
+            margin-right: 159px;
         }
 
+        @include tablet{
+
+        @include tablet {
+                max-width: 450px;
+                margin-right: 30px;
+            }
+
+            @include desktop {
+                max-width: 495px;
+                margin-right: 64px;
+            }
+        }
     }
- .title {
-     margin-bottom: 16px;
- }
-    &__subtitle {
-        font-family: "TimesNewRoman";
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1;
-        color: $colorBlack;
-        text-transform: uppercase;
+
+    &__box {
+        margin-bottom: 32px;
+
+    @include tablet {
+            &:last-child {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__button {
         
-        // margin-bottom: 16px;
-
         @include tablet {
-            line-height: 1.15;
-
-        }
-       
-
-        @media screen and (max-width: 400px) {
-            font-size: 20px;
-        }
-    }
-
-    &__box-second {
-        @include mobimax {
-            margin-top: 16px;
-        }
-
-        @include mobile {
+            position: relative;
+            left: 496px;
+            width: 434px;
+            margin-bottom: 32px;
+            font-size: 24px;
+            line-height: 1.21;
             
         }
 
-        @include tablet {
-
-            margin-top: 0;
-
+        @include desktop {
+            left: 563px;
+           
+                        
         }
+        @include mobile{
+            margin: 0 auto 32px;}
 
-
+        &:hover,
+        &:focus {
+            color: $colorBlack;
+            background-color: $colorAccentYellow;
+        }
     }
 
-
- button {
-    // border: 1px solid #000;
-    // position: absolute;
-    //     right: 700px;
-    //     text-transform: uppercase;
-    //     width: 30px;
-        // background-color: $colorBtnBlack;
-        // color: $colorBtnWhite;
-        // font-family: 'Montserrat';
-        // font-size: 20px;
-        // line-height: 1.2;
-        // text-transform: uppercase;
-
-        // border-radius: 25px;
-        // border: 1px solid $colorAccentYellow;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // white-space: nowrap;
-
-       
-        @include mobimax {
-            font-size: 14px;
-            padding: 15px 30px;
-            width: 250px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 16px;
-            // margin-top: 16px;
-        }
-
-        @include mobile {
-            width: 384px;
-            height: 64px;
-            margin-top: 32px;
-            margin-bottom: 20px;
-            padding: 20px 43px;
-        }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        font-weight: 500;
+        line-height: 1.25;
+        text-decoration: none;
+        color: $colorBrown;
+        fill: $colorBrown;
+        transition: color $cubic;
 
         @include tablet {
-            font-size: 24px;
+            justify-content: flex-end;
+            font-size: 20px;
             line-height: 1.2;
-            margin-bottom: 32px;
-            margin-left: auto;
-            width: 434px;
-            padding: 18px 38px;
-           
+            gap: 16px;
         }
 
         @include desktop {
-         
+            margin-right: 114px;
+            
+        }
+            @include mobile {
+            margin-bottom: 32px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $colorAccentYellow;
+            fill: $colorAccentYellow;
+            
         }
     }
 
     &__icon {
-        display: block;
-        width: 24px;
-        height: 24px;
-        fill: currentColor;
+        transition: fill $cubic;
     }
-
-    
-    &__box {
-        @include tablet {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 80px;
-        }
-
-        @include desktop {
-            gap: 159px;
-        }
-    }
-
-    &__subdiscription {
-        @extend .amenities__discription;
-
-        @include tablet {
-            width: 757px;
-            
-        }
-    }
-
-    &__discription-additional {
-        @extend .amenities__discription;
-
-        @include tablet {
-            width: 450px;
-        }
-
-        @include desktop {
-            width: 495px;
-        }
-    }
-
-    &__box-second {
-        @include tablet {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        @include  desktop {
-            // width: 200px;
-            //     position: relative;
-            //     margin-left: 572px;
-            //     text-align: right;
-            gap: 64px;
-          
-        }
-    }
-}
-
-
-.link__amenities {
-    
-    font-weight: 500;
-    line-height: 1.21;
-    color: $colorBrown;
-
-    display: flex;
-    align-items: center;
-
-    @include mobimax {
-        font-size: 16px;
-        gap: 8px;
-        margin-left: 16px;
-    }
-
-    @include mobile {
-        margin-left: 16px;
-        font-size: 16px;
-        gap: 16px;
-        white-space: nowrap;
-    }
-
-    @include tablet {
-        justify-content: flex-end;
-        font-size: 20px;
-        line-height: 1.2;
-        margin-left: 497px;
-    }
-
-    @include desktop {
-        // position: relative;
-      
-        // margin-left: 563px;
-        width: 500px;
-        
-            margin-left: 500px;
-    }
-        transition: color 250ms linear;
-        
-    
-        &:hover,
-        &:focus {
-        color: $colorAccentYellow;
-}
-}
-
-.button__wrap {
-    // width: 200px;
-    // position: relative;
-    // margin-left: 572px;
-    // text-align: right;
-    margin-bottom: 32px;
-    
-}
-.button span{
-    text-transform: uppercase;
 }
