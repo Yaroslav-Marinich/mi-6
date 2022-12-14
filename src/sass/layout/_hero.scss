@@ -1,137 +1,146 @@
 .hero {
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
 
-    padding-top: 129px;
-    padding-bottom: 20px;
+  padding-top: 181px;
+  padding-bottom: 20px;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)), url(../images/main/hero/hero-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: $colorBlack;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/main/hero/hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $colorBlack;
 
-    @include tablet {
-        padding-top: 88px;
-        padding-bottom: 15px;
-    }
-    @include display {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
+  @include tablet {
+    padding-top: 188px;
+    padding-bottom: 15px;
+  }
+  @include desktop {
+    padding-top: 164px;
+    padding-bottom: 65px;
+  }
 }
 
 .hero__title {
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    margin-bottom: 24px;
+  font-size: 96px;
+  margin-bottom: 24px;
 
-    @include tablet {
-        margin-bottom: 16px;
-    }
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 128px;
+  }
 }
 
 .hero__subtitle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
 
-    color: $colorWhite;
+  color: $colorWhite;
+  margin-bottom: 40px;
+
+  @include tablet {
     margin-bottom: 56px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
 
-    @include tablet {
-        margin-bottom: 56px;
-    }
+  @include desktop {
+    margin-bottom: 64px;
+  }
 }
 
 .hero__text {
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.15;
+  font-family: 'Times New Roman';
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $colorWhite;
+  margin-bottom: 113px;
+
+  @include tablet {
+    margin-bottom: 137px;
+    font-size: 36px;
+    line-height: 1.14;
     letter-spacing: 0.05em;
-    text-transform: uppercase;
-
-    color: $colorWhite;
-    margin-bottom: 113px;
-
-    @include tablet {
-        margin-bottom: 145px;
-    }
+  }
 }
 
 .hero__bloc-btn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    @include tablet {
-        display: flex;
-        gap: 40px;
-        justify-content: flex-end;
-    }
+  @include tablet {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+  }
 }
 
 .hero__btn:not(:last-child) {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    @include tablet {
-        margin-bottom: 0;
-    }
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .hero__block {
-    position: absolute;
-    top: 0;
-    right: 15px;
+  position: absolute;
+  top: 64px;
+  right: 15px;
 
-    @include tablet {
-        position: static;
-    }
+  @include tablet {
+    position: static;
+  }
 }
 
 .hero__end {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .hero__contact {
-    @include font(400, 12px, 1.2, 0.01em);
-    color: $colorTextAddressHeader;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-    text-align: left;
+  @include font(400, 12px, 1.2, 0.01em);
+  color: $colorTextAddressHeader;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  text-align: left;
 
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    width: 210px;
-    height: 47px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 210px;
+  height: 47px;
+
+  @include tablet {
+    width: 285px;
+  height: 56px;
+ @include font(null, 16px, 1.25, null);
+  }
 }
 
 .hero__icon {
-    fill: $colorAccentYellow;
-    margin-left: 11px;
+  fill: $colorAccentYellow;
+  margin-left: 11px;
 }
 
 .hero__social {
-    display: flex;
-    gap: 20px;
-    margin-top: 58px;
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
 
-    @include tablet {
-        margin-top: 25px;
-    }
+  @include tablet {
+    margin-top: 25px;
+  }
 
-    @include desktop {
-        display: none;
-    }
+  @include desktop {
+    display: none;
+  }
 }
