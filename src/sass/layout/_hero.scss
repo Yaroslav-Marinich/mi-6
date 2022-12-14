@@ -1,4 +1,5 @@
 .hero {
+<<<<<<< Updated upstream
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -182,6 +183,33 @@
     @include desktop {
         display: none;
     }
+=======
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/main/hero/hero-mob.jpg');
+      @include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../images/main/hero/hero-mob-2x.jpg');
+      }
+
+      @include tablet {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../images/main/hero/hero-tab.jpg');
+            @include retina {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                  url('../images/main/hero/hero-tab-2x.jpg');
+              }
+      }
+
+        @include desktop {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../images/main/hero/hero-desk.jpg');
+
+            @include retina {
+              background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../images/main/hero/hero-desk-2x.jpg');
+            }
+      }
+>>>>>>> Stashed changes
 }
 
 // Hero restaurant
