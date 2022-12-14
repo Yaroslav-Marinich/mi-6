@@ -185,13 +185,14 @@
   height: 100%;
 
   @include mobilemax {
-    padding-bottom: 56px;
+    padding-bottom: 42px;
   }
 
   .slick-list {
+    overflow: visible;
+
     @include mobilemax {
-      padding: 32px;
-      padding-left: 90px;
+      padding: 32px 0 28px 90px;
     }
 
     @include tablet {
@@ -229,7 +230,7 @@
 
   .slick-prev,
   .slick-next {
-    transform: translate(-10px, -50%);
+    transform: translate(-10px, -8px);
 
     @include tablet {
       transform: translate(337px, -50%);
@@ -247,6 +248,15 @@
   .slick-prev:before {
     background: url('../images/cil_arrow-left32.svg') no-repeat 0 0 / 32px 32px;
   }
+
+  // .slick-slide {
+  //   display: none;
+  // }
+
+  // .slick-active {
+  //   display: block;
+  //   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  // }
 }
 
 .room-luxe__slide {
