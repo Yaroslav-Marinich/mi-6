@@ -1,0 +1,222 @@
+.about-our-rest {
+  background-color: $colorBgLemon;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+}
+
+.about-rest__slogan {
+  margin-bottom: 13px;
+  font-family: 'Times New Roman';
+  @include font(400, 20, none, 0);
+  color: $colorTextSecondary;
+
+  @include tablet {
+    margin-bottom: 4px;
+    font-size: 32px;
+  }
+}
+
+.restaurant-logo {
+  color: $colorTextAddressMobTab;
+  margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+}
+
+.rest-card {
+  position: relative;
+  display: flex;
+}
+
+.rest-card:first-child {
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 338px;
+  }
+
+  @include desktop {
+    margin-bottom: 350px;
+  }
+
+  .rest-card__description {
+    width: 258px;
+    margin-bottom: 28px;
+    color: $colorTextPrimary;
+
+    @include tablet {
+      width: 439px;
+      margin-bottom: 0;
+    }
+
+    @include desktop {
+      width: 518px;
+    }
+  }
+
+  .rest-card__photo {
+    margin-left: auto;
+
+    @include tablet {
+      z-index: 5;
+      position: absolute;
+      right: 65px;
+      top: -286px;
+    }
+
+    @include desktop {
+      right: 95px;
+      top: -286px;
+    }
+  }
+}
+
+.rest-card:last-child {
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 154px;
+  }
+
+  @include desktop {
+    margin-bottom: 124px;
+  }
+
+  .rest-card__description {
+    padding-bottom: 20px;
+    max-width: 163px;
+    color: $colorBrown;
+
+    @include tablet {
+      max-width: 100%;
+      width: 312px;
+      padding-bottom: 0;
+      margin-left: auto;
+      margin-right: 220px;
+    }
+
+    @include desktop {
+      margin-right: 305px;
+    }
+  }
+
+  .rest-card__photo {
+    @include tablet {
+      position: absolute;
+      left: 0;
+      transform: translateY(-6px);
+    }
+
+    @include desktop {
+      top: -188px;
+      transform: translateY(1px);
+    }
+  }
+}
+
+.rest-card__description {
+  @include font(600, 12, 1.25, 0.02);
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.rest-card__photo {
+  background: $colorBgImage;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.rest-slider-box {
+  @include mobile {
+    padding-left: 69px;
+  }
+
+  @include tablet {
+    padding-left: 0;
+    padding-right: 13px;
+  }
+
+  @include desktop {
+    padding-right: 0;
+  }
+}
+
+.rest-slider {
+  margin-right: -15px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+  @include tablet {
+    width: 428px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  @include desktop {
+    width: 530px;
+  }
+
+  .slick-track {
+    column-gap: 24px;
+    display: flex;
+
+    @include tablet {
+      column-gap: 40px;
+    }
+
+    @include desktop {
+      height: 245px;
+    }
+  }
+}
+
+.rest-slide {
+  display: block;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.slider-arrows {
+  display: inline-flex;
+  width: 100%;
+  gap: 32px;
+  margin-top: 20px;
+  justify-content: flex-end;
+  padding-right: 2px;
+
+  @include tablet {
+    margin-top: 32px;
+  }
+
+  @include desktop {
+    margin-top: 40px;
+  }
+}
+
+.right-arrow,
+.left-arrow {
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/slider-arrow.svg);
+  background-size: cover;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+}
