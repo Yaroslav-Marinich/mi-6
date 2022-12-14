@@ -181,7 +181,7 @@
 
 .room-luxe__slider {
   display: flex;
-  width: 100%;
+  width: 120%;
   height: 100%;
 
   @include mobilemax {
@@ -189,19 +189,24 @@
   }
 
   .slick-list {
-    overflow: visible;
-
     @include mobilemax {
       padding: 32px 0 28px 90px;
+      margin-left: -215px;
     }
 
     @include tablet {
-      max-height: 194px;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      margin-top: -28px;
+      // max-height: 194px;
       min-width: 428px;
+
+      padding-left: 28px;
+      margin-left: -28px;
     }
 
     @include desktop {
-      max-height: 254px;
+      // max-height: 254px;
       min-width: 548px;
     }
   }
@@ -249,14 +254,16 @@
     background: url('../images/cil_arrow-left32.svg') no-repeat 0 0 / 32px 32px;
   }
 
-  // .slick-slide {
-  //   display: none;
-  // }
+  .slick-slide {
+    opacity: 0;
+    transition: opacity $transDuration $cubic;
+  }
 
-  // .slick-active {
-  //   display: block;
-  //   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  // }
+  .slick-active {
+    opacity: 1;
+
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .room-luxe__slide {
