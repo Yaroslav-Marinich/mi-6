@@ -189,10 +189,18 @@
   
   .slick-prev {
     left: 0;
+    @include tablet {
+      transform: translate(1725%, -50%);
+    }
+    // transform: translate(1700%, -50%);
   }
   
   .slick-next {
     left: 64px;
+    @include tablet {
+      transform: translate(1725%, -50%);
+    }
+    // transform: translate(1700%, -50%);
   }
   
   .slick-next:before,
@@ -227,3 +235,6 @@
     min-width: 870px !important;
   }
   
+  .slick-prev, .slick-next {
+
+  }
