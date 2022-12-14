@@ -50,6 +50,10 @@
     top: -32px;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
+
+  @include desktop {
+    right: 185px;
+  }
 }
 
 .hotel-wrap-bottom {
@@ -140,9 +144,9 @@
 
 .room-wrap-bottom {
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 16px;
+  padding-left: 80px;
   @include tablet {
     margin-bottom: 81px;
   }
