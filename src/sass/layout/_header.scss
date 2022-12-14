@@ -2,6 +2,7 @@
     position: absolute;
     z-index: 1;
     
+    width: 100%;
     height: 64px;
     padding-top: 16px;
     padding-bottom: 9px;
@@ -164,6 +165,7 @@ display: none;
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 60px;
 }
 }
 
