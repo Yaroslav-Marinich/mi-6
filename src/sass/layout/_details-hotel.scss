@@ -54,22 +54,32 @@
   }
   
   .details-hotel__wrap {
-    width: 259px;
+    max-width: 260px;
     // margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: end;
+    // display: flex;
+    // justify-content: flex-end;
+    // flex-direction: column;
+    // align-items: end;
     // align-content: flex-end;
     margin-bottom: 48px;
-    margin-left: 32px;
+    // margin-left: 32px;
+    padding-left: 17px;
     @include tablet {
-      margin-left: 90px;
-      width: 610px;
+      // margin-left: 90px;
+      // width: 610px;
+      max-width: 699px;
+      padding-left: 150px;
     }
     @include desktop {
-      margin-left: 250px;
+      // margin-left: 250px;
+      max-width: 890px;
+      padding-left: 295px;
     }
+  }
+
+  .details-hotel__container {
+    padding-left: 52px;
+    padding-right: 52px;
   }
 
   // .menu.revers {
@@ -77,18 +87,24 @@
   // }
 
   .details-hotel__logo {
+    display: block;
+    text-align: right;
     margin-bottom: 12px;
+    position: relative;
+    right: -0.3em;
     @include tablet {
       margin-bottom: 16px;
     }
   }
 
   .details-hotel__title {
+    // display: block;
+    text-align: right;
     margin-bottom: 20px;
-    padding-right: 12px;
+    // padding-right: 12px;
     @include tablet {
       margin-bottom: 8px;
-      padding-right: 9px;
+      // padding-right: 9px;
     }
   }
 
@@ -97,17 +113,17 @@
   // }
 
   .details-hotel__text {
-    display: block;
-    width: 259px;
-    font-family: 'Montserrat';
-    font-style: normal;
+    // display: block;
+    // width: 259px;
+    // font-family: 'Montserrat';
+    // font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $colorTextHotel;
     @include tablet {
-      width: 610px;
+      // width: 610px;
       font-size: 16px;
     }
   }
@@ -203,9 +219,11 @@
       gap: 32px;
     }
     @media screen and (min-width: 1280px) {
-      gap: 87px;
+      gap: 88px;
     }
   }
 
-  
+  .slick-list {
+    min-width: 870px !important;
+  }
   
