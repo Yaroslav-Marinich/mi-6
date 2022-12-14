@@ -189,17 +189,32 @@
   
   .slick-prev {
     left: 0;
+    transform: translate(570%, -50%);
+    @include mobile {
+      transform: translate(590%, -50%);
+    }
     @include tablet {
       transform: translate(1725%, -50%);
+    }
+    @include desktop {
+      transform: translate(2450%, -50%);
     }
     // transform: translate(1700%, -50%);
   }
   
   .slick-next {
     left: 64px;
+    transform: translate(570%, -50%);
+    @include mobile {
+      transform: translate(590%, -50%);
+    }
     @include tablet {
       transform: translate(1725%, -50%);
     }
+    @include desktop {
+      transform: translate(2450%, -50%);
+    }
+
     // transform: translate(1700%, -50%);
   }
   
