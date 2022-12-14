@@ -1,0 +1,170 @@
+.modal-room {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  padding: 60px 15px;
+  background-color: $colorBgLemon;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $transDuration $cubic;
+  @include mobile {
+    width: 414px;
+  }
+  @include tablet {
+    width: 712px;
+    height: 638px;
+    padding: 60px;
+  }
+}
+
+.modal-room__title {
+  font-family: 'Times New Roman', sans;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+  color: $colorBlack;
+  text-align: center;
+  margin-bottom: 40px;
+  @include tablet {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
+
+.modal-room__input-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 12px;
+    width: 288px;
+  }
+}
+
+.modal-room__modal-label {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $colorBrown;
+  margin-left: 12px;
+}
+
+.modal-room__modal-input,
+.modal-room__modal-option {
+  width: 95%;
+  @include mobile {
+    width: 384px;
+  }
+  height: 54px;
+  border: 1px solid $colorBrown;
+  padding-left: 12px;
+  padding-right: 15px;
+  margin-bottom: 8px;
+  font-family: 'Times New Roman', sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: $colorTextModal;
+  background-color: $colorBgLemon;
+  transition: border-color $transDuration $cubic;
+
+  @include tablet {
+    height: 64px;
+    width: 288px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.modal-room__modal-input:focus {
+  box-shadow: 1px 1px 15px 1px $colorTextSecondary;
+}
+
+.modal-room__close-icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.modal-room__btn--close {
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  color: $colorBlack;
+  transition: color $transDuration $cubic, transform $transDuration $cubic;
+}
+.modal-room__btn--close:hover,
+.modal-room__btn--close:focus {
+  color: $colorBrown;
+  transform: rotate(90deg);
+}
+
+.modal-room__custom-select {
+  background-image: url(../images/ep_arrow-down-bold.svg);
+  background-position: top 15px right 15px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  fill: $colorBrown;
+
+  @include tablet {
+    background-position: top 20px right 20px;
+  }
+  margin-bottom: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+// Приховати іконку календаря
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.modal-room__button {
+  margin-top: 40px;
+  @include tablet {
+    margin-top: 28px;
+  }
+}
+
+.modal-room__wrapper,
+.modal-room__input-wrap,
+.modal-room__input-box {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+.modal-room__input-wrap--category {
+  @include tablet {
+    width: 100%;
+    justify-content: right;
+    display: flex;
+    gap: 16px;
+  }
+}
+
+// .modal-room__custom-date {
+//   background-image: url(../images/ep_arrow-down-bold.svg);
+//   background-position: top 20px right 15px;
+//   background-size: 24px 24px;
+//   background-repeat: no-repeat;
+//   fill: $colorBrown;
+
+//   @include tablet {
+//     background-position: top 20px right 20px;
+//   }
+// }
