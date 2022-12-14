@@ -1,0 +1,183 @@
+.room-for-3__container {
+  position: relative;
+}
+
+.room-for-3__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  @include desktop {
+    margin-right: calc(142px - 85px);
+  }
+}
+
+.room-for-3__pre-title {
+  font-family: 'Times New Roman';
+  @include font(400, 20px, null, null);
+  margin-bottom: 8px;
+  color: $colorTextHotel;
+  @include tablet {
+    @include font(400, 32px, 1.16, null);
+    margin-bottom: 4px;
+  }
+}
+
+.room-for-3__logo {
+  margin-bottom: 32px;
+  margin-right: -0.3em;
+  color: $colorLogoGray;
+  @include tablet {
+    margin-bottom: 62px;
+    @include font(null, 64px, 1.08, null);
+  }
+  @include desktop {
+    margin-bottom: 72px;
+  }
+}
+
+.room-for-3__title {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  @include tablet {
+    margin-bottom: 16px;
+    margin-right: calc(90px - 47px);
+    @include font(null, 30px, 1.13, null);
+  }
+  @include desktop {
+    margin-right: 0;
+    margin-bottom: 24px;
+    @include font(null, 36px, 1.14, null);
+  }
+}
+
+.room-for-3__text {
+  margin-right: calc(74px - 15px);
+  width: 242px;
+  margin-bottom: 32px;
+  @include font(600, 12px, 1.25, 0.02em);
+  @include tablet {
+    width: 400px;
+    margin-right: calc(67px - 47px);
+    margin-bottom: 169px;
+    @include font(null, 16px, null, null);
+  }
+  @include desktop {
+    margin-right: calc(195px - 85px - 57px);
+    margin-bottom: 188px;
+  }
+}
+
+.room-for-3__center {
+  display: inline-block;
+  margin-bottom: 32px;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  @include tablet {
+    position: absolute;
+    top: -96px;
+    left: 112px;
+    margin-bottom: 48px;
+  }
+  @include desktop {
+    top: -104px;
+    left: 180px;
+  }
+}
+
+.room-ror-3__slider-wrap {
+  position: relative;
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.room-for-3__slider {
+  margin-bottom: 72px;
+  overflow: hidden;
+  margin-left: 115px;
+  @include tablet {
+    margin-bottom: 0;
+    margin-left: 266px;
+  }
+  @include desktop {
+    margin-left: 326px;
+  }
+}
+
+.room-for-3__bathroom {
+  display: flex;
+  gap: 16px;
+  @include tablet {
+    gap: 40px;
+  }
+}
+
+.room-for-3__bathroom img {
+  border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.room-for-3-btn__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  @include tablet {
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+
+.room-for-3-btn__details {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 65px;
+}
+
+.room-for-3-svg {
+  bottom: 35%;
+  right: 0%;
+  justify-content: flex-end;
+  display: flex;
+  position: absolute;
+  fill: $colorBlack;
+  cursor: pointer;
+  @include tablet {
+    bottom: -35%;
+    right: 35%;
+    fill: $colorBlack;
+  }
+  @include desktop {
+    bottom: -28%;
+    right: 40%;
+  }
+}
+
+.room-for-3-svg__left {
+  margin-right: 34px;
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}
+
+.room-for-3-svg__right {
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}
+
+// SLICK
+
+.slick-track {
+  display: flex;
+  gap: 16px;
+  @include tablet {
+    gap: 40px;
+  }
+  @include desktop {
+    gap: 40px;
+  }
+}

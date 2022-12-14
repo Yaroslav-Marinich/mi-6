@@ -66,3 +66,17 @@ $('.rest-slider').slick({
   prevArrow: '<button type="button" class="left-arrow"></button > ',
   nextArrow: '<button type="button" class="right-arrow"></button>',
 });
+
+// SLICK SLIDER ROOM
+
+$('.room-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  initialSlide: 0,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  variableWidth: true,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next'),
+});

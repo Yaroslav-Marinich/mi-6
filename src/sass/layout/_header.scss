@@ -1,5 +1,9 @@
 .header {
-    background-color: #383535;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+
     height: 64px;
     padding-top: 16px;
     padding-bottom: 9px;
@@ -25,14 +29,20 @@
     line-height: 1.08;
     letter-spacing: 0.3em;
 
-    // margin-right: 52px;
+    margin-right: 52px;
 
     color: $colorLogoWhite;
+    transition: color $transDuration $cubic;
 
     @include tablet {
         font-size: 40px;
         line-height: 1.1;
     }
+}
+
+.header-logo:hover,
+.header-logo:focus {
+    color: $colorAccentYellow;
 }
 
 
@@ -156,6 +166,7 @@ display: none;
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 60px;
 }
 }
 
