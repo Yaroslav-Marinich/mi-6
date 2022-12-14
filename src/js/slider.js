@@ -10,11 +10,14 @@ $('.autoplay').slick({
 // ROOMS PAGE SLIDER - SLICK SCRIPT
 
 $('.fade').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   fade: true,
   cssEase: 'linear',
+  arrows: true,
+  prevArrow: '<div class="luxe-left__arrow"></div>',
+  nextArrow: '<div class="luxe-right__arrow"></div>',
 });
 
 // SLICK SLIDER FOR VARIABLE WIDTH
@@ -37,4 +40,43 @@ $('.autoplay-mini').slick({
   variableWidth: true,
   autoplay: true,
   autoplaySpeed: 2000,
+});
+
+// Restaurant page -> Kitchen Section -> Slider
+$('.kitchen-slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  infinite: true,
+  arrows: true,
+  appendArrows: '.slider-arrows',
+  prevArrow: '<button type="button" class="left-arrow"></button > ',
+  nextArrow: '<button type="button" class="right-arrow"></button>',
+});
+
+// SLICK-SLIDER REST
+
+$('.rest-slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  infinite: true,
+  arrows: true,
+  appendArrows: '.slider-arrows',
+  prevArrow: '<button type="button" class="left-arrow"></button > ',
+  nextArrow: '<button type="button" class="right-arrow"></button>',
+});
+
+// SLICK SLIDER ROOM
+
+$('.room-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  initialSlide: 0,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  variableWidth: true,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next'),
 });
