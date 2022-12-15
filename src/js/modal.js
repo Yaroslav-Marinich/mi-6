@@ -1,24 +1,23 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openmodal2lBtn: document.querySelector('[data-modal2l-open]'),
+    closemodal2lBtn: document.querySelector('[data-modal2l-close]'),
+    modal2l: document.querySelector('[data-modal2l]'),
     body: document.querySelector('body'),
-    modalList: document.querySelector('.mob-modal__nav'),
+    modal2lList: document.querySelector('.mob-modal2l__nav'),
   };
 
-  refs.openModalBtn.addEventListener('click', togglemodal);
-  refs.closemodalBtn.addEventListener('click', togglemodal);
-  refs.modalList.addEventListener('click', removemodal);
+  refs.openmodal2lBtn.addEventListener('click', togglemodal2l);
+  refs.closemodal2lBtn.addEventListener('click', togglemodal2l);
+  refs.modal2lList.addEventListener('click', removemodal2l);
 
-  function togglemodal() {
-    refs.modal.classList.toggle('is-hidden');
+  function togglemodal2l() {
+    refs.modal2l.classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   }
 
-  function removemodal() {
-    refs.modal.classList.add('is-hidden');
+  function removemodal2l() {
+    refs.modal2l.classList.add('is-hidden');
     refs.body.classList.remove('no-scroll');
   }
 })();
-
