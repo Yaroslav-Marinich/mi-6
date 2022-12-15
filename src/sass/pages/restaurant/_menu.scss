@@ -163,10 +163,7 @@
 }
 
 .menu__button {
-  background-color: $colorBtnBlack;
-
-  &:hover,
-  &:focus {
-    border-color: $colorAccentYellow;
+  @include mobilemax {
+    max-width: 100%;
   }
 }
