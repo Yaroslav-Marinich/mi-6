@@ -111,7 +111,7 @@
 }
 
 .kitchen-card__description {
-  @include font(600, 12, 1.25, 0.02);
+  @include font(600, 12, 1.25, null);
   @include tablet {
     font-size: 16px;
     line-height: 20px;
