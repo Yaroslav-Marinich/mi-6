@@ -11,6 +11,18 @@
 
 .footer__container{
     display: flex;
+
+@include mobile {
+    padding-right: 33px;
+    padding-left: 59px;
+} 
+    
+@include tablet {
+    align-items: center;
+    justify-content: center;
+    padding-right: 154px;
+    padding-left: 122px;
+}
          
 }
 
@@ -32,15 +44,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 66%;
     color: inherit;
+    font-size: 40px;
+    margin-right: 30px;
+    
 
     transition: color $transDuration $cubic;
 
+    @include mobile {
+        margin-right: 85px;
+    }
+
     @include tablet {
-        width: 50%;
         font-size: 64px;
         line-height: 1.08;
+        margin-right: 163px;
     }
 }
 
@@ -62,10 +80,15 @@
 .footer__menu-link {
     
     color: inherit;
-
     transition: color $transDuration $cubic;
-    
-    @include font (500, 20px, 1.2, .02);
+
+    @include font (500, 16px, 1.2, .02);
+
+    @include mobile {
+        font-size: 20px;
+        
+    }
+        
 
 }
 
@@ -76,7 +99,13 @@
 
 .footer__social{
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    
+    @include mobile {
+        gap: 20px;
+    }
+    
+
     @include tablet {
         flex-direction: column-reverse;
         gap: 12px;
@@ -121,6 +150,7 @@
 }
 
 .icon-social__icon {
+    display: block;
     fill: currentColor;
     
 }
