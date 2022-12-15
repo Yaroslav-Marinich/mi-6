@@ -196,7 +196,7 @@
   background: url('../images/vector-left.svg') no-repeat 0 0 / 32px 32px;
 }
 
-.slick-track {
+.detail-rest__slider .slick-track {
   display: flex;
   gap: 20px;
   @include tablet {
