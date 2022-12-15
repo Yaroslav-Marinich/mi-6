@@ -1,0 +1,2 @@
+!function(){var e={openmodPriceBtn:document.querySelector("[data-modPrice2r-open]"),closemodPriceBtn:document.querySelector("[data-modPrice2r-close]"),modPrice:document.querySelector("[data-modPrice2r]"),body:document.querySelector("body")};function o(){e.modPrice.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openmodPriceBtn.addEventListener("click",o),e.closemodPriceBtn.addEventListener("click",o)}();
+//# sourceMappingURL=hotel.b4cb17cb.js.map
