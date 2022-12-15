@@ -1,12 +1,16 @@
 .room-section {
-  position: relative;
 }
 
+// ------ верхній блок
+
 .hotel-wrap-top {
+  position: relative;
   @include tablet {
     display: flex;
   }
 }
+
+// ----- текстовий блок
 
 .room-wrap-top {
   @include tablet {
@@ -16,7 +20,7 @@
   }
 
   @include desktop {
-    margin-bottom: 188px;
+    margin-bottom: 140px;
   }
 }
 
@@ -34,6 +38,8 @@
   }
 }
 
+// --------- головна картинка
+
 .room-wrap-center {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -45,19 +51,16 @@
   }
 
   @include tablet {
-    position: relative;
+    position: absolute;
     top: -96px;
-    left: 37px;
+    left: 50%;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  }
-
-  @include desktop {
-    left: 149px;
   }
 }
 
+// ---------- нижній блок
+
 .hotel-wrap-bottom {
-  // position: relative;
   @include tablet {
     display: flex;
     align-items: center;
@@ -65,15 +68,15 @@
   }
 }
 
+// ------------ блок слайдера
+
 .room-slider-thumb {
-  // overflow: hidden;
   @include mobilemax {
     position: relative;
     top: 0;
-    left: -15px;
+    left: -135px;
     padding-top: 32px;
-    padding-right: 100px;
-    padding-bottom: 72px;
+    padding-bottom: 44px;
   }
   @include tablet {
     padding-top: 48px;
@@ -82,16 +85,14 @@
   }
 
   @include desktop {
-    padding-bottom: 0px;
+    padding-bottom: 40px;
   }
 }
 
+//  ----- слайдер
+
 .hotel-room-slider {
-  display: flex;
-  gap: 16px;
-  flex-direction: row-reverse;
   @include tablet {
-    gap: 40px;
     max-width: 428px;
   }
 
@@ -111,12 +112,24 @@
 }
 
 .hotel-room-slider .slick-list {
+  padding: 30px;
+  margin: -30px;
   @include mobilemax {
-    border-radius: 2px;
-    box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
-    padding-left: 90px;
+    // border-radius: 2px;
+    // box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
+    // padding-left: 90px;
   }
 }
+
+.hotel-room-slider .slick-track {
+  display: flex;
+  gap: 16px;
+  @include tablet {
+    gap: 40px;
+  }
+}
+
+//  ------ стрілки слайдера
 
 .room-svg {
   cursor: pointer;
@@ -126,16 +139,16 @@
   fill: $colorBlack;
 
   @include mobilemax {
-    left: 16px;
+    right: -136px;
   }
 
   @include tablet {
-    top: 40px;
+    top: 32px;
     left: 331px;
   }
 
   @include desktop {
-    top: 48px;
+    top: 40px;
     left: 450px;
   }
 }
@@ -159,14 +172,13 @@
   }
 }
 
+//  ----- блок кнопок
+
 .room-wrap-bottom {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding-left: 80px;
-  @include tablet {
-    margin-bottom: 81px;
-  }
 }
 
 .hotel-link {
