@@ -74,7 +74,7 @@
 .kitchen-card:last-child {
   align-items: center;
   column-gap: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 0px;
 
   @include tablet {
     margin-bottom: 154px;
@@ -129,7 +129,7 @@
   display: inline-flex;
   width: 100%;
   gap: 32px;
-  margin-top: 20px;
+  margin-top: -12px;
   justify-content: flex-end;
   padding-right: 2px;
   @include tablet {
@@ -188,6 +188,7 @@
     }
     @include desktop {
       height: 245px;
+      min-height: 335px;
     }
   }
 }
@@ -195,7 +196,7 @@
 .kitchen-slide {
   display: block;
   border-radius: 2px;
-  padding: 60px 0;
+  padding: 32px 0;
   picture {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   }
