@@ -1,5 +1,14 @@
 .room-section {
   position: relative;
+
+  .slick-track {
+    display: flex;
+    gap: 16px;
+
+    @include tablet {
+      gap: 40px;
+    }
+  }
 }
 
 .hotel-wrap-top {
