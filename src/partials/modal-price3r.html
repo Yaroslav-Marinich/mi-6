@@ -1,59 +1,60 @@
-<div class="backdrop is-hidden" data-modal >
-    <!-- is-hidden -->
-    <div class="modal-price">
-        <button type="button" class="modal-price__btn-close" data-price3r-modal-close>
-        <svg class="modal-price__icon-close" width="24" height="24">
-            <use href="./images/sprite.svg#icon-close"></use>
-        </svg>
-        </button>
-  
-        <p class="modal-price__title">ЦІНИ НА НОМЕР</p>
-        <p class="modal-price__sub-title">Трьохмісний номер</p>
-        
-        <form class="form form__modal-price">
-          <p class="modal-price__text">Категорія номеру</p>
-          <div class="container__form-price">
-            <div class="wrapper-input">
-             <div class="modal-price__input-wrap">
-                <input
-                  type="number"
-                  id="number-cast"
-                  name="number-cast"              
-                  class="modal-price__input input-cast"
-                  minlength="1"
-                  placeholder="1"
-                  min=1
-                  pattern="^[0-9]" title="Must be number."
-                  value=2
-                  required
-                />
-              </div>
-  
-              <label for="number-cast" class="modal-price__label-input">Кількість ночей</label>
-            </div>
-    
-            <div class="wrapper-input">
-  
-              <div class="modal-price__input-wrap">
-                <input
-                  type="number"
-                  id="number-cost"
-                  name="number-cost"
-                  class="modal-price__input"
-                  minlength="3"
-                  placeholder="1000"
-                  min=100
-                  value=1000
-                  required
-                />
-              </div>
-              <label for="number-cost" class="modal-price__label">Завдаток грн</label>
-            </div>
+<div class="backdrop is-hidden" data-modPrice3r>
+  <!-- is-hidden -->
+  <div class="modal-price">
+    <button type="button" class="modal-price__btn-close" data-modPrice3r-close>
+      <svg class="modal-price__icon-close" width="24" height="24">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-price__title">ЦІНИ НА НОМЕР</p>
+    <p class="modal-price__sub-title">Трьохмісний номер</p>
+
+    <form class="form form__modal-price">
+      <p class="modal-price__text">Категорія номеру</p>
+      <div class="container__form-price">
+        <div class="wrapper-input">
+          <div class="modal-price__input-wrap">
+            <input
+              type="number"
+              id="numberCast3"
+              name="numberCast3"
+              class="modal-price__input input-cast"
+              minlength="1"
+              placeholder="2"
+              min="1"
+              pattern="^[0-9]"
+              title="Must be number."
+              value="2"
+              required
+            />
           </div>
-  
-          
-          <button type="submit" class="modal__btn">ЗАБРОНЮВАТИ НОМЕР</button>
-        </form>
-    </div>
+
+          <label for="numberCast" class="modal-price__label-input"
+            >Кількість ночей</label
+          >
+        </div>
+
+        <!-- wrapper-input wrapper-last -->
+        <div class="wrapper-input">
+          <div class="modal-price__input-wrap">
+            <input
+              type="number"
+              id="numberСost3"
+              name="numberСost3"
+              class="modal-price__input"
+              minlength="3"
+              placeholder="1000"
+              min="100"
+              value="2000"
+              required
+            />
+          </div>
+          <label for="number-cost" class="modal-price__label">грн</label>
+        </div>
+      </div>
+
+      <button type="submit" class="modal__btn">ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
   </div>
-  
+</div>
