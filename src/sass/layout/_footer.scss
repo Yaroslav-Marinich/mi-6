@@ -11,7 +11,8 @@
 
 .footer__container{
     display: flex;
-
+    justify-content: center;
+    
 @include mobile {
     padding-right: 33px;
     padding-left: 59px;
