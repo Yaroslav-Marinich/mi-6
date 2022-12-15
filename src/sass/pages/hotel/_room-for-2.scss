@@ -99,15 +99,19 @@
   @include desktop {
     max-width: 548px;
   }
-}
 
-.hotel-room-slider .slic-active {
-  opacity: 1;
-  border-radius: 2px;
-  box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
+  .slic-active {
+    opacity: 1;
+    border-radius: 2px;
+    box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
 
-  @include tablet {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    @include tablet {
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .slic-slide {
+    opacity: 0;
   }
 }
 
@@ -115,9 +119,6 @@
   padding: 30px;
   margin: -30px;
   @include mobilemax {
-    // border-radius: 2px;
-    // box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
-    // padding-left: 90px;
   }
 }
 
