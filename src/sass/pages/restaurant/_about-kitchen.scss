@@ -194,6 +194,9 @@
 
 .kitchen-slide {
   display: block;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  padding: 60px 0;
+  picture {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
 }
