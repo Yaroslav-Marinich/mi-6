@@ -18,14 +18,14 @@
 .header-wrap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header-logo {
     display: block;
     font-family: 'Film P3', sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 33px;
     line-height: 1.08;
     letter-spacing: 0.3em;
 
@@ -54,7 +54,8 @@
     display: flex;
     gap: 15px;
 
-    @include mobile { gap: 26px;}
+    @include mobile { 
+        gap: 26px;}
 
     @include tablet {
         gap: 72px;

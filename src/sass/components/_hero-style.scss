@@ -23,11 +23,17 @@
 }
 
 .hero__title {
-    font-size: 96px;
-    margin-bottom: 24px;
+
+    padding: 0;
+    font-size: 66px;
     margin-right: -0.3em;
 
-    @include tablet {
+    @include mobile {
+        font-size: 96px;
+        margin-bottom: 24px;
+    }
+    
+   @include tablet {
         margin-bottom: 32px;
         font-size: 128px;
     }
@@ -55,12 +61,16 @@
 
 .hero__text {
     font-family: 'Times New Roman';
-    font-size: 32px;
+    font-size: 23px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
     color: $colorWhite;
     margin-bottom: 113px;
+
+    @include mobile {
+        font-size: 32px;
+    }
 
     @include tablet {
         margin-bottom: 137px;
@@ -119,6 +129,8 @@
     width: 210px;
     height: 47px;
 
+    transition: color $transDuration $cubic, background $transDuration $cubic;
+
     @include tablet {
         width: 285px;
         height: 56px;
@@ -126,6 +138,13 @@
         @include font(null, 16px, 1.25, null);
     }
 }
+
+.hero__contact:hover,
+.hero__contact:focus {
+    color: $colorBlack;
+    background: $colorWhite;
+}
+
 
 .hero__icon {
     fill: $colorAccentYellow;
@@ -151,5 +170,6 @@
 }
 
 .hero__social-icon {
+    display: block;
     fill: rgba(243, 198, 83, 0.7);
 }
