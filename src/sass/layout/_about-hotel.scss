@@ -1,0 +1,111 @@
+.about-hotel {
+  position: relative;
+  background-color: $colorBgLemon;
+  @include mobile {
+    padding-top: 18px;
+    padding-bottom: 72px;
+  }
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 96px;
+  }
+}
+
+.hidden-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.about-hotel__title {
+  text-align: end;
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: 23px;
+  color: $colorTextSecondary;
+  margin-bottom: 6px;
+}
+
+.about-hotel__logo {
+  text-align: end;
+  text-transform: uppercase;
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+  letter-spacing: 0.3em;
+  color: $colorTextAddressMobTab;
+  margin-bottom: 16px;
+}
+
+.about-hotel__text {
+  width: 243px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+}
+
+.about-hotel__list .about-hotel__img {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.about-hotel__img-bedroom {
+  @include tablet {
+    top: -23px;
+    left: 112px;
+  }
+}
+
+.about-hotel__list-item {
+  margin-bottom: 32px;
+
+  & .about-hotel__text {
+    margin-bottom: 28px;
+  }
+
+  &:last-child {
+    display: flex;
+    color: $colorBrown;
+  }
+}
+
+.about-hotel__box {
+  width: 163px;
+  display: flex;
+  align-items: center;
+}
+
+.about-hotel-slider {
+  display: flex;
+  position: relative;
+  padding-right: 84px;
+}
+
+.about-hotel__slider-arrows {
+  margin-top: 20px;
+}
+
+.about-hotel__left-arrow {
+  border: none;
+  margin-right: 33px;
+  background: url(../images/cil_arrow-left32.svg) 0 0 / 32px 32px no-repeat;
+}
+
+.about-hotel__right-arrow {
+  border: none;
+  background: url(../images/cil_arrow-right32.svg) 0 0 / 32px 32px no-repeat;
+}
