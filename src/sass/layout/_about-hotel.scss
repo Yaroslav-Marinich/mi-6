@@ -34,23 +34,22 @@
 }
 
 .hotel-desc__wrap {
-max-width: 242px;
+  max-width: 242px;
 
- margin-left: auto;
- text-align: left;
- margin-bottom: 28px;
+  margin-left: auto;
+  text-align: left;
+  margin-bottom: 28px;
 
- @include tablet {
- max-width: 419px;
- }
-
- @include desktop {
-  max-width: 488px;
+  @include tablet {
+    max-width: 419px;
   }
 
+  @include desktop {
+    max-width: 488px;
+  }
 }
 
-.about-hotel__slogan, {
+.about-hotel__slogan {
   text-align: right;
 }
 
@@ -89,7 +88,6 @@ max-width: 242px;
     @include tablet {
       width: 439px;
       margin-bottom: 0;
-      
     }
 
     @include desktop {
@@ -107,13 +105,13 @@ max-width: 242px;
     @include tablet {
       z-index: 5;
       position: absolute;
-      left: 30px;
-      top: -375px;
+      left: 60px;
+      top: -380px;
     }
 
     @include desktop {
       left: 95px;
-      top: -370px;
+      top: -375px;
     }
   }
 }
@@ -183,11 +181,10 @@ max-width: 242px;
   border-radius: 2px;
 }
 
-
 .hotel-slider-box {
-max-width: 428px;
-transform: translateX(-82px);
- 
+  max-width: 428px;
+  transform: translateX(-82px);
+
   @include mobile {
     padding-left: 69px;
   }
@@ -252,9 +249,11 @@ transform: translateX(-82px);
   margin-top: 20px;
   justify-content: flex-start;
   padding-right: 2px;
+  margin-left: 15px;
 
   @include tablet {
     margin-top: 32px;
+    margin-left: 0;
   }
 
   @include desktop {
