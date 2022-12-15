@@ -1,0 +1,2 @@
+!function(){var e={openmodDetTableBtn:document.querySelector("[data-modDetTable-open]"),closemodDetTableBtn:document.querySelector("[data-modDetTable-close]"),modDetTable:document.querySelector("[data-modDetTable]"),body:document.querySelector("body")};function t(){e.modDetTable.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openmodDetTableBtn.addEventListener("click",t),e.closemodDetTableBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.c78060b0.js.map

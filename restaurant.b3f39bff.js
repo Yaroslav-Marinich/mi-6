@@ -1,0 +1,2 @@
+!function(){var e={openmodMenuTableBtn:document.querySelector("[data-modMenuTable-open]"),closemodMenuTableBtn:document.querySelector("[data-modMenuTable-close]"),modMenuTable:document.querySelector("[data-modMenuTable]"),body:document.querySelector("body")};function o(){e.modMenuTable.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openmodMenuTableBtn.addEventListener("click",o),e.closemodMenuTableBtn.addEventListener("click",o)}();
+//# sourceMappingURL=restaurant.b3f39bff.js.map

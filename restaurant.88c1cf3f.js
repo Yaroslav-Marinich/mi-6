@@ -1,0 +1,2 @@
+!function(){var o={openmodRoomBtn:document.querySelector("[data-modRoom-open]"),closemodRoomBtn:document.querySelector("[data-modRoom-close]"),modRoom:document.querySelector("[data-modRoom]"),body:document.querySelector("body")};function e(){o.modRoom.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openmodRoomBtn.addEventListener("click",e),o.closemodRoomBtn.addEventListener("click",e)}();
+//# sourceMappingURL=restaurant.88c1cf3f.js.map
