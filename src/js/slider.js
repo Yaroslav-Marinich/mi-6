@@ -32,14 +32,17 @@ $('.variable-width').slick({
   variableWidth: true,
 });
 
-// SLICK-SLIDER Mini
+// about-hotel-slider
 
-$('.autoplay-mini').slick({
-  slidesToShow: 1.1,
+$('.about-hotel-slider').slick({
+  slidesToShow: 2,
   slidesToScroll: 1,
   variableWidth: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
+  infinite: true,
+  arrows: true,
+  appendArrows: '.about-hotel__slider-arrows',
+  prevArrow: '<button type="button" class="about-hotel__left-arrow"></button>',
+  nextArrow: '<button type="button" class="about-hotel__right-arrow"></button>',
 });
 
 // Restaurant page -> Kitchen Section -> Slider
