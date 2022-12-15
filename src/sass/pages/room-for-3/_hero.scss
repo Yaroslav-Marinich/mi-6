@@ -1,0 +1,279 @@
+.room-3-hero {
+  padding-top: 483px;
+  padding-bottom: 40px;
+  @include tablet {
+    padding-top: 468px;
+    padding-bottom: 64px;
+  }
+  @include desktop {
+    padding-top: 524px;
+    padding-bottom: 48px;
+  }
+
+  position: relative;
+  background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: top, center;
+  background-size: 100% 143px;
+  @include mobile {
+    background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    // background-size: 414px 143px;
+    background-size: 100% 143px;
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    // background-size: 1024px 116px;
+    background-size: 100% 116px;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    // background-size: 1280px 147px;
+    background-size: 100% 147px;
+  }
+}
+
+.room-3-hero__container {
+  @include tablet {
+    display: flex;
+    gap: 191px;
+  }
+  position: relative;
+  @include desktop {
+    gap: 371px;
+  }
+}
+
+.room-3-hero__map {
+  color: $colorTextAddressHeader;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  bottom: 589px;
+  width: 210px;
+  height: 47px;
+  @include font(400, 12px, 1.25, 0.01em);
+  padding-left: 11px;
+  @include tablet {
+    @include font(400, 16px, 1.25, 0.01em);
+    padding-left: 16px;
+    width: 285px;
+    height: 56px;
+    right: 692px;
+    bottom: -40px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.room-3-hero__map:hover,
+.room-3-hero__map:focus {
+  color: rgba(243, 198, 83, 0.7);
+  transition: color $transDuration $cubic;
+}
+
+.map__adress {
+  width: 179px;
+  height: 30px;
+  @include tablet {
+    width: 233px;
+    height: 40px;
+  }
+}
+.room-3-hero-map__icon {
+  margin-right: 13px;
+  fill: $colorAccentYellow;
+  @include tablet {
+    margin-right: 16px;
+  }
+}
+
+.room-3-hero__tittle {
+  font-family: 'Times New Roman';
+  @include font(700, 28px, 1.14, 0.05em);
+  color: $colorWhite;
+  width: 100%;
+  height: 64px;
+  @include mobile {
+    width: 325px;
+  }
+  margin-bottom: 14px;
+  @include tablet {
+    width: 507px;
+    height: 41px;
+    white-space: nowrap;
+    @include font(700, 36px, 1.14, 0.05em);
+    margin-bottom: 24px;
+  }
+}
+.room-3-hero__text {
+  @include font(700, 12px, 1.25, 0.02em);
+  color: $colorWhite;
+  width: 100%;
+  height: 61px;
+  @include mobile {
+    width: 325px;
+  }
+  margin-bottom: 30px;
+  @include tablet {
+    width: 400px;
+    @include font(700, 16px, 1.25, 0.02em);
+    margin-bottom: 0;
+    height: 83px;
+  }
+}
+
+.room-3-hero__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.room-3-hero__social {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -26px;
+  @include tablet {
+    flex-direction: row;
+    gap: 20px;
+    left: 372px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.icon-social--room3 {
+  fill: rgba(243, 198, 83, 0.7);
+  transition: fill $transDuration $cubic;
+}
+
+.icon-social--room3:hover,
+.icon-social--room3:focus {
+  fill: $colorWhite;
+}
+
+.room-3-hero_soclink {
+  width: 24px;
+  height: 24px;
+}
+.room-3-hero__button {
+  width: 232px;
+  height: 48px;
+  margin-left: 50px;
+  @include mobile {
+    margin-left: 94px;
+  }
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid $colorWhite;
+  @include font(700, 16px, 1.25, 0.02em);
+  color: $colorAccentYellow;
+  transition: color $transDuration $cubic;
+  transition: background-color $transDuration $cubic;
+  @include tablet {
+    margin-left: 0;
+    margin-top: 140px;
+  }
+  @include desktop {
+    margin-top: 82px;
+  }
+}
+
+// Slider
+
+.room-3-hero__slider {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  // max-width: 414px;
+  // @include tablet {
+  //   max-width: 1024px;
+  // }
+  // @include desktop {
+  //   max-width: 1280px;
+  // }
+}
+
+.slick-arrow {
+  z-index: 1;
+}
+
+.room-3-hero__fade > .slick-list {
+  z-index: -1;
+}
+.slider__img {
+  height: 755px;
+  @include mobile {
+    height: 740px;
+  }
+  @include tablet {
+    height: 720px;
+  }
+  @include desktop {
+    height: 720px;
+  }
+}
+
+.luxe-left__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 350px;
+  left: 15px;
+  background-image: url(../images/room/lux_arrow-left.svg);
+  width: 40px;
+  height: 40px;
+  @include tablet {
+    top: 340px;
+    left: 47px;
+  }
+  @include desktop {
+    top: 412px;
+    left: 85px;
+  }
+}
+.luxe-right__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 350px;
+  right: 15px;
+  background-image: url(../images/room/lux_arrow-right.svg);
+  width: 40px;
+  height: 40px;
+  @include tablet {
+    top: 340px;
+    right: 47px;
+  }
+  @include desktop {
+    top: 412px;
+    right: 85px;
+  }
+}
