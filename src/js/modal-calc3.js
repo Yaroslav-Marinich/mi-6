@@ -1,21 +1,21 @@
 // Калькулятор модалки 3room
 const numberCast3Input = document.querySelector('[name=numberCast3]');
-const quantityInput = document.querySelector('[name=quantity]');
-const total = document.querySelector('.total');
-const quantityLabel = document.querySelector('.quantity-label');
+const quantity3Input = document.querySelector('[name=quantity3]');
+const total3 = document.querySelector('.total3');
+const quantity3Label = document.querySelector('.quantity3-label');
 
-function calculateCost() {
+function calculateCost3() {
   const numberCast3 = numberCast3Input.value;
-  const quantity = 1000;
-  const cost = numberCast3 * quantity;
+  const quantity3 = 1000;
+  const cost3 = numberCast3 * quantity3;
 
-  console.log(cost);
+  console.log(cost3);
 
-  document.getElementById('numberСost3').value = cost.toFixed(2);
+  document.getElementById('numberСost3').value = cost3.toFixed(2);
 }
 
-calculateCost();
+calculateCost3();
 
-numberCast3Input.addEventListener('input', calculateCost);
-quantityInput.addEventListener('input', calculateCost);
-quantityInput.addEventListener('input', updateQuantityLabel);
+numberCast3Input.addEventListener('input', calculateCost3);
+quantity3Input.addEventListener('input', calculateCost3);
+quantity3Input.addEventListener('input', updateQuantity3Label);
