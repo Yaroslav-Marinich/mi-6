@@ -1,23 +1,41 @@
+// Модалка для hotel-page двохмісна
+
 (() => {
   const refs = {
-    openmodal2lBtn: document.querySelector('[data-modal2l-open]'),
-    closemodal2lBtn: document.querySelector('[data-modal2l-close]'),
-    modal2l: document.querySelector('[data-modal2l]'),
+    openmodPriceBtn: document.querySelector('[data-modPrice-open]'),
+    closemodPriceBtn: document.querySelector('[data-modPrice-close]'),
+    modPrice: document.querySelector('[data-modPrice]'),
     body: document.querySelector('body'),
-    modal2lList: document.querySelector('.mob-modal2l__nav'),
   };
 
-  refs.openmodal2lBtn.addEventListener('click', togglemodal2l);
-  refs.closemodal2lBtn.addEventListener('click', togglemodal2l);
-  refs.modal2lList.addEventListener('click', removemodal2l);
+  refs.openmodPriceBtn.addEventListener('click', togglemodPrice);
+  refs.closemodPriceBtn.addEventListener('click', togglemodPrice);
 
-  function togglemodal2l() {
-    refs.modal2l.classList.toggle('is-hidden');
+  function togglemodPrice() {
+    refs.modPrice.classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   }
-
-  function removemodal2l() {
-    refs.modal2l.classList.add('is-hidden');
-    refs.body.classList.remove('no-scroll');
-  }
 })();
+
+// Калькулятор модалки
+
+const numberCastInput = document.querySelector('[name=numberCast]');
+const quantityInput = document.querySelector('[name=quantity]');
+const total = document.querySelector('.total');
+const quantityLabel = document.querySelector('.quantity-label');
+
+function calculateCost() {
+  const numberCast = numberCastInput.value;
+  const quantity = 1000;
+  const cost = numberCast * quantity;
+
+  console.log(cost);
+
+  document.getElementById('numberСost').value = cost.toFixed(2);
+}
+
+calculateCost();
+
+numberCastInput.addEventListener('input', calculateCost);
+quantityInput.addEventListener('input', calculateCost);
+quantityInput.addEventListener('input', updateQuantityLabel);

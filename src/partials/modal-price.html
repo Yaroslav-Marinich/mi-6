@@ -1,11 +1,7 @@
-<div class="backdrop is-hidden" data-modal2l>
+<div class="backdrop is-hidden" data-modPrice>
   <!-- is-hidden -->
   <div class="modal-price">
-    <button
-      type="button"
-      class="modal-price__btn-close"
-      data-price-modal2l-close
-    >
+    <button type="button" class="modal-price__btn-close" data-modPrice-close>
       <svg class="modal-price__icon-close" width="24" height="24">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
@@ -14,7 +10,7 @@
     <p class="modal-price__title">ЦІНИ НА НОМЕР</p>
     <p class="modal-price__sub-title">Двомісний люкс</p>
 
-    <form class="form form__modal-price">
+    <form name="form1" class="form form__modal-price">
       <p class="modal-price__text">Категорія номеру</p>
       <div class="container__form-price">
         <div class="wrapper-input">
@@ -22,7 +18,7 @@
             <input
               type="number"
               id="number-cast"
-              name="number-cast"
+              name="numberCast"
               class="modal-price__input input-cast"
               minlength="1"
               placeholder="1"
@@ -42,7 +38,7 @@
               </select>      -->
           </div>
 
-          <label for="number-cast" class="modal-price__label-input"
+          <label for="numberCast" class="modal-price__label-input"
             >Кількість ночей</label
           >
           <!-- <label for="select-cast" class="modal-price__label-select">Кількість ночей</label> -->
@@ -53,8 +49,8 @@
           <div class="modal-price__input-wrap">
             <input
               type="number"
-              id="number-cost"
-              name="number-cost"
+              id="numberСost"
+              name="numberСost"
               class="modal-price__input"
               minlength="3"
               placeholder="1000"
@@ -63,9 +59,7 @@
               required
             />
           </div>
-          <label for="number-cost" class="modal-price__label"
-            >Завдаток грн</label
-          >
+          <label for="number-cost" class="modal-price__label">грн</label>
         </div>
       </div>
 
