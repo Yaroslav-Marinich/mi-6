@@ -139,8 +139,6 @@
 }
 
 .contacts__map {
-  display: flex;
-  justify-content: center;
   @include mobile {
     margin-left: 124px;
   }

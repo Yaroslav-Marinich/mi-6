@@ -1,0 +1,40 @@
+.hero__hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../images/hotel/hotel-bg-mob.jpg');
+
+        @include retina {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../images/hotel/hotel-bg-mob-2x.jpg');
+        }
+
+        @include tablet {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../images/hotel/hotel-bg-tab.jpg');
+
+            @include retina {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url('../images/hotel/hotel-bg-tab-2x.jpg');
+            }
+        }
+
+        @include desktop {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../images/hotel/hotel-bg-desk.jpg');
+
+            @include retina {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url('../images/hotel/hotel-bg-desk-2x.jpg');
+            }
+        }
+}
+
+.hero__subtitle--hotel {
+    margin-bottom: 178px;
+
+    @include tablet {
+        margin-bottom: 218px;
+    }
+    @include desktop {
+        margin-bottom: 242px;
+    }
+}

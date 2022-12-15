@@ -1,4 +1,6 @@
 .logo {
+  display: inline-block;
+  margin-right: -0.3em;
   font-family: 'Film P3', sans-serif;
   @include font(700, 40px, 1.08, 0.3em);
   color: $colorLogoWhite;
