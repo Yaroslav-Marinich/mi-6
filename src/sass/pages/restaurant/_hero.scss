@@ -1,0 +1,29 @@
+.hero__rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('../images/restaurant/restaurant-bg-mob.jpg');
+
+    @include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../images/restaurant/restaurant-bg-mob-2x.jpg');
+    }
+
+    @include tablet {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../images/restaurant/restaurant-bg-tab.jpg');
+
+        @include retina {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../images/restaurant/restaurant-bg-tab-2x.jpg');
+        }
+    }
+
+    @include desktop {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../images/restaurant/restaurant-bg-desk.jpg');
+
+        @include retina {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../images/restaurant/restaurant-bg-desk-2x.jpg');
+        }
+    }
+}

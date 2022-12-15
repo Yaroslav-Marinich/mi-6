@@ -51,7 +51,7 @@
     gap: 15px;
 
     @include mobile { gap: 26px;}
-    
+
     @include tablet {
         gap: 72px;
     }
@@ -66,12 +66,12 @@
     @include mobile {
         gap: 12px;
     }
-    
+
 
     @include tablet {
         gap: 32px;
     }
-    
+
 }
 .site-nav__link {
 
@@ -89,7 +89,7 @@
         font-size: 16px;
         line-height: 1.25;
     }
-    
+
     @include tablet {
         font-size: 20px;
         line-height: 1.2;
@@ -105,8 +105,8 @@
 .site-nav__contact-wrap {
     display: flex;
     align-items: center;
-    
-    
+
+
     @include tablet {
         gap: 15px;
         padding: 10px 8px 10px 14px;
@@ -120,7 +120,7 @@
 .site-nav__contact {
     display: none;
 
-    @include tablet 
+    @include tablet
     {   display: block;
         font-weight: 400;
         font-size: 14px;
@@ -128,7 +128,7 @@
         letter-spacing: 0.02em;
 
         color: $colorLogoWhite;
-    
+
         transition: color $transDuration $cubic;
     }
 
@@ -138,7 +138,7 @@
 .site-nav__contact:focus {
     color: $colorAccentYellow;
 
-   
+
 }
 
 .site-nav__icon-link {
@@ -150,7 +150,7 @@
 .site-nav__icon-link:hover,
 .site-nav__icon-link:focus {
     color: $colorLogoWhite;
-} 
+}
 
 .site-nav__icon {
     display: block;
