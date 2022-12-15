@@ -1,9 +1,9 @@
 // Модалка для hotel-page двохмісна люкс
 (() => {
   const refs = {
-    openmodPriceBtn: document.querySelector('[data-modPrice-open]'),
-    closemodPriceBtn: document.querySelector('[data-modPrice-close]'),
-    modPrice: document.querySelector('[data-modPrice]'),
+    openmodPriceBtn: document.querySelector('[data-modPrice2r-open]'),
+    closemodPriceBtn: document.querySelector('[data-modPrice2r-close]'),
+    modPrice: document.querySelector('[data-modPrice2r]'),
     body: document.querySelector('body'),
   };
 
