@@ -29,10 +29,14 @@
     line-height: 1.08;
     letter-spacing: 0.3em;
 
-    margin-right: 52px;
+    margin-right: 15px;
 
     color: $colorLogoWhite;
     transition: color $transDuration $cubic;
+
+    @include mobile {
+        margin-right: 52px;
+    }
 
     @include tablet {
         font-size: 40px;

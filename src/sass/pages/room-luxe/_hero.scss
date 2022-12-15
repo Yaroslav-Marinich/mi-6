@@ -27,7 +27,8 @@
       rgba(0, 0, 0, 0.55) 54.17%,
       rgba(0, 0, 0, 0) 100%
     );
-    background-size: 414px 143px;
+    // background-size: 414px 143px;
+    background-size: 100% 143px;
   }
 
   @include tablet {
@@ -37,7 +38,8 @@
       rgba(0, 0, 0, 0.55) 54.17%,
       rgba(0, 0, 0, 0) 100%
     );
-    background-size: 1024px 116px;
+    // background-size: 1024px 116px;
+    background-size: 100% 116px;
   }
   @include desktop {
     background-image: linear-gradient(
@@ -46,7 +48,8 @@
       rgba(0, 0, 0, 0.55) 54.17%,
       rgba(0, 0, 0, 0) 100%
     );
-    background-size: 1280px 147px;
+    // background-size: 1280px 147px;
+    background-size: 100% 147px;
   }
 }
 
@@ -210,22 +213,23 @@
   left: 0;
   bottom: 0;
   right: 0;
-  max-width: 414px;
-  @include tablet {
-    max-width: 1024px;
-  }
-  @include desktop {
-    max-width: 1280px;
-  }
+  width: 100%;
+  // max-width: 414px;
+  // @include tablet {
+  //   max-width: 1024px;
+  // }
+  // @include desktop {
+  //   max-width: 1280px;
+  // }
 }
 
 .slick-arrow {
   z-index: 1;
 }
 
-// .slick-list {
-//   z-index: -1;
-// }
+.luxe-hero__fade {
+  z-index: -1;
+}
 .slider__img {
   height: 755px;
   @include mobile {
