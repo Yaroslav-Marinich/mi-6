@@ -1,0 +1,175 @@
+.amenities-for-2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-bottom: 48px;
+  }
+
+  @include desktop {
+    background-color: $colorBgLemon;
+  }
+
+  &__container {
+    max-width: 414px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @include tablet {
+      max-width: 1024px;
+      padding-left: 47px;
+    padding-right: 47px;
+    }
+
+    @include desktop {
+      max-width: 1280px;
+      padding-left: 85px;
+    padding-right: 198px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: $colorBlack;
+  }
+
+  &__title-text {
+    max-width: 757px;
+    margin-bottom: 32px;
+    line-height: 1.25;
+    color: $colorTextRooms;
+  }
+
+  &__text {
+    max-width: 384px;
+    line-height: 1.25;
+    color: $colorTextRooms;
+
+    @include tablet {
+      max-width: 400px;
+    }
+  }
+
+  &__item-discription {
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: $colorBlack;
+  }
+
+  &__discription {
+    max-width: 384px;
+    margin-bottom: 16px;
+    line-height: 1.25;
+    color: $colorTextRooms;
+
+    @include tablet {
+      max-width: 400px;
+      margin-right: 80px;
+      margin-bottom: 0;
+    }
+
+    @include desktop {
+      margin-right: 159px;
+    }
+  }
+
+  //     @include tablet{
+
+  //     @include tablet {
+  //             max-width: 450px;
+  //             margin-right: 30px;
+  //         }
+
+  //         @include desktop {
+  //             max-width: 495px;
+  //             margin-right: 64px;
+  //         }
+  //     }
+  // }
+
+  &__box:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__items {
+    margin-bottom: 32px;
+
+    @include tablet {
+        margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    margin: 0 auto 20px;
+
+    @include tablet {
+      position: relative;
+      left: 496px;
+      width: 434px;
+      margin-bottom: 32px;
+      font-size: 24px;
+      line-height: 1.21;
+    }
+
+    @include desktop {
+      left: 563px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $colorBlack;
+      background-color: $colorAccentYellow;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-decoration: none;
+    color: $colorBrown;
+    fill: $colorBrown;
+    transition: color $cubic;
+
+    @include tablet {
+      justify-content: flex-end;
+      font-size: 20px;
+      line-height: 1.2;
+      gap: 16px;
+    }
+
+
+    &:hover,
+    &:focus {
+      color: $colorAccentYellow;
+      fill: $colorAccentYellow;
+    }
+  }
+
+  &__icon {
+    transition: fill $cubic;
+  }
+}
