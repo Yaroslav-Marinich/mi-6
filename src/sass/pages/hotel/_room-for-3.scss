@@ -106,16 +106,9 @@
 }
 
 .room-for-3__bathroom {
+  width: 120%;
+  height: 100%;
   display: flex;
-  gap: 16px;
-  @include tablet {
-    gap: 40px;
-  }
-}
-
-.room-for-3__bathroom img {
-  border-radius: 2px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .room-for-3-btn__wrap {
@@ -177,7 +170,14 @@
   @include tablet {
     gap: 40px;
   }
-  @include desktop {
-    gap: 40px;
-  }
+}
+
+.slick-slide {
+  opacity: 0;
+  transition: opacity $transDuration $cubic;
+}
+
+.slick-active {
+  opacity: 1;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
 }
