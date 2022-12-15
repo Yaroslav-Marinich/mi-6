@@ -47,6 +47,7 @@ $('.kitchen-slider').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   variableWidth: true,
+  adaptiveHeight: true,
   infinite: true,
   arrows: true,
   appendArrows: '.slider-arrows',
