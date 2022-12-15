@@ -13,6 +13,12 @@
 @mixin calc-width ($count, $gap) {
     width: calc((100% - $gap * ($count - 1)) / $count);
     }
+
+        @mixin mobimax {
+          @media (max-width: 413px) {
+            @content;
+          }
+        }
   
 @mixin mobile {
     @media screen and (min-width: 414px) {
