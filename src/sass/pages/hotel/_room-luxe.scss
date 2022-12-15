@@ -156,6 +156,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include mobilemax {
+    max-width: 100%;
+  }
 }
 
 //Styles for slider
@@ -185,6 +189,7 @@
   height: 100%;
 
   @include mobilemax {
+    max-width: 100vw;
     padding-bottom: 42px;
   }
 
