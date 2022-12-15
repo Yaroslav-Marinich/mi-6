@@ -171,7 +171,8 @@
 
 .kitchen-slider {
   margin-right: -15px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 60px 2px rgba(0, 0, 0, 0.25),
+    2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   @include tablet {
     width: 428px;
     margin-left: auto;
@@ -194,7 +195,6 @@
 }
 
 .kitchen-slide {
-  display: block;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  overflow: hidden;
 }
