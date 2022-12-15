@@ -1,4 +1,4 @@
-// Модалка для hotel-page двохмісна
+// Модалка для hotel-page двохмісна люкс
 (() => {
   const refs = {
     openmodPriceBtn: document.querySelector('[data-modPrice-open]'),
