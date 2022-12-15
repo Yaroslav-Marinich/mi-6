@@ -147,8 +147,7 @@
     @include mobilemax {
       position: relative;
       top: 0;
-      left: -32px;
-      min-width: 374px;
+      width: 100%;
     }
     @include tablet {
       display: flex;
@@ -177,12 +176,14 @@
   }
   
   .details-hotel .slick-prev {
-    left: 0;
+    left: -120px;
     transform: translate(770%, -50%);
     @include mobile {
+      left: -28px;
       transform: translate(795%, -50%);
     }
     @include tablet {
+      left: 0;
       transform: translate(1765%, -50%);
     }
     @include desktop {
@@ -191,12 +192,14 @@
   }
   
   .details-hotel .slick-next {
-    left: 64px;
+    left: -57px;
     transform: translate(770%, -50%);
     @include mobile {
+      left: 28px;
       transform: translate(795%, -50%);
     }
     @include tablet {
+      left: 64px;
       transform: translate(1765%, -50%);
     }
     @include desktop {
@@ -233,8 +236,7 @@
   }
 
   .details-hotel .slick-list {
-    min-width: 870px;
-    //  !important;
+    width: 100%;
     @include mobilemax {
       padding-left: 103px;
     }
