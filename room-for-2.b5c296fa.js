@@ -1,0 +1,2 @@
+!function(){var o={openmodPriceRoomFor2Btn:document.querySelector("[data-modPriceRoomFor2-open]"),closemodPriceRoomFor2Btn:document.querySelector("[data-modPriceRoomFor2-close]"),modPriceRoomFor2:document.querySelector("[data-modPriceRoomFor2]"),body:document.querySelector("body")};function e(){o.modPriceRoomFor2.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openmodPriceRoomFor2Btn.addEventListener("click",e),o.closemodPriceRoomFor2Btn.addEventListener("click",e)}();
+//# sourceMappingURL=room-for-2.b5c296fa.js.map
