@@ -155,7 +155,7 @@
   transform: rotate(180deg);
 }
 
-// <--------------------------- Kitchen Slider Container Styles
+// <--------------------------- Kitchen Slider BOX Styles
 .kitchen-slider-box {
   @include mobile {
     padding-left: 69px;
@@ -170,7 +170,6 @@
 }
 
 // <--------------------------- Kitchen Slider Thumb Styles
-
 .kitchen-slider-thumb {
   margin-left: auto;
   @include mobilemax {
@@ -191,6 +190,7 @@
   }
 }
 
+// <--------------------------- Kitchen Slides Carousel Styles
 .kitchen-slider {
   margin-right: -15px;
   @include tablet {
