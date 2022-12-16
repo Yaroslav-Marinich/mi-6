@@ -106,12 +106,11 @@
       z-index: 5;
       position: absolute;
       left: 60px;
-      top: -417px;
+      top: -380px;
     }
 
     @include desktop {
       left: 95px;
-      top: -425px;
     }
   }
 }
