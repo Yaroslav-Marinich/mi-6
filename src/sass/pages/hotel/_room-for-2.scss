@@ -11,11 +11,16 @@
   }
 }
 
+// ------ верхній блок
+
 .hotel-wrap-top {
+  position: relative;
   @include tablet {
     display: flex;
   }
 }
+
+// ----- текстовий блок
 
 .room-wrap-top {
   @include tablet {
@@ -25,11 +30,11 @@
   }
 
   @include desktop {
-    margin-bottom: 188px;
+    margin-bottom: 140px;
   }
 }
 
-.hotel-logo {
+.room-logo {
   display: block;
   margin-bottom: 32px;
 
@@ -43,6 +48,8 @@
   }
 }
 
+// --------- головна картинка
+
 .room-wrap-center {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -55,18 +62,15 @@
 
   @include tablet {
     position: absolute;
-    right: 112px;
-    top: -32px;
+    top: -96px;
+    left: 50%;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  }
-
-  @include desktop {
-    right: 185px;
   }
 }
 
+// ---------- нижній блок
+
 .hotel-wrap-bottom {
-  position: relative;
   @include tablet {
     display: flex;
     align-items: center;
@@ -74,15 +78,15 @@
   }
 }
 
+// ------------ блок слайдера
+
 .room-slider-thumb {
-  // overflow: hidden;
   @include mobilemax {
     position: relative;
     top: 0;
-    left: -15px;
+    left: -135px;
     padding-top: 32px;
-    padding-right: 100px;
-    padding-bottom: 72px;
+    padding-bottom: 44px;
   }
   @include tablet {
     padding-top: 48px;
@@ -91,9 +95,11 @@
   }
 
   @include desktop {
-    padding-bottom: 0px;
+    padding-bottom: 40px;
   }
 }
+
+//  ----- слайдер
 
 .hotel-room-slider {
   @include tablet {
@@ -103,25 +109,38 @@
   @include desktop {
     max-width: 548px;
   }
-}
 
-.hotel-room-slider .slic-active {
-  opacity: 1;
-  border-radius: 2px;
-  box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
+  .slic-active {
+    opacity: 1;
+    border-radius: 2px;
+    box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
 
-  @include tablet {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    @include tablet {
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .slic-slide {
+    opacity: 0;
   }
 }
 
 .hotel-room-slider .slick-list {
+  padding: 30px;
+  margin: -30px;
   @include mobilemax {
-    border-radius: 2px;
-    box-shadow: 2px 2px 32px 2px rgba(0, 0, 0, 0.25);
-    padding-left: 90px;
   }
 }
+
+.hotel-room-slider .slick-track {
+  display: flex;
+  gap: 16px;
+  @include tablet {
+    gap: 40px;
+  }
+}
+
+//  ------ стрілки слайдера
 
 .room-svg {
   cursor: pointer;
@@ -131,17 +150,17 @@
   fill: $colorBlack;
 
   @include mobilemax {
-    left: 16px;
+    right: -136px;
   }
 
   @include tablet {
-    top: 40px;
+    top: 32px;
+    left: 331px;
   }
 
   @include desktop {
-    top: 48px;
+    top: 40px;
     left: 450px;
-    fill: $colorTextModal;
   }
 }
 
@@ -163,6 +182,8 @@
     fill: $colorAccentYellow;
   }
 }
+
+//  ----- блок кнопок
 
 .room-wrap-bottom {
   display: flex;

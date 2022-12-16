@@ -2,7 +2,7 @@
   width: 258px;
   height: 76px;
   @include font(600, 12px, 1.25, 0.02em);
-  color: #5f5f5f;
+  color: $colorTextPrimary;
   margin-top: 12px;
 
   @include tablet {
@@ -16,5 +16,6 @@
     width: 400px;
     height: 83px;
     margin-top: 24px;
+    color: $colorTextRooms;
   }
 }
