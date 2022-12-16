@@ -158,15 +158,18 @@
 .rest-slider {
   margin-right: -15px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
 
   @include tablet {
     width: 428px;
     margin-left: auto;
     margin-right: 0;
+    margin-bottom: 32px;
   }
 
   @include desktop {
     width: 530px;
+    margin-bottom: 36px;
   }
 
   .slick-track {
