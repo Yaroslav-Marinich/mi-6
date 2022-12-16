@@ -186,6 +186,7 @@
   width: 232px;
   height: 48px;
   margin-left: 50px;
+  text-transform: initial;
   @include mobile {
     margin-left: 94px;
   }
