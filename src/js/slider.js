@@ -32,17 +32,14 @@ $('.variable-width').slick({
   variableWidth: true,
 });
 
-// about-hotel-slider
+// SLICK-SLIDER Mini
 
-$('.about-hotel-slider').slick({
-  slidesToShow: 2,
+$('.autoplay-mini').slick({
+  slidesToShow: 1.1,
   slidesToScroll: 1,
   variableWidth: true,
-  infinite: true,
-  arrows: true,
-  appendArrows: '.about-hotel__slider-arrows',
-  prevArrow: '<button type="button" class="about-hotel__left-arrow"></button>',
-  nextArrow: '<button type="button" class="about-hotel__right-arrow"></button>',
+  autoplay: true,
+  autoplaySpeed: 2000,
 });
 
 // Restaurant page -> Kitchen Section -> Slider
@@ -77,7 +74,7 @@ $('.room-slider').slick({
   infinite: true,
   speed: 300,
   initialSlide: 0,
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   variableWidth: true,
   prevArrow: $('.prev'),
