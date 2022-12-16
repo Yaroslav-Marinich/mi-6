@@ -80,3 +80,17 @@ $('.room-slider').slick({
   prevArrow: $('.prev'),
   nextArrow: $('.next'),
 });
+
+// SLICK SLIDER ROOM for 3
+
+$('.room-slider-for-3').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  initialSlide: 0,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  prevArrow: $('.room-for-3-svg__left'),
+  nextArrow: $('.room-for-3-svg__right'),
+});
