@@ -45,6 +45,7 @@
 
 .contacts__item {
   margin-bottom: 16px;
+  
   @include mobile {
     justify-content: flex-start;
     display: flex;
