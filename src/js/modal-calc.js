@@ -6,7 +6,7 @@ const quantityLabel = document.querySelector('.quantity-label');
 
 function calculateCost() {
   const numberCast = numberCastInput.value;
-  const quantity = 1000;
+  const quantity = 3000;
   const cost = numberCast * quantity;
 
   console.log(cost);
