@@ -74,7 +74,7 @@
 .kitchen-card:last-child {
   align-items: center;
   column-gap: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 0;
 
   @include tablet {
     margin-bottom: 154px;
@@ -111,7 +111,7 @@
 }
 
 .kitchen-card__description {
-  @include font(600, 12, 1.25, 0.02);
+  @include font(600, 12, 1.25, null);
   @include tablet {
     font-size: 16px;
     line-height: 20px;
@@ -129,14 +129,14 @@
   display: inline-flex;
   width: 100%;
   gap: 32px;
-  margin-top: 20px;
+  margin-top: -8px;
   justify-content: flex-end;
   padding-right: 2px;
   @include tablet {
-    margin-top: 32px;
+    margin-top: -20px;
   }
   @include desktop {
-    margin-top: 40px;
+    margin-top: -15px;
   }
 }
 
@@ -150,12 +150,18 @@
   border: none;
   background-color: transparent;
 }
+.right-arrow:focus,
+.right-arrow:hover,
+.left-arrow:focus,
+.left-arrow:hover {
+  background-image: url(../images/slider-arrow-orange.svg);
+}
 
 .right-arrow {
   transform: rotate(180deg);
 }
 
-// KITCHEN SLIDER CONTAINER
+// <--------------------------- Kitchen Slider BOX Styles
 .kitchen-slider-box {
   @include mobile {
     padding-left: 69px;
@@ -169,35 +175,72 @@
   }
 }
 
-.kitchen-slider {
-  margin-right: -15px;
-  box-shadow: inset 2px 0px 60px 2px rgba(0, 0, 0, 0.25),
-    2px 0px 60px 2px rgba(0, 0, 0, 0.25);
+// <--------------------------- Kitchen Slider Thumb Styles
+.kitchen-slider-thumb {
+  margin-left: auto;
+  @include mobilemax {
+    max-width: 284px;
+    position: relative;
+    top: 0;
+    left: -15px;
+  }
   @include tablet {
-    width: 428px;
+    max-width: 428px;
+    min-height: 244px;
+  }
+  @include desktop {
+    min-width: 548px;
+    min-height: 300px;
+  }
+}
+
+// <--------------------------- Kitchen Slides Carousel Styles
+.kitchen-slider {
+  display: flex;
+  width: 120%;
+  height: 100%;
+
+  @include tablet {
     margin-left: auto;
     margin-right: 0;
   }
   @include desktop {
-    width: 530px;
+  }
+  .slick-list {
+    @include mobilemax {
+      padding: 32px 0 28px 90px;
+      margin-left: -106px;
+    }
+    @include tablet {
+      padding: 28px 86px;
+      margin-left: -68px;
+      margin-top: -28px;
+      min-width: 428px;
+    }
+    @include desktop {
+      min-width: 548px;
+    }
   }
 
   .slick-track {
-    column-gap: 24px;
     display: flex;
+    gap: 24px;
     @include tablet {
-      column-gap: 40px;
-    }
-    @include desktop {
-      height: 245px;
+      gap: 40px;
     }
   }
-}
-
-.kitchen-slide {
-  border-radius: 2px;
-  display: block;
-  overflow: hidden;
-  box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.25),
-    -5px 0 20px -5px rgba(0, 0, 0, 0.25);
+  .kitchen-slide {
+    overflow: hidden;
+    border-radius: 2px;
+    max-width: 245px;
+    max-height: 245px;
+  }
+  .slick-slide {
+    opacity: 0;
+    transition: opacity $transDuration $cubic;
+  }
+  .slick-active {
+    opacity: 1;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+  }
 }
