@@ -172,8 +172,23 @@
 // <--------------------------- Kitchen Slider Thumb Styles
 
 .kitchen-slider-thumb {
-  min-width: 548px;
-  min-height: 319px;
+  margin-left: auto;
+  @include mobilemax {
+    max-width: 284px;
+    position: relative;
+    top: 0;
+    left: -15px;
+  }
+
+  @include tablet {
+    max-width: 428px;
+    min-height: 251px;
+  }
+
+  @include desktop {
+    min-width: 548px;
+    min-height: 319px;
+  }
 }
 
 .kitchen-slider {
