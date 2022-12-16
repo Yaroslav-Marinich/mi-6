@@ -110,6 +110,7 @@
 .site-nav__contact-wrap {
     display: flex;
     align-items: center;
+    
 
 
     @include tablet {
@@ -117,7 +118,7 @@
         padding: 10px 8px 10px 14px;
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px;
-
+        
         }
 }
 
@@ -146,14 +147,16 @@
 
 }
 
-.site-nav__icon-link {
+.menu-open {
     color: $colorAccentYellow;
-
+    background-color: transparent;
+    border-color: transparent;
     transition: color $transDuration $cubic;
+    padding: 0;
 }
 
-.site-nav__icon-link:hover,
-.site-nav__icon-link:focus {
+.menu-open:hover,
+.menu-open:focus {
     color: $colorLogoWhite;
 }
 
@@ -189,3 +192,110 @@ display: none;
     display: block;
     fill: currentColor;
 }
+
+
+// МОБІЛЬНЕ МЕНЮ
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 60px;
+
+    width: 100vw;
+    height: 430px;
+    background-color:$colorBgLemon;
+
+   @include tablet {
+      display: none;
+    }
+}
+
+// .mob-menu-close {
+//     position: absolute;
+//           top: 21px;
+//           right: 25px;
+
+//           display: inline-flex;
+//           margin: 0;
+//           padding: 0;
+//           border: none;
+//           border-color: transparent;
+//           background-color: transparent;
+//           margin-bottom: 8px;
+//           fill: black;
+// }
+
+.mob-menu-title {
+    font-family: 'Times New Roman', sans;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+    color: $colorBlack;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mob-menu-item {
+    border: 1px solid $colorBrown;
+    background-color: $colorWhite;
+    padding: 16px 12px;
+    border-radius: 2px;
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.mob-menu-text {
+   @include font(500, 20px, 1.2, 0.02em);
+    color: $colorBrown;
+    margin-bottom: 20px;
+}
+
+.mob-contact-tel {
+    @include font(400, 14px, 1.2, 0.02em);
+    color: $colorTextAddressMobTab;
+
+    transition: color $transDuration $cubic
+}
+
+.mob-contact-tel:hover,
+.mob-contact-tel:focus {
+    color: $colorAccentYellow;
+}
+
+.mob-menu-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    padding: 0;
+    margin: 0;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    color: $colorBlack;
+      
+    transition: color $transDuration $cubic, transform $transDuration $cubic;
+  }
+  
+  .mob-menu-close:hover,
+  .mob-menu-close:focus {
+    color: $colorBrown;
+    transform: rotate(90deg);
+  }
+
+
+  .mob-icon-close {
+    display: inline-block;
+    stroke: currentColor;
+    fill: currentColor;
+  }
