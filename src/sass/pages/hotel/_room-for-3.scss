@@ -3,6 +3,10 @@
     overflow: hidden;
   }
 
+  @include tablet {
+    padding-bottom: 104px;
+  }
+
   @include desktop {
     padding-bottom: 65px;
   }
