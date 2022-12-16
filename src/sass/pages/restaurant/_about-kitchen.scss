@@ -136,7 +136,7 @@
     margin-top: -20px;
   }
   @include desktop {
-    margin-top: 40px;
+    margin-top: -15px;
   }
 }
 
@@ -184,7 +184,7 @@
   }
   @include desktop {
     min-width: 548px;
-    min-height: 319px;
+    min-height: 300px;
   }
 }
 
@@ -206,7 +206,7 @@
       margin-left: -106px;
     }
     @include tablet {
-      padding: 28px 68px;
+      padding: 28px 86px;
       margin-left: -68px;
       margin-top: -28px;
       min-width: 428px;
@@ -226,6 +226,8 @@
   .kitchen-slide {
     overflow: hidden;
     border-radius: 2px;
+    max-width: 245px;
+    max-height: 245px;
   }
   .slick-slide {
     opacity: 0;
