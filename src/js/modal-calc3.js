@@ -1,19 +1,21 @@
-// Калькулятор модалки 3room
-const numberCast3Input = document.querySelector('[name=numberCast3]');
-const quantity3Input = document.querySelector('[name=quantity3]');
-const total3 = document.querySelector('.total3');
-const quantity3Label = document.querySelector('.quantity3-label');
+// Калькулятор модалки
+const numberCast3rInput = document.querySelector('[name=numberCast3r]');
+const numberCost3rInput = document.querySelector('[name=numberCost3r]');
+const total3r = document.querySelector('.total3r');
+const quantity3rLabel = document.querySelector('.quantity3r');
 
-function calculateCost3() {
-  const numberCast3 = numberCast3Input.value;
-  const quantity3 = 2000;
-  const cost3 = numberCast3 * quantity3;
+function calculateCost3r() {
+  const numberCast3r = numberCast3rInput.value;
+  const numberCost3r = numberCost3rInput.value;
+  const cost3r = numberCast3r * numberCost3r;
 
-  console.log(cost3);
-
-  document.getElementById('numberСost3').value = cost3.toFixed(2);
+  console.log(numberCast3r);
+  console.log(numberCost3r);
+  console.log(cost3r);
+  document.getElementById('numberСost3r').value = cost3r.toFixed(2);
 }
-calculateCost3();
 
-numberCast3Input.addEventListener('input', calculateCost3);
-quantity3Input.addEventListener('input', calculateCost3);
+calculateCost3r();
+
+numberCast3rInput.addEventListener('input', calculateCost3r);
+numberCost3rInput.addEventListener('input', calculateCost3r);
