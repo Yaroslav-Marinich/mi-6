@@ -13,9 +13,7 @@ function calculateCost2() {
 
   document.getElementById('numberСost2').value = Cost2.toFixed(2);
 }
-
 calculateCost2();
 
 numberCast2Input.addEventListener('input', calculateCost2);
 quantity2Input.addEventListener('input', calculateCost2);
-quantity2Input.addEventListener('input', updatequantity2Label);

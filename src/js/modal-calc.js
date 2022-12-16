@@ -18,4 +18,3 @@ calculateCost();
 
 numberCastInput.addEventListener('input', calculateCost);
 quantityInput.addEventListener('input', calculateCost);
-quantityInput.addEventListener('input', updateQuantityLabel);
