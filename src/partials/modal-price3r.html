@@ -8,9 +8,19 @@
     </button>
 
     <p class="modal-price__title">ЦІНИ НА НОМЕР</p>
-    <p class="modal-price__sub-title">Трьохмісний номер</p>
+    <!-- <p class="modal-price__sub-title">Трьохмісний номер</p> -->
 
     <form class="form form__modal-price">
+      <select
+        name="number-cast"
+        id="select-cast"
+        class="modal-price__input modal-price__custom-select"
+      >
+        <option value="1500">ДВОМІСНИЙ ЛЮКС</option>
+        <option value="1300">ТРЬОХМІСНИЙ НОМЕР</option>
+        <option value="1000">ДВОМІСНИЙ НОМЕР</option>
+      </select>
+      
       <p class="modal-price__text">Категорія номеру</p>
       <div class="container__form-price">
         <div class="wrapper-input">
