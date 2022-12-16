@@ -192,25 +192,37 @@
 
 // <--------------------------- Kitchen Slides Carousel Styles
 .kitchen-slider {
-  margin-right: -15px;
+  display: flex;
+  width: 120%;
+  height: 100%;
+
   @include tablet {
-    width: 428px;
     margin-left: auto;
     margin-right: 0;
   }
   @include desktop {
-    width: 530px;
   }
-  .slick-track {
-    column-gap: 24px;
-    display: flex;
+  .slick-list {
+    @include mobilemax {
+      padding: 32px 0 28px 90px;
+      margin-left: -215px;
+    }
     @include tablet {
-      column-gap: 40px;
+      padding: 28px 68px;
+      margin-left: -68px;
+      margin-top: -28px;
+      min-width: 428px;
     }
     @include desktop {
-      width: 120%;
-      height: 100%;
-      display: flex;
+      min-width: 548px;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+    gap: 24px;
+    @include tablet {
+      gap: 40px;
     }
   }
   .slick-slide {
