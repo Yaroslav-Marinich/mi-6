@@ -8,12 +8,12 @@
     </button>
 
     <p class="modal-price__title">ЦІНИ НА НОМЕР</p>
-    <!-- <p class="modal-price__sub-title">Двохмісний номер</p> -->
+    <!-- <p class="modal-price__sub-title">Двомісний люкс</p> -->
 
     <form class="form form__modal-price">
       <select
-        name="number-cast"
-        id="select-cast"
+        name="numberCost2r"
+        id="select-cast2r"
         class="modal-price__input modal-price__custom-select"
       >
         <option value="1500">ДВОМІСНИЙ ЛЮКС</option>
@@ -27,22 +27,23 @@
           <div class="modal-price__input-wrap">
             <input
               type="number"
-              id="numberCast2"
-              name="numberCast2"
+              id="numberCast2r"
+              name="numberCast2r"
               class="modal-price__input input-cast"
               minlength="1"
-              placeholder="2"
+              placeholder="1"
               min="1"
               pattern="^[0-9]"
               title="Must be number."
-              value="3"
+              value="1"
               required
             />
           </div>
 
-          <label for="numberCast2" class="modal-price__label-input"
+          <label for="numberCast2r" class="modal-price__label-input"
             >Кількість ночей</label
           >
+          <!-- <label for="select-cast" class="modal-price__label-select">Кількість ночей</label> -->
         </div>
 
         <!-- wrapper-input wrapper-last -->
@@ -50,18 +51,18 @@
           <div class="modal-price__input-wrap">
             <input
               type="number"
-              id="numberСost2"
-              name="numberСost2"
+              id="numberСost2r"
+              name="numberСost2r"
               class="modal-price__input"
               minlength="3"
               placeholder="1000"
               min="100"
-              value="2000"
+              value="1000"
               disabled
               required
             />
           </div>
-          <label for="number-cost" class="modal-price__label">грн</label>
+          <label for="numberСost2r" class="modal-price__label">грн</label>
         </div>
       </div>
 

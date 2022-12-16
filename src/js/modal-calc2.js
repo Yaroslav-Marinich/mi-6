@@ -1,19 +1,21 @@
-// Калькулятор модалки 2room
-const numberCast2Input = document.querySelector('[name=numberCast2]');
-const quantity2Input = document.querySelector('[name=quantity2]');
-const total2 = document.querySelector('.total2');
-const quantity2Label = document.querySelector('.quantity2-label');
+// Калькулятор модалки
+const numberCast2rInput = document.querySelector('[name=numberCast2r]');
+const numberCost2rInput = document.querySelector('[name=numberCost2r]');
+const total2r = document.querySelector('.total2r');
+const quantity2rLabel = document.querySelector('.quantity2r');
 
-function calculateCost2() {
-  const numberCast2 = numberCast2Input.value;
-  const quantity2 = 1000;
-  const Cost2 = numberCast2 * quantity2;
+function calculateCost2r() {
+  const numberCast2r = numberCast2rInput.value;
+  const numberCost2r = numberCost2rInput.value;
+  const cost2r = numberCast2r * numberCost2r;
 
-  console.log(Cost2);
-
-  document.getElementById('numberСost2').value = Cost2.toFixed(2);
+  console.log(numberCast2r);
+  console.log(numberCost2r);
+  console.log(cost2r);
+  document.getElementById('numberСost2r').value = cost2r.toFixed(2);
 }
-calculateCost2();
 
-numberCast2Input.addEventListener('input', calculateCost2);
-quantity2Input.addEventListener('input', calculateCost2);
+calculateCost2r();
+
+numberCast2rInput.addEventListener('input', calculateCost2r);
+numberCost2rInput.addEventListener('input', calculateCost2r);
