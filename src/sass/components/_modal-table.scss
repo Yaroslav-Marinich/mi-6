@@ -26,6 +26,10 @@
       width: 712px;
       padding: 60px 60px;
     }
+    @media screen and (max-height: 685px) {
+      top: 100vh;
+    }
+  
     
   }
   

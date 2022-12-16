@@ -190,6 +190,14 @@
   flex-direction: column;
   gap: 16px;
   padding-left: 80px;
+  @include tablet {
+    margin-bottom: 81px;
+  }
+  @include mobilemax {
+       padding-left: 0px;
+  align-items: center;
+  }
+ 
 }
 
 .hotel-link {

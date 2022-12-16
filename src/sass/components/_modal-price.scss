@@ -21,6 +21,10 @@
       min-height: 489px;
       padding: 60px;
     }
+    @media screen and (max-height: 580px) {
+      top: 100vh;
+    }
+  
 }
 
 .modal-price__btn-close {

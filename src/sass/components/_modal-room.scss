@@ -18,6 +18,10 @@
     height: 638px;
     padding: 60px;
   }
+  @media screen and (max-height: 815px) {
+      top: 100vh;
+    }
+  
 }
 
 .modal-room__title {
