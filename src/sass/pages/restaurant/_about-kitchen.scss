@@ -150,6 +150,12 @@
   border: none;
   background-color: transparent;
 }
+.right-arrow:focus,
+.right-arrow:hover,
+.left-arrow:focus,
+.left-arrow:hover {
+  background-image: url(../images/slider-arrow-orange.svg);
+}
 
 .right-arrow {
   transform: rotate(180deg);
@@ -235,6 +241,6 @@
   }
   .slick-active {
     opacity: 1;
-    box-shadow: 2px 2px 20px 2px red;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
   }
 }
