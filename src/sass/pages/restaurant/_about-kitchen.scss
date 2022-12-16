@@ -171,8 +171,6 @@
 
 .kitchen-slider {
   margin-right: -15px;
-  box-shadow: inset 2px 0px 60px 2px rgba(0, 0, 0, 0.25),
-    2px 0px 60px 2px rgba(0, 0, 0, 0.25);
   @include tablet {
     width: 428px;
     margin-left: auto;
@@ -181,7 +179,6 @@
   @include desktop {
     width: 530px;
   }
-
   .slick-track {
     column-gap: 24px;
     display: flex;
@@ -189,15 +186,29 @@
       column-gap: 40px;
     }
     @include desktop {
-      height: 245px;
+      width: 120%;
+      height: 100%;
+      display: flex;
     }
+  }
+
+  .slick-slide {
+    opacity: 0;
+    transition: opacity $transDuration $cubic;
+  }
+
+  .slick-active {
+    opacity: 1;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
   }
 }
 
+.kitchen-slider-thumb {
+  min-width: 548px;
+  min-height: 319px;
+}
+
 .kitchen-slide {
-  border-radius: 2px;
-  display: block;
-  overflow: hidden;
-  box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.25),
-    -5px 0 20px -5px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity $transDuration $cubic;
 }

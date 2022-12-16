@@ -46,6 +46,7 @@ $('.autoplay-mini').slick({
 $('.kitchen-slider').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
+  initialSlide: 0,
   variableWidth: true,
   infinite: true,
   arrows: true,
