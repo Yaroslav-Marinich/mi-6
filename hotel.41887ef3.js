@@ -1,0 +1,2 @@
+var numberCastInput=document.querySelector("[name=numberCast]"),numberCostInput=document.querySelector("[name=numberCost]"),total=document.querySelector(".total"),quantityLabel=document.querySelector(".quantity-label");function calculateCost(){var e=numberCastInput.value,t=numberCostInput.value,n=e*t;console.log(e),console.log(t),console.log(n),document.getElementById("numberСost").value=n.toFixed(2)}calculateCost(),numberCastInput.addEventListener("input",calculateCost),numberCostInput.addEventListener("input",calculateCost);
+//# sourceMappingURL=hotel.41887ef3.js.map

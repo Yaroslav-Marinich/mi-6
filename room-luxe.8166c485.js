@@ -1,0 +1,2 @@
+!function(){var o={openmodPriceRoomLuxeBtn:document.querySelector("[data-modPriceRoomLuxe-open]"),closemodPriceRoomLuxeBtn:document.querySelector("[data-modPriceRoomLuxe-close]"),modPriceRoomLuxe:document.querySelector("[data-modPriceRoomLuxe]"),body:document.querySelector("body")};function e(){o.modPriceRoomLuxe.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openmodPriceRoomLuxeBtn.addEventListener("click",e),o.closemodPriceRoomLuxeBtn.addEventListener("click",e)}();
+//# sourceMappingURL=room-luxe.8166c485.js.map
