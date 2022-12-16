@@ -221,11 +221,6 @@
 
   .slick-active {
     opacity: 1;
-    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 20px 2px red;
   }
-}
-
-.kitchen-slide {
-  opacity: 0;
-  transition: opacity $transDuration $cubic;
 }
